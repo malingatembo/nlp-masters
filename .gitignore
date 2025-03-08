@@ -1,6 +1,6 @@
 # My project specific
 output/results/*
-data/processed/text/*
+data/processed/*
 
 
 
