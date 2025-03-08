@@ -11,5 +11,6 @@ models:
   embedding: "all-MiniLM-L6-v2"
   tiny_llama: "TinyLlama/TinyLlama-1.1B-Chat-v1.0"
   
+# Please give this as an env variable. if you do, leave the "" blank. 
 api_keys:
-  openai: "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"
+  openai: ""
