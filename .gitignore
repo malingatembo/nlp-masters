@@ -1,10 +1,16 @@
+# My project specific
+output/results/*
+data/processed/text/*
+
+
+
+
+
+
 led / optimized / DLL files
 __pycache__/
 *.py[cod]
 *$py.class
-
-# C extensions
-*.so
 
 # Distribution / packaging
 .Python
@@ -104,6 +110,7 @@ celerybeat.pid
 # Environments
 .env
 .envThs/
+envThs/
 .venv
 venv/
 ENV/
@@ -126,4 +133,5 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
 
