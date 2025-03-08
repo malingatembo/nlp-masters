@@ -81,8 +81,14 @@ class ChromaVectorStore:
                 meta_clean = meta.copy()
                 if 'text' in meta_clean:
                     del meta_clean['text']
-                batch_metadata_clean.append(meta_clean)
             
+                # sanitize empty metadata valuees
+                for key, value in list(meta_clean.items()):
+                    if value is None:
+                        meta_clean[key] = ""
+
+                batch_metadata_clean.append(meta_clean)
+
             # Add to collection
             collection.add(
                 embeddings=batch_embeddings,
