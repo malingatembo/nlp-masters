@@ -1,6 +1,7 @@
 # My project specific
 output/results/*
 data/processed/*
+.env
 
 
 

@@ -16,6 +16,10 @@ from evaluation import EvaluationMetrics, ResultsEvaluator
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
 logger = logging.getLogger(__name__)
 
+
+# Load environment variables from .env file
+load_dotenv()
+
 def load_config(config_path: str):
     """Load configuration from YAML file"""
     with open(config_path, 'r') as f:
