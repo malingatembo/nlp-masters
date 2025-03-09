@@ -5,6 +5,7 @@ import logging
 import json
 import yaml
 from datetime import datetime
+from dotenv import load_dotenv  # Added for .env file support
 
 # Import components
 from data_loader import ArtelDataLoader
@@ -12,6 +13,9 @@ from embedding_generator import EmbeddingGenerator
 from vector_database import ChromaVectorStore
 from rag_pipeline import RAGPipeline
 from evaluation import EvaluationMetrics, ResultsEvaluator
+
+# Load environment variables from .env file
+load_dotenv()
 
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
 logger = logging.getLogger(__name__)
@@ -74,11 +78,19 @@ def run_query(config, query, task_type, model):
         overwrite=False
     )
     
-    # Initialize RAG pipeline
+    # Get API key with priority: environment variable > config file
+    openai_api_key = os.environ.get('OPENAI_API_KEY', config.get('api_keys', {}).get('openai', ''))
+    
+    # Check if API key is available when using GPT models
+    if 'gpt' in model.lower() and not openai_api_key:
+        logger.error("OpenAI API key not found. Set OPENAI_API_KEY in .env file or config file.")
+        raise ValueError("OpenAI API key is required for GPT models but was not provided")
+    
+    # Initialize RAG pipeline with API key
     pipeline = RAGPipeline(
         vector_db=collection,
         config_path=config['config_files']['hyperparams'],
-        openai_api_key=config.get('api_keys', {}).get('openai'),
+        openai_api_key=openai_api_key,
         tiny_llama_path=config.get('models', {}).get('tiny_llama')
     )
     
@@ -185,6 +197,16 @@ def main():
     
     # Load configuration
     config = load_config(args.config)
+    
+    # Check if API key is available when using GPT models
+    if 'gpt' in args.model.lower():
+        api_key = os.environ.get('OPENAI_API_KEY', config.get('api_keys', {}).get('openai', ''))
+        if not api_key:
+            logger.warning("No OpenAI API key found in .env file or config file")
+            if args.mode != "setup":
+                logger.error("OpenAI API key is required for GPT models")
+                print("Error: OpenAI API key not found. Please add it to your .env file in the project root.")
+                return
     
     if args.mode == "setup":
         setup_pipeline(config)
