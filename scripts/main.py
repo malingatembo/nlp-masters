@@ -210,7 +210,6 @@ def run_query(config, query, task_type, model):
     
     # Force a higher number of results to increase chances of relevant context
     n_results = config.get('retrieval', {}).get('n_results', 5)
-    n_results = max(n_results, 10)  # Try to get at least 10 results
     
     # Process query with debug info
     logger.info(f"Processing query: '{query}' using model: {model}")

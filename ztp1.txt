@@ -1,0 +1,45 @@
+
+================================================================================
+Query: What is Zero Touch Provisioning and how can it be cancelled on Arista switches?
+Task: question_answering
+Model: gpt4_rag
+================================================================================
+Zero Touch Provisioning (ZTP) is a configuration method for Arista Network switches that does not require user intervention. It works by downloading a startup configuration file (startup-config) or a boot script from a location specified by a DHCP server. The switch enters ZTP mode when it boots if flash memory does not contain a startup-config. It remains in ZTP mode until a user cancels ZTP mode, or until the switch retrieves a startup-config or a boot script.
+
+To cancel ZTP mode, you need to log into the switch using the admin password, then enter the 'zerotouch cancel' command. The switch will then boot immediately without installing a startup-config file. To avoid entering ZTP mode on subsequent reboots, a startup-config file needs to be created.
+================================================================================
+Retrieved 10 context passages
+
+Context Used:
+
+--- Context 1 --------------------------------------------------
+subsection_2_1
+
+--- Context 2 --------------------------------------------------
+subsubsubsection_2_1_2_2
+
+--- Context 3 --------------------------------------------------
+code_subsubsubsection_2_1_2_2_0
+
+--- Context 4 --------------------------------------------------
+subsubsection_2_1_1
+
+--- Context 5 --------------------------------------------------
+code_subsubsubsection_2_3_4_2_0
+
+--- Context 6 --------------------------------------------------
+code_subsection_9_6_35
+
+--- Context 7 --------------------------------------------------
+code_subsubsubsection_2_3_4_3_0
+
+--- Context 8 --------------------------------------------------
+chapter_2
+
+--- Context 9 --------------------------------------------------
+code_subsubsubsection_2_1_2_2_1
+
+--- Context 10 --------------------------------------------------
+subsubsection_9_2_5
+================================================================================
+Result saved to: output/results/gpt4_rag_question_answering_20250501_112723.json

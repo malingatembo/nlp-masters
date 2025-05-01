@@ -1,0 +1,99 @@
+Text-Based Questions
+
+   python scripts/main.py --mode query --task question_answering --model tiny_llama --query 
+   python scripts/main.py --mode query --task question_answering --model gpt4_no_rag --query 
+   python scripts/main.py --mode query --task question_answering --model gpt4_rag --query 
+   python scripts/main.py --mode query --task summarization --model gpt4_rag --query 
+   python scripts/main.py --mode query --task summarization --model gpt4_no_rag --query 
+   python scripts/main.py --mode query --task summarization --model tiny_llama --query 
+
+Arista-Specific Questions 
+
+1. "What is the purpose of the 'configure terminal' command on Arista switches?"
+2. "How do you configure the management interface on an Arista switch?"
+3. "What is the significance of the 'errdisabled' status on Arista switch interfaces?"
+4. "How do you set the speed of an Ethernet interface to 40gfull on an Arista switch?"
+5. "What is the difference between 'connected' and 'errdisabled' interfaces on Arista switches?"
+6. "How do you configure multiple Ethernet interfaces on an Arista switch?"
+7. "What is the purpose of the 'commit' command in Arista switch configuration?"
+8. "How do you delete a configuration session on an Arista switch?"
+9. "What is the purpose of the 'rollback clean-config' command on Arista switches?"
+10. "How do you set a limit on the maximum number of uncommitted sessions on an Arista switch?"
+11. "What is the purpose of the 'abort' command in Arista switch configuration?"
+12. "How do you configure port groups on an Arista DCS-7050Q-16 switch?"
+13. "What is the difference between QSFP+ and SFP+ ports on Arista switches?"
+14. "How do you check the status of all interfaces on an Arista switch?"
+15. "What is the purpose of the 'show interfaces status' command on Arista switches?"
+16. "How do you configure flow control on Arista switches?"
+17. "What is the significance of the 'Flags' column in the 'show interfaces status' output on Arista switches?"
+18. "How do you configure the speed of multiple Ethernet interfaces on an Arista switch?"
+19. "What is the purpose of the 'service configuration session max completed' command on Arista switches?"
+20. "How do you configure the management interface IP address on an Arista switch?"
+21. "What is the purpose of configuring the management interface on a switch?"
+22. "What does the 'errdisabled' status indicate on a switch interface?"
+23. "What is the significance of setting the speed to '40gfull' on an Ethernet interface?"
+25. "Summarize the steps to configure an IP address on the management interface of a switch."
+26. "Summarize the process of configuring multiple Ethernet interfaces with forced speed settings."
+27. "Summarize the key differences between connected and errdisabled interfaces on a switch."
+
+---
+
+Code-Based Questions
+
+   python scripts/main.py --mode query --task code_generation --model gpt4_rag --query 
+   python scripts/main.py --mode query --task code_generation --model gpt4_no_rag --query
+   python scripts/main.py --mode query --task code_generation --model tiny_llama --query
+
+1. "Write a configuration to set the IP address of the management interface to 10.0.2.5/24."
+2. "Generate a script to configure the speed of Ethernet interfaces 5/49/1, 5/49/5, and 5/49/9 to 40gfull."
+3. "Write a configuration to enable forced speed settings on Ethernet interfaces 5/49/1-12."
+4. "Generate a script to check the status of all interfaces on a switch."
+5. "Write a configuration to set the speed of Ethernet interface 5/49/1 to 40gfull."
+6. "Generate a script to configure the management interface with an IP address."
+7. "Write a configuration to delete a specific configuration session on a switch."
+8. "Generate a script to revert the configuration of a session to factory defaults."
+9. "Write a configuration to set a limit on the maximum number of committed sessions."
+10. "Generate a script to abort an uncommitted configuration session."
+11. "Generate a script to configure the speed of Ethernet interfaces 5/49/1, 5/49/5, and 5/49/9 to 40gfull."
+12. "Write a configuration to enable forced speed settings on Ethernet interfaces 5/49/1-12."
+13. "Generate a script to check the status of all interfaces on a switch."
+14. "Write a configuration to set the speed of Ethernet interface 5/49/1 to 40gfull."
+15. "Generate a script to configure the management interface with an IP address."
+
+---
+
+Table-Based Questions
+
+   python scripts/main.py --mode query --task question_answering --model gpt4_rag --query 
+   python scripts/main.py --mode query --task question_answering --model gpt4_no_rag --query 
+   python scripts/main.py --mode query --task question_answering --model tiny_llama --query 
+
+   python scripts/main.py --mode query --task summarization --model gpt4_rag --query 
+   python scripts/main.py --mode query --task summarization --model gpt4_no_rag --query 
+   python scripts/main.py --mode query --task summarization --model tiny_llama --query 
+
+1. "What information is displayed in the 'show interfaces status' output table?"
+2. "How are connected and errdisabled interfaces represented in the 'show interfaces status' table?"
+3. "What does the 'Flags' column indicate in the 'show interfaces status' table?"
+4. "Summarize the key details provided in the 'show interfaces status' table."
+5. "Summarize the differences between connected and errdisabled interfaces as shown in the 'show interfaces status' table."
+6. "What is the significance of the 'Vlan' column in the 'show interfaces status' table?"
+7. "How does the 'show interfaces status' table differentiate between port types like 10GBASE-T and 100GBASE-SR1?"
+8. "What does the 'Speed' column indicate in the 'show interfaces status' table?"
+9. "How are unconfigured interfaces represented in the 'show interfaces status' table?"
+10. "What is the purpose of the 'Name' column in the 'show interfaces status' table?"
+11. "Summarize the port status information displayed in the 'show interfaces status' table."
+12. "What information is displayed in the 'show interfaces status' output table?"
+13. "What does the 'Flags' column indicate in the 'show interfaces status' table?"
+14. "How are connected and errdisabled interfaces represented in the 'show interfaces status' table?"
+15. "Summarize the differences between connected and errdisabled interfaces as shown in the 'show interfaces status' table."
+
+---
+
+Evaluation Commands
+
+1. Run full evaluation with default config
+   python scripts/main.py --mode evaluate
+
+2. Run evaluation with custom config
+   python scripts/main.py --mode evaluate --config configs/custom_paths.yaml

@@ -58,6 +58,9 @@ class RAGPipeline:
         filter_criteria: Optional[Dict] = None
     ) -> Tuple[List[str], List[Dict]]:
         """Retrieve relevant context from vector database"""
+        # Ensure we only get maximum 5 results to avoid token limit issues
+        n_results = min(n_results, 5)
+        
         results = self.vector_db.query(
             query_texts=[query],
             n_results=n_results,
@@ -206,10 +209,13 @@ class RAGPipeline:
         try:
             # RAG approach with GPT-4
             if model == "gpt4_rag":
+                # Limit n_results to 5 to prevent token limit issues
+                safe_n_results = min(n_results, 5)
+                
                 # Retrieve context
                 documents, metadatas = self.retrieve_context(
                     query, 
-                    n_results=n_results
+                    n_results=safe_n_results
                 )
                 context = self.format_context(documents, metadatas)
                 
