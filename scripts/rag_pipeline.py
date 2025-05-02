@@ -95,36 +95,60 @@ class RAGPipeline:
         self, 
         query: str, 
         context: str, 
-        task_type: str
+        task_type: str,
+        is_rag_mode: bool = True
     ) -> str:
         """Generate a response using GPT-4 with retrieved context"""
         if not self.use_gpt4:
             return "GPT-4 API not configured"
         
-        # Task-specific instructions
-        if task_type == "summarization":
-            instruction = "Generate a comprehensive and concise summary of the telecommunications documentation in the context. Focus on technical details, command syntax, and configuration steps."
-        elif task_type == "question_answering":
-            instruction = "Answer the query based solely on the information provided in the context. If the context doesn't contain relevant information, acknowledge the limitations."
-        elif task_type == "code_generation":
-            instruction = "Generate configuration code or commands to address the query, based on the examples and documentation in the context. Ensure the code follows the conventions shown in the context."
+        # Different instructions based on whether we're using RAG or not
+        if is_rag_mode:
+            # Task-specific instructions for RAG mode
+            if task_type == "summarization":
+                instruction = "Generate a comprehensive and concise summary of the telecommunications documentation in the context. Focus on technical details, command syntax, and configuration steps."
+            elif task_type == "question_answering":
+                instruction = "Answer the query based solely on the information provided in the context. If the context doesn't contain relevant information, acknowledge the limitations."
+            elif task_type == "code_generation":
+                instruction = "Generate configuration code or commands to address the query, based on the examples and documentation in the context. Ensure the code follows the conventions shown in the context."
+            else:
+                instruction = "Generate a comprehensive answer addressing the query using only the information provided in the context."
+            
+            # Create prompt with context
+            prompt = f"""
+            [CONTEXT]
+            {context}
+            [/CONTEXT]
+            
+            [QUERY]
+            {query}
+            [/QUERY]
+            
+            [INSTRUCTION]
+            {instruction}
+            [/INSTRUCTION]
+            """
         else:
-            instruction = "Generate a comprehensive answer addressing the query using only the information provided in the context."
-        
-        # Create prompt with context
-        prompt = f"""
-        [CONTEXT]
-        {context}
-        [/CONTEXT]
-        
-        [QUERY]
-        {query}
-        [/QUERY]
-        
-        [INSTRUCTION]
-        {instruction}
-        [/INSTRUCTION]
-        """
+            # Non-RAG mode instructions
+            if task_type == "summarization":
+                instruction = "Generate a comprehensive and concise summary about the telecommunications topic in the query. Focus on technical accuracy and clarity."
+            elif task_type == "question_answering":
+                instruction = "Answer the query based on your knowledge of telecommunications and networking. Provide a detailed and accurate response."
+            elif task_type == "code_generation":
+                instruction = "Generate configuration code or commands to address the query for telecommunications and networking equipment. Follow best practices."
+            else:
+                instruction = "Generate a comprehensive answer addressing the query using your knowledge of telecommunications and networking."
+            
+            # Create prompt without context
+            prompt = f"""
+            [QUERY]
+            {query}
+            [/QUERY]
+            
+            [INSTRUCTION]
+            {instruction} Do NOT make any references to external context, documentation, or information sources in your answer.
+            [/INSTRUCTION]
+            """
         
         try:
             response = self.client.chat.completions.create(
@@ -207,6 +231,9 @@ class RAGPipeline:
         }
         
         try:
+            # Check if we're using RAG or not
+            is_rag_mode = not model.endswith("_no_rag")
+            
             # RAG approach with GPT-4
             if model == "gpt4_rag":
                 # Limit n_results to 5 to prevent token limit issues
@@ -220,7 +247,7 @@ class RAGPipeline:
                 context = self.format_context(documents, metadatas)
                 
                 # Generate response with context
-                response = self.generate_with_gpt4(query, context, task_type)
+                response = self.generate_with_gpt4(query, context, task_type, is_rag_mode=True)
                 
                 result["response"] = response
                 result["context_used"] = [m.get('id', '') for m in metadatas]
@@ -228,8 +255,11 @@ class RAGPipeline:
             
             # GPT-4 without RAG (for comparison)
             elif model == "gpt4_no_rag":
-                response = self.generate_with_gpt4(query, "", task_type)
+                # Non-RAG mode - pass empty context and set is_rag_mode to False
+                response = self.generate_with_gpt4(query, "", task_type, is_rag_mode=False)
                 result["response"] = response
+                # Don't include context_used for non-RAG mode
+                result["context_used"] = []
             
             # Tiny LLaMA baseline
             elif model == "tiny_llama":
