@@ -1,0 +1,73 @@
+QUESTION: Generate the EOS CLI commands to assign custom MAC addresses to multiple interfaces on an Arista switch and verify the configuration.
+
+=== gpt4_no_rag ===
+Here are the EOS CLI commands to assign custom MAC addresses to multiple interfaces on an Arista switch:
+
+```
+configure terminal
+interface Ethernet1
+mac address 0011.2233.4455
+exit
+interface Ethernet2
+mac address 0066.7788.9900
+exit
+interface Ethernet3
+mac address 00aa.bbcc.ddee
+exit
+end
+```
+
+To verify the configuration, you can use the following command:
+
+```
+show interfaces Ethernet1
+show interfaces Ethernet2
+show interfaces Ethernet3
+```
+
+Please replace "Ethernet1", "Ethernet2", "Ethernet3" with your actual interface names and "0011.2233.4455", "0066.7788.9900", "00aa.bbcc.ddee" with your actual MAC addresses.
+
+=== gpt4_rag ===
+### Code Example: 
+```
+! Assigning custom MAC addresses to multiple interfaces
+Arista(config)#interface Ethernet1
+Arista(config-if-Et1)#mac-address 001c.2804.17e2
+Arista(config)#interface Ethernet2
+Arista(config-if-Et2)#mac-address 001c.2804.17e3
+Arista(config)#interface Ethernet3
+Arista(config-if-Et3)#mac-address 001c.2804.17e4
+Arista(config)#interface Ethernet4
+Arista(config-if-Et4)#mac-address 001c.2804.17e5
+
+! Verifying the configuration
+Arista(config)#do show interface ethernet 1
+Arista(config)#do show interface ethernet 2
+Arista(config)#do show interface ethernet 3
+Arista(config)#do show interface ethernet 4
+```
+This code assigns custom MAC addresses to Ethernet interfaces 1 to 4 and then verifies the configuration by displaying the MAC address of each interface.
+
+CONTEXT USED:
+subsection_9_1
+code_subsubsubsection_2_3_4_3_0
+subsection_2_1
+code_subsubsubsection_2_3_4_2_0
+subsubsection_9_5_2
+
+=== tiny_llama ===
+1. Open the EOS CLI and enter the following commands:
+
+   ```
+   eos show interfaces
+   eos show interfaces | grep -v interface-type | grep -v interface-state | awk '{print $1}'
+   eos show interface | grep -v interface-type | grep -v interface-state | awk '{print $1}'
+   eos show interfaces | grep -v interface-type | grep -v interface-state | awk '{print $1}' | cut -d " " -f 1-2
+   eos show interface | grep -v interface-type | grep -v interface-state | awk '{print $1}' | cut -d " " -f 1-2 | tr -d " "
+   eos show interface | grep -v interface-type | grep -v interface-state | awk '{print $1}' | tr -d " " | cut -d " " -f 1-2
+   eos show interface | grep -v interface-type | grep -v interface-state | awk '{print $1}' | tr -d " " | cut -d " " -f 1-2 | awk '{print $1}'
+   eos show interface | grep -v interface-type | grep -v interface-state | awk '{print $1}' | tr -d " " | cut -d " " -f 1-2 | awk '{print $1}'
+   eos show interfaces | grep -v interface-type | grep -v interface-state | awk '{print $1}' | tr -d " " | cut -d " " -f 1-2 | awk '{print $1}'
+   eos show interfaces | grep -v interface-type | grep -v interface-state | awk '{print $1}' | tr -d " " | cut -d " " -f 1-2 | awk '{print $1}' | tr -d " "
+   eos show interfaces | grep -v interface-type | grep -v interface-state | awk '{print $1}' | tr -d " " | cut -d " " -f 1-2 | awk '{print $1}' | tr -
+

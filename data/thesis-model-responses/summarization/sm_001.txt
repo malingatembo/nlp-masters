@@ -1,0 +1,26 @@
+QUESTION: Summarize the Zero Touch Provisioning (ZTP) process on Arista switches, including how it works and how to cancel it if needed.
+
+=== gpt4_no_rag ===
+Zero Touch Provisioning (ZTP) on Arista switches is an automated process that allows the switches to be provisioned and configured automatically, eliminating the need for manual intervention. This process begins when an Arista switch is powered on for the first time. The switch checks for an IP address via DHCP. If it receives one, it then attempts to download a configuration file from a specified location using protocols such as TFTP, HTTP, or HTTPS. The switch then applies this configuration automatically.
+
+To cancel the ZTP process on an Arista switch, you need to disable the ZTP feature. This can be done by entering the 'no zerotouch' command in the switch's global configuration mode. Once this command is executed, the switch will no longer attempt to automatically download and apply a configuration file upon startup. However, this does not affect any configurations that have already been applied through the ZTP process.
+
+=== gpt4_rag ===
+Zero Touch Provisioning (ZTP) on Arista switches allows for the configuration of a switch without user intervention. The switch enters ZTP mode when it boots if there is no startup-config in the flash memory. It remains in this mode until a user cancels it or the switch retrieves a startup-config or a boot script. During ZTP, the switch downloads a startup configuration file or a boot script from a location specified by a DHCP server.
+
+To provision a switch through ZTP, the switch should be mounted in its permanent location, connected to a network that can access the DHCP server and configuration file, and powered on. The progress of ZTP provisioning can be monitored through the console port.
+
+However, ZTP cannot distinguish between an approved and a rogue DHCP server, which poses a security risk. To ensure secure provisioning, only approved DHCP servers should be allowed to communicate with the switch until the ZTP process is complete. It is also recommended to validate the EOS image on the ZTP server by confirming its MD5 checksum.
+
+If the switch cannot download a startup-config or boot script file, ZTP needs to be cancelled. This can be done by logging into the switch with the admin password and entering the 'zerotouch cancel' command. The switch will then boot without installing a startup-config file. To avoid entering ZTP mode on subsequent reboots, a startup-config file should be created.
+
+CONTEXT USED:
+subsection_2_1
+subsubsection_2_1_1
+subsubsubsection_2_1_2_2
+chapter_2
+code_subsubsubsection_2_3_4_3_0
+
+=== tiny_llama ===
+
+

@@ -1,0 +1,52 @@
+QUESTION: What is Zero Touch Provisioning (ZTP) on Arista switches and how does it work?
+
+=== gpt4_rag ===
+Zero Touch Provisioning (ZTP) on Arista switches is a method of configuring a switch without user intervention. It works by downloading a startup configuration file (startup-config) or a boot script from a location specified by a DHCP server. 
+
+When the switch boots and the flash memory does not contain a startup-config, it enters ZTP mode. It remains in this mode until a user cancels it, or until the switch retrieves a startup-config or a boot script. After downloading a file through ZTP, the switch reboots again, using the retrieved file.
+
+To provision the switch through ZTP, you need to mount the switch in its permanent location, connect at least one management or Ethernet port to a network that can access the DHCP server and configuration file, and provide power to the switch. 
+
+However, ZTP process cannot distinguish an approved DHCP server from a rogue one. For secure provisioning, you must ensure that only approved DHCP servers are able to communicate with the switch until after the ZTP process is complete. 
+
+If the switch cannot download a startup-config or boot script file, ZTP mode can be cancelled by logging into the switch with the admin password and entering the 'zerotouch cancel' command. The switch then immediately boots without installing a startup-config file.
+
+CONTEXT USED:
+subsection_2_1
+subsubsection_2_1_1
+subsubsubsection_2_1_2_2
+code_subsubsubsection_2_1_2_2_1
+code_subsubsubsection_2_3_4_3_0
+
+=== tiny_llama ===
+Answers:
+
+1. Zero Touch Provisioning (ZTP) on Arista switches
+
+ZTP is a feature that allows users to provision new devices and networks on an Arista switch without having to log into the switch. ZTP works by creating a virtual switch, which is then used to provision the devices. When a device is added to the virtual switch, it is assigned a unique IP address, which can be used to connect to the network. ZTP is an important feature for small businesses and organizations that need to quickly provision new devices and networks. It saves time and reduces the risk of human error. To implement ZTP, you need to follow these steps:
+
+1. Configure the switch's management interface to enable ZTP.
+
+2. Create a virtual switch using the switch's management interface.
+
+3. Configure the virtual switch to connect to the physical switch.
+
+4. Create a virtual port group that includes the devices you want to provision.
+
+5. Configure the virtual port group to use ZTP.
+
+6. Assign the virtual port group to the virtual switch.
+
+7. Connect the devices to the virtual port group.
+
+In summary, ZTP is a feature that allows users to quickly and easily provision new devices and networks on Arista switches. It saves time and reduces the risk of human error.
+
+=== gpt4_no_rag ===
+Arista switches support a variety of management API HTTP commands that allow users to interact with the switch's operating system. These commands include GET, POST, PUT, and DELETE, which are used to retrieve, create, update, and delete resources respectively.
+
+The GET command is used to retrieve information about a specific resource. The POST command is used to create a new resource. The PUT command is used to update an existing resource, and the DELETE command is used to remove a specific resource.
+
+In terms of protocol configuration options, Arista switches support both HTTP and HTTPS protocols. HTTP is the standard protocol, while HTTPS is a secure version that uses SSL/TLS encryption to protect the data in transit.
+
+To enable access to the management API on Arista switches, users need to configure the HTTP server on the switch. This involves specifying the IP address and port number for the server, and enabling the server. Additionally, users need to configure the API access list, which defines the IP addresses that are allowed to access the API. Finally, users need to enable the API itself, which can be done using the 'management api http-commands' command.
+

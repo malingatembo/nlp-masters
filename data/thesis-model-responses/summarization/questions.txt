@@ -1,0 +1,55 @@
+==> sm_001.txt <==
+QUESTION: Summarize the Zero Touch Provisioning (ZTP) process on Arista switches, including how it works and how to cancel it if needed.
+
+
+==> sm_002.txt <==
+QUESTION: Summarize the different password recovery procedures available for Arista switches as described in the documentation.
+
+
+==> sm_003.txt <==
+QUESTION: Explain how configuration sessions work in Arista EOS, including their purpose and key commands for managing them.
+
+
+==> sm_004.txt <==
+QUESTION: Summarize the different connection management methods available on Arista switches and how to configure them.
+
+
+==> sm_005.txt <==
+QUESTION: Provide an overview of the different multi-lane port types (QSFP+, QSFP100, CFP2, MXP) on Arista switches and their configurations.
+
+
+==> sm_007.txt <==
+QUESTION: Explain how flow control works on Arista switches, including configuration options and compatibility requirements.
+
+
+==> sm_008.txt <==
+QUESTION: Summarize how to configure port groups on DCS-7050Q-16 and DCS-7050QX-32S Arista switches and how they affect interface availability.
+
+
+==> sm_009.txt <==
+QUESTION: Explain the concept of Agile Ports on Arista 7150 series switches, including how they work and how to configure them.
+
+
+==> sm_010.txt <==
+QUESTION: Summarize the XMPP management capabilities on Arista switches, including key configuration steps and commands.
+
+
+==> sm_011.txt <==
+QUESTION: Explain how to configure and tune DWDM transceivers on Arista switches, including channel selection and verification commands.
+
+
+==> sm_012.txt <==
+QUESTION: Describe the different Ethernet standards supported by Arista switches and their key characteristics.
+
+
+==> sm_013.txt <==
+QUESTION: Summarize how to configure management interfaces on Arista switches, including assigning IP addresses and setting up default routes.
+
+
+==> sm_014.txt <==
+QUESTION: Explain the link debounce feature on Arista switches and how to configure it on interfaces.
+
+
+==> sm_015.txt <==
+QUESTION: Provide an overview of the different show commands available for monitoring Ethernet interfaces on Arista switches and what information they display.
+

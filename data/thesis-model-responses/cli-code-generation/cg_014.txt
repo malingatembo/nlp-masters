@@ -1,0 +1,135 @@
+QUESTION: Generate the EOS CLI commands for restoring the factory default EOS image and startup configuration on an Arista switch.
+
+=== tiny_llama ===
+EOS CLI commands:
+
+1. Restore factory default image
+   a. EOS CLI command:
+   ```
+   eos restore-image default-image
+   ```
+   b. EOS CLI output:
+   ```
+   Restoring default image...
+   EOS_RESTORE_IMAGE_COMPLETED
+   ```
+
+2. Restart EOS service
+   a. EOS CLI command:
+   ```
+   eos restart
+   ```
+   b. EOS CLI output:
+   ```
+   Restarting EOS...
+   EOS_RESTART_COMPLETED
+   ```
+
+3. Restore factory default startup configuration
+   a. EOS CLI command:
+   ```
+   eos restore-config default-config
+   ```
+   b. EOS CLI output:
+   ```
+   Restoring default configuration...
+   EOS_RESTORE_CONFIG_COMPLETED
+   ```
+
+4. Restart EOS service
+   a. EOS CLI command:
+   ```
+   eos restart
+   ```
+   b. EOS CLI output:
+   ```
+   Restarting EOS...
+   EOS_RESTART_COMPLETED
+   ```
+
+5. Verify factory default EOS image and startup configuration restored successfully
+   a. EOS CLI command:
+   ```
+   eos show-image
+   ```
+   b. EOS CLI output:
+   ```
+   Image: default-image
+   State: Restored
+   ```
+   c. EOS CLI command:
+   ```
+   eos show-config
+   ```
+   b. EOS CLI output:
+   ```
+   Configuration: Restored
+   ```
+
+I hope this helps! Let me know if you have any questions.
+
+=== gpt4_rag ===
+[[CODE:code_subsubsection_2_4_3_0]]
+
+<!-- CODE:START -->
+Type "fullrecover" and press Enter to revert /mnt/flash to factory default 
+state, or just press Enter to reboot:
+<!-- CODE:END -->
+
+[[CODE:code_subsubsection_2_4_3_1]]
+
+<!-- CODE:START -->
+Aboot#fullrecover
+<!-- CODE:END -->
+
+[[CODE:code_subsubsection_2_4_3_2]]
+
+<!-- CODE:START -->
+All data on /mnt/flash will be erased; type "yes" and press Enter to proceed, 
+or just press Enter to cancel:
+<!-- CODE:END -->
+
+[[CODE:code_subsubsection_2_4_3_3]]
+
+<!-- CODE:START -->
+Aboot#exit
+<!-- CODE:END -->
+
+CONTEXT USED:
+subsection_2_4
+subsubsection_2_4_3
+subsubsection_2_4_4
+subsubsection_2_4_2
+code_subsubsubsection_2_1_2_3_0
+
+=== gpt4_no_rag ===
+To restore the factory default EOS image and startup configuration on an Arista switch, you can follow these commands:
+
+1. First, access the switch via the CLI (Command Line Interface). You can do this by connecting a console cable to the switch and using a terminal emulator such as PuTTY.
+
+2. Once you're in the CLI, enter the privileged EXEC mode using the following command:
+
+```bash
+enable
+```
+
+3. Now, you can erase the current startup configuration with the following command:
+
+```bash
+write erase
+```
+
+4. Confirm the operation by pressing `Enter` when prompted.
+
+5. After erasing the startup configuration, reload the switch to apply the changes:
+
+```bash
+reload
+```
+
+6. Confirm the operation by pressing `Enter` when prompted.
+
+7. After the switch reboots, it will be in its factory default state. You will need to go through the initial setup process again.
+
+Please note that these commands will erase all the configuration on the switch and reboot it. Make sure to backup any important configuration before proceeding.
+

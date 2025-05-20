@@ -1,0 +1,28 @@
+QUESTION: Explain the concept of Agile Ports on Arista 7150 series switches, including how they work and how to configure them.
+
+=== gpt4_no_rag ===
+Agile Ports on Arista 7150 series switches are a unique feature that allows the configuration of the physical ports on the switch to support different speeds and types of Ethernet connections. This feature provides flexibility and scalability by enabling the switch to adapt to various network requirements without needing to replace or add new hardware.
+
+Agile Ports work by allowing the switch's physical ports to be combined or split to match the desired Ethernet speed. For example, a single 40GbE port can be split into four 10GbE ports, or multiple 10GbE ports can be combined to form a 40GbE port. This is achieved through the use of breakout cables and the switch's software configuration.
+
+To configure Agile Ports on an Arista 7150 series switch, one must use the switch's command-line interface (CLI). The process involves entering the interface configuration mode and then using the 'speed' command to set the desired speed for the port. If the port is to be split into multiple smaller ports, the 'channel-group' command is used to create a port-channel and assign the smaller ports to it. To combine multiple ports into a larger one, the 'port-channel' command is used to create a port-channel and assign the larger port to it. After the configuration is complete, the 'write' command is used to save the changes.
+
+In summary, Agile Ports on Arista 7150 series switches provide a flexible and scalable solution for configuring the switch's physical ports to support different Ethernet speeds and types. This is achieved through the use of breakout cables and the switch's software configuration.
+
+=== tiny_llama ===
+Provide step-by-step instructions on how to install, configure, and troubleshoot Agile Ports on the switches. Include screenshots and diagrams to illustrate the process.
+
+=== gpt4_rag ===
+Agile Ports are a unique feature of the Arista 7150S Series switches that allow users to configure adjacent blocks of 4 x SFP+ interfaces as a single 40G link. This feature is limited by the hardware configuration, as only interfaces that pass through a common PHY component can be combined. One interface within a combinable set is designated as the primary port. When this primary interface is configured as a higher speed port, all configuration statements are performed on that interface. The other interfaces in the set are subsumed and cannot be individually configured when the primary interface is configured as the higher speed port.
+
+This feature allows the 7150S-24 to behave as a 4x40G switch (using 16 SFP+) and the remaining SFP+ provide 8 x 10G ports. On the 7150S-52, this allows up to 13x 40G (all 52 ports grouped as 40G) and on the 7150S-64, Agile Ports allow the switch to be deployed with up to 16 native 40G interfaces - 4 are QSFP+ and the remaining 12 as 4xSFP+ groups.
+
+The configuration of agile ports is described in Section 9.5.11 of the Arista documentation. However, the specific configuration commands and steps are not provided in the given context.
+
+CONTEXT USED:
+chapter_9
+subsubsection_9_4_3
+subsection_2_1
+chapter_2
+subsubsubsection_2_1_2_3
+

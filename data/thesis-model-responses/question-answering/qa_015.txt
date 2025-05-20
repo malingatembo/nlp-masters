@@ -1,0 +1,53 @@
+QUESTION: How would you implement a comprehensive recovery strategy for an Arista switch that includes password recovery, configuration backup, and restoration of the EOS image?
+
+=== gpt4_no_rag ===
+To implement a comprehensive recovery strategy for an Arista switch, you will need to address three main areas: password recovery, configuration backup, and restoration of the EOS image. 
+
+1. Password Recovery: If you lose the password for an Arista switch, you can recover it by rebooting the switch and interrupting the boot process. Here's how:
+
+   - Connect to the switch console and reboot the switch.
+   - During the boot process, press "Ctrl + C" to enter the "ABBA" prompt.
+   - Type "passwd" to set a new password.
+   - Type "boot" to continue the boot process.
+
+2. Configuration Backup: Regularly backing up the switch configuration is crucial to quickly recover from any configuration errors or hardware failures. Here's how:
+
+   - Connect to the switch console and enter the privileged EXEC mode.
+   - Use the "copy running-config startup-config" command to save the current configuration to the startup configuration file.
+   - Use the "copy startup-config tftp: //TFTP_SERVER_IP_ADDRESS/FILENAME" command to back up the startup configuration file to a TFTP server.
+
+3. Restoration of the EOS Image: If the EOS image gets corrupted or deleted, you can restore it using a TFTP server. Here's how:
+
+   - Connect to the switch console and reboot the switch.
+   - During the boot process, press "Ctrl + C" to enter the "ABBA" prompt.
+   - Use the "tftpboot TFTP_SERVER_IP_ADDRESS/EOS_IMAGE_FILENAME" command to download the EOS image from the TFTP server.
+   - Use the "boot flash:EOS_IMAGE_FILENAME" command to boot the switch with the new EOS image.
+
+Remember, this recovery strategy should be part of a larger disaster recovery plan that includes regular backups, redundant hardware, and periodic testing of the recovery procedures.
+
+=== tiny_llama ===
+
+
+=== gpt4_rag ===
+The context provides some information on recovery procedures for an Arista switch, but it does not provide a comprehensive strategy. 
+
+From the context, we know that the recovery procedures include:
+
+1. Removing the Enable Password from the Startup Configuration
+2. Reverting the Switch to the Factory Default Startup Configuration
+3. Restoring the Factory Default EOS Image and Startup Configuration
+4. Restoring the Configuration and Image from a USB Flash Drive
+
+The first three procedures require Aboot Shell access through the console port. If the console port is not accessible, the configuration file can be replaced through the USB Flash Drive.
+
+However, the context does not provide detailed steps for these procedures or how to implement them as part of a comprehensive recovery strategy. It also does not provide information on configuration backup. For a comprehensive recovery strategy, you would typically need to include steps for regular configuration backups and a process for restoring these backups in case of failure. 
+
+For more detailed information, you would need to refer to the relevant sections in the Arista manual or other technical documentation.
+
+CONTEXT USED:
+chapter_2
+subsection_2_4
+code_subsubsubsection_2_1_2_3_0
+code_subsubsubsection_2_1_2_3_7
+subsection_9_1
+

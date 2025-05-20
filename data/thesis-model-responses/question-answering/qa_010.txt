@@ -1,0 +1,34 @@
+QUESTION: What is the process for tuning DWDM transceivers on Arista switches, and which commands would you use to verify the configuration?
+
+=== gpt4_no_rag ===
+Tuning DWDM (Dense Wavelength Division Multiplexing) transceivers on Arista switches involves configuring the wavelength for the transceiver to operate on. This is done using the Arista command-line interface (CLI). Here is a general process:
+
+1. Access the switch CLI: You need to log into the switch using your credentials. 
+
+2. Enter the configuration mode: Once you are logged in, you need to enter the configuration mode. This is done using the 'configure' command.
+
+3. Select the interface: You need to select the interface where the transceiver is installed. This is done using the 'interface' command followed by the interface identifier (e.g., 'interface Ethernet1').
+
+4. Tune the transceiver: You can now tune the transceiver to the desired wavelength. This is done using the 'tunable frequency' command followed by the desired frequency (e.g., 'tunable frequency 193.10').
+
+5. Exit and save: Once you have set the frequency, you can exit the configuration mode using the 'exit' command and save the configuration using the 'write' command.
+
+To verify the configuration, you can use the 'show interfaces transceiver' command. This command will display the current status and configuration of all transceivers on the switch, including the wavelength they are operating on. If the transceiver is operating on the correct wavelength, then the tuning process was successful.
+
+=== tiny_llama ===
+
+
+=== gpt4_rag ===
+The process for tuning DWDM 10G SFP+ transceivers on Arista switches includes tuning the transceiver wavelength/frequency by channel number, showing wavelengths/frequencies for specified channels supported by the transceiver, and showing current wavelength/frequency settings of the transceiver interface. 
+
+To tune the transceiver wavelength/frequency by channel number, you would use the command "transceiver channel". To show the current wavelength/frequency settings for specified channels, you would use the command "show interfaces transceiver channels". To show the current wavelength/frequency settings of an interface, you would use the command "show interfaces transceiver hardware". 
+
+Please note that the context does not provide detailed steps on how to perform these tasks, it only mentions the commands to be used.
+
+CONTEXT USED:
+subsubsection_9_4_5
+subsubsection_9_2_5
+subsection_9_1
+subsection_2_1
+chapter_9
+

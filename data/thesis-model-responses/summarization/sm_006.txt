@@ -1,0 +1,32 @@
+QUESTION: Summarize the recovery procedures available for Arista switches, including how to remove passwords, restore factory defaults, and use USB recovery methods.
+
+=== gpt4_rag ===
+The recovery procedures for Arista switches are detailed in Section 2.4 of the documentation. There are four main procedures:
+
+1. Removing the Enable Password from the Startup Configuration (Section 2.4.1): This procedure allows users to remove the enable password that is set in the startup configuration of the switch.
+
+2. Reverting the Switch to the Factory Default Startup Configuration (Section 2.4.2): This procedure helps users to revert the switch back to its factory default settings.
+
+3. Restoring the Factory Default EOS Image and Startup Configuration (Section 2.4.3): This procedure is used to restore the default EOS image and startup configuration of the switch.
+
+4. Restoring the Configuration and Image from a USB Flash Drive (Section 2.4.4): This procedure enables users to restore the switch's configuration and image from a USB flash drive.
+
+The first three procedures require Aboot Shell access through the console port. If the console port is not accessible, the last procedure can be used to replace the configuration file through a USB Flash Drive. More details about the switch booting process, the Aboot shell, Aboot boot loader, and required configuration files can be found in Chapter 6 of the documentation.
+
+CONTEXT USED:
+chapter_2
+subsection_2_1
+code_subsubsubsection_2_1_2_3_0
+subsection_2_4
+code_subsubsubsection_2_1_2_3_7
+
+=== gpt4_no_rag ===
+Arista switches offer several recovery procedures. To remove passwords, you can use the password recovery process which involves rebooting the switch, interrupting the boot process, and modifying the boot variables to enter the password recovery mode. After setting a new password, you can save the configuration and reboot the switch.
+
+Restoring factory defaults can be achieved by erasing the startup configuration and reloading the switch. This process involves deleting the startup-config file and rebooting the switch, which causes it to start with a blank configuration.
+
+USB recovery methods are also available for Arista switches. This involves creating a recovery USB drive with the required EOS image and booting the switch from this drive. This method is especially useful when the switch doesn't boot up due to a corrupted software image. The switch can be booted from the USB drive, allowing the user to replace the corrupted image with the one on the USB drive.
+
+=== tiny_llama ===
+
+

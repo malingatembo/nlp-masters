@@ -1,0 +1,104 @@
+QUESTION: How do you configure a QSFP+ module as a single 40GbE interface versus four 10GbE interfaces on an Arista switch?
+
+=== tiny_llama ===
+1. Single 40GbE interface:
+
+a) Use the same Ethernet cable and switch to connect all four ports.
+b) Use a different Ethernet cable and switch to connect each port.
+c) Use different Ethernet cables to connect each port.
+
+2. Four 10GbE interfaces on an Arista switch:
+
+a) Connect each port to a different switch.
+b) Connect each port to the same switch.
+c) Connect each port to a different switch and use a different cable to connect each port.
+
+Answer: Answer: Answer: Answer:
+
+Answer: Answer: Answer: Answer:
+
+In this scenario, we will connect the QSFP+ module to the switch as a 40GbE interface.
+
+a) Use the same Ethernet cable and switch to connect all four ports.
+
+To connect all four ports, use a single Ethernet cable. Connect the QSFP+ module to the switch's SFP+ ports. Connect the QSFP+ module's RJ45 connectors to the corresponding SFP+ ports on the switch.
+
+b) Use a different Ethernet cable to connect each port.
+
+To connect each port, use a different Ethernet cable. Connect the QSFP+ module to the switch's SFP+ ports. Connect the QSFP+ module's RJ45 connectors to the corresponding SFP+ ports on the switch.
+
+c) Use different Ethernet cables to connect each port.
+
+To connect each port, use different Ethernet cables. Connect the QSFP+ module to the switch's SFP+ ports. Connect the QSFP+ module's RJ45 connectors to the corresponding SFP+ ports on the switch using different Ethernet cables.
+
+=== gpt4_no_rag ===
+To configure a QSFP+ module as a single 40GbE interface on an Arista switch, you need to ensure that the QSFP+ port is not in breakout mode. Breakout mode splits the QSFP+ port into four separate 10GbE interfaces. 
+
+Here are the steps to configure a QSFP+ module as a single 40GbE interface:
+
+1. Access the Arista switch command line interface (CLI). You can do this by connecting a console cable to the switch and using terminal emulation software, or by connecting to the switch over the network using SSH or Telnet.
+
+2. Enter the privileged EXEC mode by typing `enable` and pressing Enter. You may be asked for a password.
+
+3. Enter the global configuration mode by typing `configure terminal` and pressing Enter.
+
+4. Specify the QSFP+ interface that you want to configure. For example, if the QSFP+ module is in slot 1, port 1, you would type `interface Ethernet1/1` and press Enter.
+
+5. To ensure the QSFP+ port is not in breakout mode, type `no speed forced 40gfull` and press Enter. This command disables the breakout mode and configures the port as a single 40GbE interface.
+
+6. Save your changes by typing `write memory` or `copy running-config startup-config` and pressing Enter. This will save the configuration to the switch's startup configuration, so it will persist after a reboot.
+
+Remember to replace "Ethernet1/1" with the actual interface ID of your QSFP+ port. The interface ID can be found by using the `show interfaces status` command.
+
+=== gpt4_rag ===
+To configure a QSFP+ module as a single 40GbE interface on an Arista switch, you need to combine the module's four data lanes using the speed command (speed forced 40g full) on the port's /1 lane (the primary lane). Here are the steps:
+
+1. Enter interface Ethernet configuration mode for lane /1 of the QSFP+ Ethernet interface.
+``` 
+<!-- CODE:START -->
+switch(config)#interface Ethernet1/1/1
+<!-- CODE:END -->
+```
+2. Enter the speed forced 40gfull command. Depending on the platform, this command may restart the forwarding agent, disrupting traffic on all ports for 60 seconds or more.
+```
+<!-- CODE:START -->
+switch(config-if-Et1/1/1)#speed forced 40gfull
+<!-- CODE:END -->
+```
+3. Use the show interfaces status command to confirm the change in configuration.
+```
+<!-- CODE:START -->
+switch#show interfaces status
+<!-- CODE:END -->
+```
+
+To configure the port as four 10GbE interfaces, use the speed command (speed forced 10000full) on the port's /1 lane (the primary lane). Here are the steps:
+
+1. Enter interface Ethernet configuration mode for lane /1 of the QSFP+ Ethernet interface.
+```
+<!-- CODE:START -->
+switch(config)#interface Ethernet1/1/1
+<!-- CODE:END -->
+```
+2. Enter the speed forced 10000full command. Depending on the platform, this command may restart the forwarding agent, disrupting traffic on all ports for 60 seconds or more.
+```
+<!-- CODE:START -->
+switch(config-if-Et1/1/1)#speed forced 10000full
+<!-- CODE:END -->
+```
+3. Use the show interfaces status command to confirm the change in configuration.
+```
+<!-- CODE:START -->
+switch#show interfaces status
+<!-- CODE:END -->
+```
+
+Please note that the speed command is hitless on the 7050X, 7060X, 7250X, 7260X, 7280SE, 7300X, 7320X, and 7500E series platforms. On all other platforms, this command restarts the forwarding agent, which will result in traffic disruption.
+
+CONTEXT USED:
+subsubsection_9_5_3
+subsubsection_9_5_6
+subsubsection_9_5_7
+subsubsubsection_9_5_6_1
+subsubsubsection_9_5_6_2
+

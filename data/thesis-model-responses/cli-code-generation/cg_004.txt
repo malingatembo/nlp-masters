@@ -1,0 +1,58 @@
+QUESTION: Write the EOS CLI configuration commands to configure a QSFP+ port on an Arista switch to operate as four 10G interfaces instead of a single 40G interface.
+
+=== gpt4_rag ===
+[[CODE:code_subsubsubsection_9_5_6_2_0]]
+<!-- CODE:START -->
+switch(config)#interface Ethernet1/1/1
+<!-- CODE:END -->
+
+[[CODE:code_subsubsubsection_9_5_6_2_1]]
+<!-- CODE:START -->
+switch(config-if-Et1/1/1)#speed forced 10000full
+<!-- CODE:END -->
+
+[[CODE:code_subsubsubsection_9_5_6_2_2]]
+<!-- CODE:START -->
+switch#show interfaces status
+<!-- CODE:END -->
+
+CONTEXT USED:
+subsubsection_9_5_3
+subsubsubsection_9_5_6_2
+subsubsubsection_9_5_7_5
+subsubsubsection_9_5_6_1
+subsubsubsection_9_5_7_3
+
+=== gpt4_no_rag ===
+To configure a QSFP+ port on an Arista switch to operate as four 10G interfaces instead of a single 40G interface, use the following EOS CLI configuration commands:
+
+```
+switch(config)# interface Ethernet1/1
+switch(config-if-Et1/1)# speed forced 40gfull
+switch(config-if-Et1/1)# switchport
+switch(config-if-Et1/1)# exit
+switch(config)# hardware qsfp split Ethernet1/1
+switch(config)# interface Ethernet1/1-1
+switch(config-if-Et1/1-1)# speed forced 10gfull
+switch(config-if-Et1/1-1)# switchport
+switch(config-if-Et1/1-1)# exit
+switch(config)# interface Ethernet1/1-2
+switch(config-if-Et1/1-2)# speed forced 10gfull
+switch(config-if-Et1/1-2)# switchport
+switch(config-if-Et1/1-2)# exit
+switch(config)# interface Ethernet1/1-3
+switch(config-if-Et1/1-3)# speed forced 10gfull
+switch(config-if-Et1/1-3)# switchport
+switch(config-if-Et1/1-3)# exit
+switch(config)# interface Ethernet1/1-4
+switch(config-if-Et1/1-4)# speed forced 10gfull
+switch(config-if-Et1/1-4)# switchport
+switch(config-if-Et1/1-4)# exit
+switch(config)# end
+```
+
+Please note that the interface names (Ethernet1/1, Ethernet1/1-1, etc.) used in the commands are examples. Replace them with the actual interface names on your switch.
+
+=== tiny_llama ===
+Ensure that the configuration is secure and meets all necessary requirements for the switch.
+

@@ -1,0 +1,175 @@
+QUESTION: Provide the steps and EOS CLI commands to remove the enable password from the startup configuration of an Arista switch when the password is lost.
+
+=== gpt4_rag ===
+[[CODE:code_subsubsection_2_4_1_0]]
+
+<!-- CODE:START -->
+Aboot#cd /mnt/flash
+<!-- CODE:END -->
+
+[[CODE:code_subsubsection_2_4_1_1]]
+
+<!-- CODE:START -->
+Aboot#vi startup-config
+<!-- CODE:END -->
+
+[[CODE:code_subsubsection_2_4_1_3]]
+
+<!-- CODE:START -->
+Aboot#exit
+<!-- CODE:END -->
+
+CONTEXT USED:
+subsubsection_2_4_1
+code_subsubsubsection_2_1_2_3_0
+code_subsubsubsection_2_1_2_3_7
+subsubsection_2_4_2
+subsection_2_4
+
+=== tiny_llama ===
+EOS CLI commands:
+
+1. Login to the Arista switch.
+2. Run the following command:
+
+   ```
+   eos client
+   ```
+
+3. Use the following command to list all the switches on the network:
+
+   ```
+   eos switch
+   ```
+
+4. Use the following command to list all the interfaces on the switch:
+
+   ```
+   eos interface
+   ```
+
+5. Use the following command to list all the configuration files on the switch:
+
+   ```
+   eos configuration file
+   ```
+
+6. Use the following command to remove the enable password from the startup configuration of the interface:
+
+   ```
+   eos interface
+   ```
+
+7. Use the following command to set the enable password for the interface:
+
+   ```
+   eos interface
+   ```
+
+8. Use the following command to modify the configuration file:
+
+   ```
+   eos configuration file
+   ```
+
+9. Use the following command to apply the configuration file:
+
+   ```
+   eos configuration apply
+   ```
+
+10. Use the following command to validate the configuration:
+
+   ```
+   eos interface
+   ```
+
+11. Use the following command to check the configuration:
+
+   ```
+   eos configuration show
+   ```
+
+12. Use the following command to generate the configuration code for removing the enable password from the startup configuration of the interface:
+
+   ```
+   eos interface
+   ```
+
+13. Use the following command to generate the configuration code for setting the enable password for the interface:
+
+   ```
+   eos interface
+   ```
+
+14. Use the following command to generate the configuration code for modifying the configuration file:
+
+   ```
+   eos configuration file
+   ```
+
+15. Use the following command to generate the configuration code for applying the configuration file:
+
+   ```
+   eos configuration apply
+   ```
+
+16. Use the following command to validate the configuration:
+
+   ```
+   eos interface
+   ```
+
+17. Use the following command
+
+=== gpt4_no_rag ===
+1. First, you need to reboot the Arista switch. You can do this by physically power cycling the switch or by using the following command if you have access to the CLI:
+
+    ```
+    reload
+    ```
+
+2. As the switch is booting up, you need to interrupt the boot process to enter the ROMMON mode. You can do this by sending a break signal during the boot process.
+
+3. Once you are in the ROMMON mode, you need to change the configuration register to ignore the startup configuration. You can do this with the following command:
+
+    ```
+    confreg 0x2142
+    ```
+
+4. Now, you need to reboot the switch again. You can do this with the following command:
+
+    ```
+    boot
+    ```
+
+5. After the switch reboots, it will ignore the startup configuration and you will be able to enter the privileged EXEC mode without a password. 
+
+6. Now, you need to load the startup configuration into the running configuration. You can do this with the following command:
+
+    ```
+    copy startup-config running-config
+    ```
+
+7. Now, you can remove the enable password from the configuration. You can do this with the following commands:
+
+    ```
+    configure terminal
+    no enable secret
+    ```
+
+8. Finally, you need to save the running configuration to the startup configuration and change the configuration register back to its original value. You can do this with the following commands:
+
+    ```
+    copy running-config startup-config
+    config-register 0x2102
+    ```
+
+9. Now, you can reboot the switch one more time to apply the changes. You can do this with the following command:
+
+    ```
+    reload
+    ```
+
+After the switch reboots, the enable password will be removed from the startup configuration.
+

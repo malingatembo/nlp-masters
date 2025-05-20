@@ -1,0 +1,80 @@
+QUESTION: How do you configure a port-channel interface on Arista switches?
+
+=== gpt4_rag ===
+The context does not provide information on how to configure a port-channel interface on Arista switches.
+
+CONTEXT USED:
+chapter_9
+subsubsection_9_2_5
+subsection_9_1
+subsection_2_1
+code_subsection_2_5_36
+
+=== gpt4_no_rag ===
+Configuring a port-channel interface on Arista switches involves several steps. Here is a general guide:
+
+1. **Identify the Interfaces**: First, identify the interfaces you want to include in the port-channel. These should be interfaces that are not currently in use.
+
+2. **Create the Port-Channel**: Use the command `interface Port-Channel <number>` to create the port-channel. Replace `<number>` with the desired port-channel number. For example, to create port-channel 1, you would use the command `interface Port-Channel 1`.
+
+3. **Configure the Interfaces**: Next, you need to configure the interfaces that will be part of the port-channel. Use the command `interface <type> <number>` to select an interface. Replace `<type>` with the type of interface (such as Ethernet) and `<number>` with the interface number. For example, to select Ethernet interface 1, you would use the command `interface Ethernet 1`.
+
+4. **Add the Interface to the Port-Channel**: Once you have selected an interface, use the command `channel-group <number> mode active` to add it to the port-channel. Replace `<number>` with the port-channel number. For example, to add the interface to port-channel 1, you would use the command `channel-group 1 mode active`.
+
+5. **Repeat for Additional Interfaces**: Repeat steps 3 and 4 for each interface you want to add to the port-channel.
+
+6. **Verify the Configuration**: Finally, use the command `show port-channel summary` to verify that the port-channel has been configured correctly. This will display information about the port-channel and its member interfaces.
+
+Remember that all interfaces in a port-channel should have the same configuration. This includes settings such as speed, duplex mode, and VLAN configuration. If the interfaces have different configurations, the port-channel may not work correctly.
+
+=== tiny_llama ===
+Answer:
+
+1. Create a port-channel interface:
+
+1.1. On the switch, go to the port-channel interface you want to configure.
+
+1.2. Click on the "Create Port-channel" button.
+
+1.3. Fill in the necessary information:
+
+- Port-channel name (e.g. "port-channel1"):
+- Port-channel mode (e.g. "broadcast"):
+- Number of ports (e.g. 1):
+
+1.4. Click "Create" to create the port-channel interface.
+
+2. Configure the port-channel interface:
+
+2.1. On the port-channel interface, click on "Port-channel" and then "Port-channel configuration".
+
+2.2. Configure the port-channel interface:
+
+- Port-channel mode:
+- Number of ports:
+- Port-channel name (e.g. "port-channel1"):
+- IP address:
+- Subnet mask:
+- Gateway:
+- DHCP server IP address:
+- DHCP server MAC address:
+- DHCP server IPv6 address:
+
+2.3. Save the configuration.
+
+3. Test the port-channel interface:
+
+3.1. Check if the port-channel interface is up and running.
+
+3.2. Test the port-channel interface by pinging the switch's internal IP address (e.g. "10.1.1.1").
+
+4. Delete the port-channel interface:
+
+4.1. On the switch, go to the port-channel interface you want to delete.
+
+4.2. Click on the "Delete Port-channel" button.
+
+4.3. Confirm the deletion.
+
+4.4. Restart the switch to ensure that the deletion is complete.
+

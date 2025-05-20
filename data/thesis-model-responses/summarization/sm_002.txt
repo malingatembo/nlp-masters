@@ -1,0 +1,26 @@
+QUESTION: Summarize the different password recovery procedures available for Arista switches as described in the documentation.
+
+=== gpt4_rag ===
+The provided context does not contain information on the different password recovery procedures available for Arista switches.
+
+CONTEXT USED:
+chapter_2
+code_subsubsubsection_2_1_2_3_0
+code_subsubsubsection_2_1_2_3_7
+subsection_2_1
+code_subsubsubsection_2_3_4_3_0
+
+=== tiny_llama ===
+
+
+=== gpt4_no_rag ===
+Arista switches offer several password recovery procedures. The first method involves using the "password" command in the CLI (Command Line Interface) to reset the password. If you have access to the switch, you can use the "enable" command to enter privileged EXEC mode, then use the "configure terminal" command to enter global configuration mode. The "username" command followed by the username and a new password can be used to change the password.
+
+Another method is to use the "password recovery" process. This involves rebooting the switch, interrupting the boot process, and entering the "passwd default" command to reset the password to its default. 
+
+In case the switch is in Zero Touch Provisioning (ZTP) mode, the password recovery process is different. You need to reboot the switch, interrupt the boot process, and then use the "ZTP disable" command to disable ZTP. After that, you can use the "passwd default" command to reset the password to its default.
+
+For switches running EOS (Extensible Operating System), you can use the "Aboot" recovery method. This involves rebooting the switch, interrupting the boot process, and then using the "undebug" command to disable the password requirement. After that, you can use the "passwd" command to set a new password.
+
+Lastly, for switches that are part of a CloudVision Portal (CVP) cluster, you can use the CVP to reset the password. This involves logging into the CVP, navigating to the "Device Inventory" page, selecting the switch, and then using the "Reset Password" option to change the password.
+

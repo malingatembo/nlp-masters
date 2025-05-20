@@ -1,0 +1,86 @@
+QUESTION: Write the EOS CLI commands to configure management interfaces on an Arista switch, including setting IP addresses, default routes, and configuring SSH and console access.
+
+=== tiny_llama ===
+
+
+=== gpt4_no_rag ===
+Here are the EOS CLI commands to configure management interfaces on an Arista switch:
+
+1. Enter the configuration mode:
+```
+configure terminal
+```
+
+2. Configure the Management1 interface with an IP address and subnet mask. Replace 'ip_address' and 'subnet_mask' with your actual values:
+```
+interface Management1
+ip address ip_address/subnet_mask
+```
+
+3. Set the default gateway. Replace 'gateway_ip' with your actual gateway IP address:
+```
+ip route 0.0.0.0/0 gateway_ip
+```
+
+4. Enable SSH access:
+```
+ip ssh server
+```
+
+5. Generate an SSH key:
+```
+crypto key generate rsa
+```
+
+6. Configure console access. Set the line console to 0 and configure the login local:
+```
+line console 0
+login local
+```
+
+7. Exit the configuration mode:
+```
+exit
+```
+
+8. Save the configuration:
+```
+write memory
+```
+
+Please replace 'ip_address', 'subnet_mask', and 'gateway_ip' with your actual values.
+
+=== gpt4_rag ===
+### Code Example: 
+```
+! Configure Management Interface
+interface Management1
+   ip address 192.0.2.1/24
+   no shutdown
+!
+! Set Default Route
+ip route 0.0.0.0/0 192.0.2.254
+!
+! Configure SSH Access
+aaa authorization exec default local
+aaa authentication login default local
+!
+username admin privilege 15 secret 0 MyPassword
+!
+ip ssh version 2
+!
+! Configure Console Access
+line console
+   login authentication default
+   exec-timeout 10 0
+!
+end
+```
+
+CONTEXT USED:
+code_subsubsubsection_2_1_2_3_7
+code_subsubsubsection_2_1_2_3_0
+subsection_2_1
+code_subsubsubsection_2_3_4_3_0
+chapter_2
+

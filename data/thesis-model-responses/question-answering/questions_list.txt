@@ -1,0 +1,59 @@
+==> qa_001.txt <==
+QUESTION: What is Zero Touch Provisioning (ZTP) on Arista switches and how does it work?
+
+
+==> qa_002.txt <==
+QUESTION: How do you configure a port-channel interface on Arista switches?
+
+
+==> qa_003.txt <==
+QUESTION: What show commands are available for displaying configuration sessions in Arista EOS?
+
+
+==> qa_004.txt <==
+QUESTION: How do you assign a MAC address to an interface on an Arista switch and verify the configuration?
+
+
+==> qa_005.txt <==
+QUESTION: What is the purpose of the 'show hardware port-group' command and what information does it display?
+
+
+==> qa_006.txt <==
+QUESTION: How do you configure a QSFP+ module as a single 40GbE interface versus four 10GbE interfaces on an Arista switch?
+
+
+==> qa_007.txt <==
+QUESTION: How do you remove the enable password from the startup configuration on an Arista switch?
+
+
+==> qa_008.txt <==
+QUESTION: What are port groups on Arista switches, which models support them, and how are they configured?
+
+
+==> qa_009.txt <==
+QUESTION: How do you create and configure subinterfaces on Arista switches, and what are their limitations?
+
+
+==> qa_010.txt <==
+QUESTION: What is the process for tuning DWDM transceivers on Arista switches, and which commands would you use to verify the configuration?
+
+
+==> qa_011.txt <==
+QUESTION: If you need to recover an Arista switch but cannot access the console port, what alternative recovery methods are available according to the documentation?
+
+
+==> qa_012.txt <==
+QUESTION: Compare and contrast the different multi-lane port types (QSFP+, QSFP100, CFP2, and MXP) in terms of their configuration options and supported speeds.
+
+
+==> qa_013.txt <==
+QUESTION: What are the various management interface options available on Arista switches, and how do you configure each for remote access?
+
+
+==> qa_014.txt <==
+QUESTION: Explain the full process of creating, modifying, and committing a configuration session on Arista EOS, including verification steps.
+
+
+==> qa_015.txt <==
+QUESTION: How would you implement a comprehensive recovery strategy for an Arista switch that includes password recovery, configuration backup, and restoration of the EOS image?
+

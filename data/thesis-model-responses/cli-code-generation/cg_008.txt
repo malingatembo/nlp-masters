@@ -1,0 +1,64 @@
+QUESTION: Generate the EOS CLI configuration for creating and configuring multiple subinterfaces on an Ethernet interface with different VLAN encapsulations and IP addresses.
+
+=== tiny_llama ===
+The EOS CLI configuration should include the creation of the subinterface, the configuration of the encapsulation and IP addresses, and the testing of the subinterface configuration. Please ensure that the configuration is secure and meets the network security requirements.
+
+=== gpt4_rag ===
+[RESPONSE]
+```
+switch(config)#interface Ethernet1/1
+switch(config-if-Et1/1)#no switchport
+switch(config-if-Et1/1)#interface Ethernet1/1.10
+switch(config-if-Et1/1.10)#encapsulation dot1q vlan 10
+switch(config-if-Et1/1.10)#ip address 192.168.10.1/24
+switch(config-if-Et1/1.10)#no shutdown
+switch(config-if-Et1/1.10)#interface Ethernet1/1.20
+switch(config-if-Et1/1.20)#encapsulation dot1q vlan 20
+switch(config-if-Et1/1.20)#ip address 192.168.20.1/24
+switch(config-if-Et1/1.20)#no shutdown
+switch(config-if-Et1/1.20)#interface Ethernet1/1.30
+switch(config-if-Et1/1.30)#encapsulation dot1q vlan 30
+switch(config-if-Et1/1.30)#ip address 192.168.30.1/24
+switch(config-if-Et1/1.30)#no shutdown
+```
+[/RESPONSE]
+
+CONTEXT USED:
+subsubsubsection_9_5_12_1
+subsubsubsection_9_5_12_2
+code_subsubsubsection_9_5_12_1_1
+subsubsection_9_4_2
+subsubsection_9_5_5
+
+=== gpt4_no_rag ===
+interface Ethernet1
+  no switchport
+  description Uplink to Switch
+!
+interface Ethernet1.10
+  description Subinterface for VLAN 10
+  encapsulation dot1q 10
+  ip address 192.168.10.1/24
+!
+interface Ethernet1.20
+  description Subinterface for VLAN 20
+  encapsulation dot1q 20
+  ip address 192.168.20.1/24
+!
+interface Ethernet1.30
+  description Subinterface for VLAN 30
+  encapsulation dot1q 30
+  ip address 192.168.30.1/24
+!
+interface Ethernet1.40
+  description Subinterface for VLAN 40
+  encapsulation dot1q 40
+  ip address 192.168.40.1/24
+!
+interface Ethernet1.50
+  description Subinterface for VLAN 50
+  encapsulation dot1q 50
+  ip address 192.168.50.1/24
+!
+end
+

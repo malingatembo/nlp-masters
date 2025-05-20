@@ -1,0 +1,124 @@
+==> cg_001.txt <==
+QUESTION: Generate the EOS CLI configuration commands needed to set up a port-channel interface on an Arista switch, add multiple Ethernet interfaces to it, and enable LACP.
+
+
+==> cg_002.txt <==
+QUESTION: Create the EOS CLI configuration commands for preparing an Arista switch for Zero Touch Provisioning (ZTP), including canceling ZTP mode and configuring necessary initial settings.
+
+
+==> cg_003.txt <==
+QUESTION: Provide the EOS CLI commands for creating a configuration session, making multiple interface changes, and then committing the session.
+
+
+==> cg_004.txt <==
+QUESTION: Write the EOS CLI configuration commands to configure a QSFP+ port on an Arista switch to operate as four 10G interfaces instead of a single 40G interface.
+
+
+==> cg_005.txt <==
+QUESTION: Generate the EOS CLI commands to assign custom MAC addresses to multiple interfaces on an Arista switch and verify the configuration.
+
+
+==> cg_006.txt <==
+QUESTION: Create the EOS CLI configuration commands to enable flow control on multiple Ethernet interfaces of an Arista switch, including both receive and send settings.
+
+
+==> cg_007.txt <==
+QUESTION: Provide the EOS CLI commands to configure hardware port-groups on a DCS-7050Q-16 Arista switch to enable specific SFP+ and QSFP+ interfaces.
+
+
+==> cg_008.txt <==
+QUESTION: Generate the EOS CLI configuration for creating and configuring multiple subinterfaces on an Ethernet interface with different VLAN encapsulations and IP addresses.
+
+
+==> cg_009.txt <==
+QUESTION: Write the EOS CLI commands to configure management interfaces on an Arista switch, including setting IP addresses, default routes, and configuring SSH and console access.
+
+
+==> cg_010.txt <==
+QUESTION: Provide the steps and EOS CLI commands to remove the enable password from the startup configuration of an Arista switch when the password is lost.
+
+
+==> cg_011.txt <==
+QUESTION: Generate the EOS CLI configuration commands to configure an MXP port on an Arista switch to operate as three 40G interfaces rather than a single 100G interface.
+
+
+==> cg_012.txt <==
+QUESTION: Write the EOS CLI commands to configure agile ports on an Arista 7150 series switch, combining SFP+ interfaces to form a 40G port.
+
+
+==> cg_013.txt <==
+QUESTION: Provide the EOS CLI commands to tune the wavelength/frequency of DWDM transceivers on Arista switches, including setting specific channel numbers and grid-spacing.
+
+
+==> cg_014.txt <==
+QUESTION: Generate the EOS CLI commands for restoring the factory default EOS image and startup configuration on an Arista switch.
+
+
+==> cg_015.txt <==
+QUESTION: Write the EOS CLI configuration commands to set link debounce timers on multiple interfaces of an Arista switch, with different values for link-up and link-down events.
+
+
+==> questions.txt <==
+==> cg_001.txt <==
+QUESTION: Generate the EOS CLI configuration commands needed to set up a port-channel interface on an Arista switch, add multiple Ethernet interfaces to it, and enable LACP.
+
+
+==> cg_002.txt <==
+QUESTION: Create the EOS CLI configuration commands for preparing an Arista switch for Zero Touch Provisioning (ZTP), including canceling ZTP mode and configuring necessary initial settings.
+
+
+==> cg_003.txt <==
+QUESTION: Provide the EOS CLI commands for creating a configuration session, making multiple interface changes, and then committing the session.
+
+
+==> cg_004.txt <==
+QUESTION: Write the EOS CLI configuration commands to configure a QSFP+ port on an Arista switch to operate as four 10G interfaces instead of a single 40G interface.
+
+
+==> cg_005.txt <==
+QUESTION: Generate the EOS CLI commands to assign custom MAC addresses to multiple interfaces on an Arista switch and verify the configuration.
+
+
+==> cg_006.txt <==
+QUESTION: Create the EOS CLI configuration commands to enable flow control on multiple Ethernet interfaces of an Arista switch, including both receive and send settings.
+
+
+==> cg_007.txt <==
+QUESTION: Provide the EOS CLI commands to configure hardware port-groups on a DCS-7050Q-16 Arista switch to enable specific SFP+ and QSFP+ interfaces.
+
+
+==> cg_008.txt <==
+QUESTION: Generate the EOS CLI configuration for creating and configuring multiple subinterfaces on an Ethernet interface with different VLAN encapsulations and IP addresses.
+
+
+==> cg_009.txt <==
+QUESTION: Write the EOS CLI commands to configure management interfaces on an Arista switch, including setting IP addresses, default routes, and configuring SSH and console access.
+
+
+==> cg_010.txt <==
+QUESTION: Provide the steps and EOS CLI commands to remove the enable password from the startup configuration of an Arista switch when the password is lost.
+
+
+==> cg_011.txt <==
+QUESTION: Generate the EOS CLI configuration commands to configure an MXP port on an Arista switch to operate as three 40G interfaces rather than a single 100G interface.
+
+
+==> cg_012.txt <==
+QUESTION: Write the EOS CLI commands to configure agile ports on an Arista 7150 series switch, combining SFP+ interfaces to form a 40G port.
+
+
+==> cg_013.txt <==
+QUESTION: Provide the EOS CLI commands to tune the wavelength/frequency of DWDM transceivers on Arista switches, including setting specific channel numbers and grid-spacing.
+
+
+==> cg_014.txt <==
+QUESTION: Generate the EOS CLI commands for restoring the factory default EOS image and startup configuration on an Arista switch.
+
+
+==> cg_015.txt <==
+QUESTION: Write the EOS CLI configuration commands to set link debounce timers on multiple interfaces of an Arista switch, with different values for link-up and link-down events.
+
+
+==> questions.txt <==
+==> cg_001.txt <==
+QUESTION: Generate the EOS CLI configuration commands needed to set up a port-channel interface on an Arista switch, add multiple Ethernet interfaces to it, and enable LACP.

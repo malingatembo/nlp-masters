@@ -1,0 +1,36 @@
+QUESTION: Explain how to configure and tune DWDM transceivers on Arista switches, including channel selection and verification commands.
+
+=== gpt4_no_rag ===
+Dense Wavelength Division Multiplexing (DWDM) transceivers on Arista switches can be configured and tuned using the following steps:
+
+1. Channel Selection: The first step in configuring DWDM transceivers is to select the appropriate channel. This is done by setting the wavelength of the transceiver to match the desired channel. The wavelength can be set using the command 'tunable wavelength'. For example, to set the wavelength to 1550.12 nm, you would use the command 'tunable wavelength 1550.12'.
+
+2. Verification: After setting the wavelength, you should verify that the transceiver is operating on the correct channel. This can be done using the command 'show interfaces transceiver detail'. This command will display detailed information about the transceiver, including the current operating wavelength. If the operating wavelength matches the desired channel, then the transceiver is correctly configured.
+
+3. Tuning: If the transceiver is not operating on the correct channel, you will need to tune it. This can be done using the command 'tunable wavelength tune'. For example, to tune the transceiver to 1550.12 nm, you would use the command 'tunable wavelength tune 1550.12'. After tuning the transceiver, you should verify that it is operating on the correct channel using the 'show interfaces transceiver detail' command.
+
+4. Repeat the process: If you have multiple DWDM transceivers, you will need to repeat this process for each one. It is important to ensure that each transceiver is operating on a unique channel to prevent interference.
+
+Remember, the exact commands and procedures may vary depending on the specific model of the Arista switch and the version of the operating system it is running. Always refer to the specific documentation for your switch for the most accurate information.
+
+=== gpt4_rag ===
+Arista switches allow the tuning of DWDM 10G SFP+ transceivers, also known as 10GBASE-DWDM. This process includes tuning the transceiver wavelength/frequency by channel number, displaying the wavelengths/frequencies for specified channels supported by the transceiver, and showing the current wavelength/frequency settings of the transceiver interface.
+
+To tune the transceiver wavelength/frequency by channel number, you need to use the command 'transceiver channel'. This command allows you to select the channel number, which in turn sets the wavelength/frequency of the transceiver.
+
+To display the wavelengths/frequencies for specified channels supported by the transceiver, you can use the command 'show interfaces transceiver channels'. This command will provide you with the current settings for the specified channels.
+
+To verify the current wavelength/frequency settings of the transceiver interface, you can use the command 'show interfaces transceiver hardware'. This command will display the current settings of the interface, allowing you to verify that the tuning process has been successful.
+
+Remember that these commands must be entered through the Command Line Interface (CLI) of the Arista switch.
+
+CONTEXT USED:
+subsubsection_9_2_5
+subsubsection_9_4_5
+chapter_9
+subsection_2_1
+subsection_9_1
+
+=== tiny_llama ===
+Provide step-by-step instructions for setting up and configuring a DWDM network, including the use of DWDM transceivers and switches. Provide examples of the types of data services and applications that can be supported by DWDM networks, as well as best practices for network design and maintenance. Use clear and concise language, and provide diagrams or screenshots where appropriate to illustrate steps and procedures.
+

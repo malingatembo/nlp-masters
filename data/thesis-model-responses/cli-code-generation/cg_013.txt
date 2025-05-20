@@ -1,0 +1,102 @@
+QUESTION: Provide the EOS CLI commands to tune the wavelength/frequency of DWDM transceivers on Arista switches, including setting specific channel numbers and grid-spacing.
+
+=== tiny_llama ===
+EOS CLI commands:
+
+1. List available channels:
+
+   ```
+   eos show channels
+   ```
+
+   Output:
+
+   ```
+   Channels:
+   
+   +----------------------+-------------------------------------------------------------+
+   | Channel Number       | Frequency                                                   |
+   +----------------------+-------------------------------------------------------------+
+   | 1                    | 1550.258315226025454058892499459224821614684681077616376 |
+   | 2                    | 1550.268341542260254540588924994592248216146846810776161 |
+   | 3                    | 1550.278357852434154058892499459224821614684681077616377 |
+   | 4                    | 1550.288374172260254540588924994592248216146846810776162 |
+   | 5                    | 1550.298390581495916376394592249945922482161468468107761 |
+   | 6                    | 1550.30840699072545405889249945922482161468
+
+=== gpt4_no_rag ===
+The Arista EOS CLI commands to tune the wavelength/frequency of DWDM transceivers, including setting specific channel numbers and grid-spacing are as follows:
+
+1. Enter the privileged EXEC mode:
+
+```
+enable
+```
+
+2. Enter the global configuration mode:
+
+```
+configure terminal
+```
+
+3. Select the interface where the DWDM transceiver is installed:
+
+```
+interface <interface-name>
+```
+
+Replace `<interface-name>` with the name of the interface where the transceiver is installed.
+
+4. Set the channel number of the DWDM transceiver:
+
+```
+tunable channel <channel-number>
+```
+
+Replace `<channel-number>` with the desired channel number.
+
+5. Set the grid-spacing of the DWDM transceiver:
+
+```
+tunable grid-spacing <grid-spacing>
+```
+
+Replace `<grid-spacing>` with the desired grid-spacing.
+
+6. Exit the interface configuration mode:
+
+```
+exit
+```
+
+7. Save the changes:
+
+```
+write memory
+```
+
+8. Verify the changes:
+
+```
+show interfaces transceiver detail
+```
+
+This will display the details of all the transceivers, including the tuned channel number and grid-spacing.
+
+Please note that the exact commands may vary depending on the specific Arista switch model and the EOS version.
+
+=== gpt4_rag ===
+```
+switch(config)#transceiver channel <channel_number>
+switch(config)#transceiver grid-spacing <grid_spacing_value>
+switch(config)#show interfaces transceiver channels
+switch(config)#show interfaces transceiver hardware
+```
+
+CONTEXT USED:
+subsubsection_9_4_5
+subsubsection_9_2_5
+code_subsection_9_6_49
+subsection_2_1
+subsection_9_1
+

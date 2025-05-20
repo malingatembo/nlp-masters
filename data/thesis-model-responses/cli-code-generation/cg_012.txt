@@ -1,0 +1,62 @@
+QUESTION: Write the EOS CLI commands to configure agile ports on an Arista 7150 series switch, combining SFP+ interfaces to form a 40G port.
+
+=== gpt4_rag ===
+[[CODE:code_subsubsection_9_5_11_0]]
+
+<!-- CODE:START -->
+switch#config
+switch(config)#interface ethernet 13
+switch(config-if-Et13)#speed forced 40gfull
+
+  WARNING!  Executing this command will cause the forwarding agent
+            to be restarted. All interfaces will briefly drop links
+            and forwarding on all interfaces will momentarily stop.
+
+            Do you wish to proceed with this command? [y/N]
+
+Ethernet17 configured for 40G.
+Ethernet15, Ethernet17 and Ethernet19 are now subsumed.
+switch(config-if-Et13)#
+<!-- CODE:END -->
+
+CONTEXT USED:
+subsubsection_9_5_11
+subsubsection_9_4_3
+subsubsection_9_5_3
+subsubsection_9_2_5
+chapter_9
+
+=== gpt4_no_rag ===
+1. Enter into the privileged EXEC mode:
+```
+enable
+```
+2. Enter into the global configuration mode:
+```
+configure terminal
+```
+3. Specify the interfaces you want to combine. For example, to combine Ethernet interfaces 1 to 4:
+```
+interface Ethernet1-4
+```
+4. Set the speed to 40G:
+```
+speed forced 40gfull
+```
+5. Exit the interface configuration mode:
+```
+exit
+```
+6. Save the configuration changes:
+```
+write memory
+```
+7. Verify the configuration:
+```
+show interfaces status
+```
+This will display the status of all interfaces. The combined interfaces should now show as a single 40G interface.
+
+=== tiny_llama ===
+The configuration should include the correct SFP+ mode and the port number. The EOS CLI commands should be formatted and indented for clarity.
+

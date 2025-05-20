@@ -1,0 +1,61 @@
+QUESTION: What show commands are available for displaying configuration sessions in Arista EOS?
+
+=== gpt4_no_rag ===
+In Arista EOS (Extensible Operating System), there are several show commands available for displaying configuration sessions. These commands are used to view the current configuration sessions and their details. 
+
+1. `show configuration sessions`: This command displays all the current configuration sessions. It shows the session name, state, user, PID, and the time when the session was started.
+
+2. `show configuration sessions detail`: This command provides detailed information about all the configuration sessions. It includes the session name, state, user, PID, start time, and the configuration changes made in each session.
+
+3. `show configuration sessions <session name>`: This command shows the details of a specific configuration session. You need to replace `<session name>` with the name of the configuration session you want to view.
+
+4. `show configuration sessions diffs`: This command displays the differences between the running configuration and the configuration in each session.
+
+5. `show configuration sessions summary`: This command provides a summary of the configuration sessions, including the total number of sessions and the number of sessions in each state.
+
+6. `show configuration sessions commit-list`: This command shows the list of configuration changes that have been committed in each session.
+
+Remember, these commands must be executed in the privileged EXEC mode or the configuration session mode.
+
+=== tiny_llama ===
+Answer:
+
+1. Show config session
+2. Show config session all
+3. Show config session detail
+4. Show config session list
+5. Show config session list all
+
+6. Show config session list by user
+7. Show config session list by user all
+8. Show config session list by user filter
+9. Show config session list by user filter all
+10. Show config session list by user session
+11. Show config session list by user session all
+12. Show config session list by user session filter
+13. Show config session list by user session filter all
+14. Show config session list by user session filter by group
+15. Show config session list by user session filter by group all
+16. Show config session list by user session group
+17. Show config session list by user session group all
+18. Show config session list by user session group filter
+19. Show config session list by user session group filter all
+20. Show config session list by user session group filter by group
+21. Show config session list by user session group filter by group all
+
+This shows all the available commands to view configuration sessions in Arista EOS.
+
+=== gpt4_rag ===
+The context provides two show commands related to configuration sessions in Arista EOS:
+
+1. `show configuration sessions detail`: This command displays detailed information about configuration sessions, including the maximum number of completed and pending sessions, the name, state, user, terminal, PID, and description of each session.
+
+2. `show session-config diff`: This command displays the differences between the running configuration and the configuration in a specific session.
+
+CONTEXT USED:
+code_subsubsubsection_2_3_4_1_0
+code_subsubsubsection_2_3_4_2_1
+chapter_2
+code_subsubsubsection_2_1_2_3_7
+code_subsubsubsection_2_1_2_3_0
+

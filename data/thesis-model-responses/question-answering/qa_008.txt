@@ -1,0 +1,47 @@
+QUESTION: What are port groups on Arista switches, which models support them, and how are they configured?
+
+=== gpt4_rag ===
+Port groups on Arista switches are a set of interfaces that can be configured as four SFP+ interfaces or a single QSFP+ interface. When configured in SFP+ mode, the port group enables 4 standalone 10GbE interfaces using SFP+ optics. When configured in QSFP+ mode, the port group enables a single QSFP+ interface, which can operate as a single 40GbE port, or as four 10GbE ports with the appropriate breakout cabling.
+
+The Arista models that support hardware port groups are DCS-7050Q-16 and DCS-7050QX-32S. 
+
+To configure the port groups, the 'hardware port-group' command is used to select the interface mode for the specified port group. However, it's important to note that this command restarts the forwarding agent, which disrupts traffic on all switch ports. 
+
+For example, to configure the DCS-7050-Q16 switch to enable four SFP+ interfaces and one extra QSFP+ interface, you would enable the SFP+ interfaces in port group 1 and the QSFP+ interface in port group 2. The commands would be:
+
+```
+switch(config)#hardware port-group 1 select Et17-20
+switch(config)#hardware port-group 2 select Et16/1-4
+```
+
+You can check the status of ports in the port groups using the 'show hardware port-group' command.
+
+CONTEXT USED:
+chapter_9
+subsubsection_9_5_3
+subsubsection_9_2_5
+subsection_2_1
+code_subsection_9_6_20
+
+=== tiny_llama ===
+
+
+=== gpt4_no_rag ===
+Port groups on Arista switches are a way to logically group together multiple physical ports, allowing them to be managed as a single entity. This is often used for link aggregation, which can increase the overall network capacity by combining the bandwidth of multiple ports. It can also provide redundancy, as traffic can continue to flow even if one of the ports in the group fails.
+
+Arista switches across various models support port groups, including but not limited to the 7000 series, 7100 series, 7200 series, and 7300 series. The specific support for port groups can vary depending on the model and the software version running on the switch.
+
+Configuring port groups on Arista switches typically involves the following steps:
+
+1. Identify the physical ports that you want to include in the port group. These ports should be of the same type and have the same speed.
+
+2. Use the "interface range" command to select the ports. For example, if you want to group together ports Ethernet1, Ethernet2, and Ethernet3, you would enter "interface range Ethernet1-3".
+
+3. Use the "channel-group" command to create the port group and add the selected ports to it. For example, "channel-group 1 mode active" would create a port group with an ID of 1 and add the selected ports to it. The "mode active" part of the command specifies that the switch should actively try to negotiate a link aggregation connection with the other end of the link.
+
+4. Configure the port group as needed. This might involve setting the speed, duplex mode, and other parameters. These settings are applied to the port group as a whole, not to the individual ports.
+
+5. Verify the configuration using the "show port-channel summary" command. This will display information about the port group, including the member ports and their status.
+
+Remember that the exact commands and procedures can vary depending on the specific model of the switch and the software version. Always refer to the appropriate documentation for your specific situation.
+

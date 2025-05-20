@@ -1,0 +1,51 @@
+QUESTION: Create the EOS CLI configuration commands to enable flow control on multiple Ethernet interfaces of an Arista switch, including both receive and send settings.
+
+=== gpt4_rag ===
+```
+Arista#configure terminal
+Arista(config)#interface Ethernet1
+Arista(config-if-Et1)#flowcontrol send on
+Arista(config-if-Et1)#flowcontrol receive on
+Arista(config-if-Et1)#exit
+Arista(config)#interface Ethernet2
+Arista(config-if-Et2)#flowcontrol send on
+Arista(config-if-Et2)#flowcontrol receive on
+Arista(config-if-Et2)#exit
+Arista(config)#interface Ethernet3
+Arista(config-if-Et3)#flowcontrol send on
+Arista(config-if-Et3)#flowcontrol receive on
+Arista(config-if-Et3)#exit
+Arista(config)#exit
+Arista#wr
+```
+
+CONTEXT USED:
+subsubsection_9_2_5
+subsection_9_1
+chapter_9
+code_subsubsubsection_2_3_4_3_0
+code_subsubsection_9_5_14_5
+
+=== gpt4_no_rag ===
+interface Ethernet1
+   flowcontrol receive on
+   flowcontrol send on
+exit
+interface Ethernet2
+   flowcontrol receive on
+   flowcontrol send on
+exit
+interface Ethernet3
+   flowcontrol receive on
+   flowcontrol send on
+exit
+...
+...
+interface EthernetN
+   flowcontrol receive on
+   flowcontrol send on
+exit
+
+=== tiny_llama ===
+Ensure that the configuration is applied to all interfaces and applies to all ports on the switch. The commands should include the switch name and the interface names.
+

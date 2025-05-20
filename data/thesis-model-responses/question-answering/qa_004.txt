@@ -1,0 +1,34 @@
+QUESTION: How do you assign a MAC address to an interface on an Arista switch and verify the configuration?
+
+=== gpt4_no_rag ===
+Assigning a MAC address to an interface on an Arista switch is not a typical operation because MAC addresses are usually burned into the hardware and not typically changed. However, you can configure a static MAC address for a VLAN interface. Here's how you can do it:
+
+1. Enter the configuration mode using the command `configure terminal`.
+
+2. Select the VLAN interface you want to configure. For example, for VLAN 10, you would use the command `interface vlan 10`.
+
+3. Assign the MAC address to the VLAN interface using the command `mac-address <mac-address>`. Replace `<mac-address>` with the MAC address you want to assign. For example, `mac-address 0000.1111.2222`.
+
+4. Exit the configuration mode using the command `exit`.
+
+After assigning the MAC address, you can verify the configuration using the following steps:
+
+1. Use the command `show interface vlan <vlan-id>` to display the configuration of the VLAN interface. Replace `<vlan-id>` with the ID of the VLAN interface you configured. For example, `show interface vlan 10`.
+
+2. In the output, look for the line that starts with `Hardware is`. This line should display the MAC address you assigned to the VLAN interface.
+
+Remember that changing MAC addresses can have significant impacts on your network, including potential security issues and disruption of services. Always ensure you understand the implications before making such changes.
+
+=== tiny_llama ===
+
+
+=== gpt4_rag ===
+The context provided does not include information on how to assign a MAC address to an interface on an Arista switch or how to verify the configuration.
+
+CONTEXT USED:
+subsection_2_1
+subsection_9_1
+chapter_9
+code_subsubsubsection_2_3_4_2_0
+code_subsubsubsection_2_3_4_3_0
+

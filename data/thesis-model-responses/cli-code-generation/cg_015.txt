@@ -1,0 +1,49 @@
+QUESTION: Write the EOS CLI configuration commands to set link debounce timers on multiple interfaces of an Arista switch, with different values for link-up and link-down events.
+
+=== gpt4_no_rag ===
+To set link debounce timers on multiple interfaces of an Arista switch, you can use the following EOS CLI configuration commands. The values for link-up and link-down events can be set separately.
+
+```
+configure terminal
+interface Ethernet1
+   link debounce time up 100
+   link debounce time down 200
+exit
+interface Ethernet2
+   link debounce time up 300
+   link debounce time down 400
+exit
+interface Ethernet3
+   link debounce time up 500
+   link debounce time down 600
+exit
+```
+
+In the above commands, replace `Ethernet1`, `Ethernet2`, and `Ethernet3` with the actual interfaces you want to configure. The numbers `100`, `200`, `300`, `400`, `500`, and `600` represent the debounce time in milliseconds for link-up and link-down events respectively. Adjust these values as per your requirements.
+
+=== gpt4_rag ===
+### Code Example: 
+```
+switch(config)#interface ethernet 1
+switch(config-if-Et1)#link-debounce time 5000 10000
+switch(config-if-Et1)#
+
+switch(config)#interface ethernet 2
+switch(config-if-Et2)#link-debounce time 7000 12000
+switch(config-if-Et2)#
+
+switch(config)#interface ethernet 3
+switch(config-if-Et3)#link-debounce time 9000 14000
+switch(config-if-Et3)#
+```
+
+CONTEXT USED:
+code_subsection_9_6_13
+code_subsection_9_6_14
+code_subsection_9_6_15
+subsection_9_1
+code_subsection_9_6_16
+
+=== tiny_llama ===
+Ensure that the configuration is executed using the correct syntax for EOS CLI commands.
+

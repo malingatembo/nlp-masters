@@ -1,0 +1,53 @@
+QUESTION: Generate the EOS CLI configuration commands to configure an MXP port on an Arista switch to operate as three 40G interfaces rather than a single 100G interface.
+
+=== gpt4_rag ===
+[[CODE:code_subsubsubsection_9_5_9_3_0]]
+<!-- CODE:START -->
+switch(config)#interface Ethernet1/1-4
+switch(config)#interface Ethernet1/5-8
+switch(config)#interface Ethernet1/9-12
+<!-- CODE:END -->
+
+[[CODE:code_subsubsubsection_9_5_9_3_1]]
+<!-- CODE:START -->
+switch(config-if-Et1/1-4)#speed forced 40000full
+switch(config-if-Et1/5-8)#speed forced 40000full
+switch(config-if-Et1/9-12)#speed forced 40000full
+<!-- CODE:END -->
+
+[[CODE:code_subsubsubsection_9_5_9_3_2]]
+<!-- CODE:START -->
+switch#show interfaces status
+<!-- CODE:END -->
+
+CONTEXT USED:
+subsubsection_9_2_5
+subsection_2_1
+subsubsection_9_5_3
+subsubsection_9_5_9
+subsubsubsection_9_5_9_3
+
+=== tiny_llama ===
+Please ensure that the configuration meets the requirements and is optimized for performance and reliability.
+
+=== gpt4_no_rag ===
+interface Ethernet1/1
+   no switchport
+   channel-group 1 mode active
+!
+interface Ethernet1/2
+   no switchport
+   channel-group 1 mode active
+!
+interface Ethernet1/3
+   no switchport
+   channel-group 1 mode active
+!
+interface Port-Channel1
+   switchport mode trunk
+   speed forced 40gfull
+   lacp fallback individual
+   lacp fallback timeout 60
+!
+end
+

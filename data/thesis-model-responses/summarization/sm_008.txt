@@ -1,0 +1,65 @@
+QUESTION: Summarize how to configure port groups on DCS-7050Q-16 and DCS-7050QX-32S Arista switches and how they affect interface availability.
+
+=== gpt4_rag ===
+Port groups on Arista's DCS-7050Q-16 and DCS-7050QX-32S switches are sets of interfaces that can be configured as either four SFP+ interfaces or a single QSFP+ interface. When configured in SFP+ mode, the port group enables 4 standalone 10GbE interfaces using SFP+ optics. In QSFP+ mode, the port group enables a single QSFP+ interface which can operate as a single 40GbE port, or as four 10GbE ports with the appropriate breakout cabling.
+
+To select the interface mode for a specified port group, the `hardware port-group` command is used. However, it's important to note that this command restarts the forwarding agent, disrupting traffic on all switch ports.
+
+For example, to configure the DCS-7050-Q16 switch to enable four SFP+ interfaces and one extra QSFP+ interface, the following commands can be used:
+
+```
+switch(config)#hardware port-group 1 select Et17-20
+switch(config)#hardware port-group 2 select Et16/1-4
+```
+
+The `show hardware port-group` command can be used to display the status of ports in the port groups.
+
+CONTEXT USED:
+subsubsection_9_5_3
+subsubsection_9_4_3
+subsubsubsection_9_5_3_1
+subsubsubsection_2_1_2_3
+code_subsubsection_9_3_3_0
+
+=== gpt4_no_rag ===
+Port groups on Arista switches like DCS-7050Q-16 and DCS-7050QX-32S can be configured to enhance network performance and redundancy. Port groups are a set of physical ports that are grouped together and treated as a single logical entity. They can be used for link aggregation, increasing the overall network capacity and providing redundancy in case of a port failure.
+
+To configure port groups, the user needs to access the switch's command-line interface (CLI) and use the 'interface Port-Channel' command followed by the port group number. This creates a new port group. Then, the 'channel-group' command is used on each physical interface that should be part of the port group, specifying the same port group number.
+
+Once configured, the port group will act as a single logical interface. This means that if one physical interface in the group fails, the traffic will automatically be redirected to the other interfaces in the group, ensuring continued availability. 
+
+The port group's configuration, including its member interfaces and their status, can be viewed using the 'show Port-Channel summary' command. This can help in monitoring and troubleshooting the network's performance and availability.
+
+It's important to note that all interfaces in a port group should have the same configuration settings, such as speed, duplex mode, and VLAN membership, to ensure proper operation. If there's a mismatch in configuration, it could lead to unexpected behavior or even cause the port group to become inactive.
+
+=== tiny_llama ===
+DCS-7050Q-16:
+
+1. Port Group:
+
+- Create a port group on the switch using the following command:
+
+    ```
+    show switchport port-group 1
+    ```
+
+- Add ports to the port group:
+
+    ```
+    show switchport port-group 1
+    switchport port-group 1 add 192.168.0.1/24
+    switchport port-group 1 add 192.168.0.2/24
+    switchport port-group 1 add 192.168.0.3/24
+    switchport port-group 1 add 192.168.0.4/24
+    switchport port-group 1 add 192.168.0.5/24
+    switchport port-group 1 add 192.168.0.6/24
+    switchport port-group 1 add 192.168.0.7/24
+    switchport port-group 1 add 192.168.0.8/24
+    switchport port-group 1 add 192.168.0.9/24
+    switchport port-group 1 add 192.168.0.10/24
+    switchport port-group 1 add 192.168.0.11/24
+    switchport port-group 1 add 192.168.0.12/24
+    switchport port-group 1 add 192.168.0.13/24
+    switchport port-group 1 add 192.168.0.14/24
+    switchport port-group 1 add 192.168.0.
+

@@ -1,0 +1,44 @@
+QUESTION: Provide the EOS CLI commands for creating a configuration session, making multiple interface changes, and then committing the session.
+
+=== tiny_llama ===
+
+
+=== gpt4_no_rag ===
+The following are the EOS CLI commands for creating a configuration session, making multiple interface changes, and then committing the session:
+
+```bash
+# Enter the CLI
+cli
+
+# Start a new configuration session
+configure session my_session
+
+# Make the desired interface changes
+interface Ethernet1
+description "This is Ethernet 1"
+no shutdown
+
+interface Ethernet2
+description "This is Ethernet 2"
+no shutdown
+
+# Commit the changes
+commit
+```
+
+=== gpt4_rag ===
+[[CODE:code_subsubsection_2_3_1_0]]
+<!-- CODE:START -->
+configure session routing_changes
+interface ethernet 5-7,10
+interface management 1
+commit
+<!-- CODE:END -->
+
+CONTEXT USED:
+subsubsection_2_3_1
+subsection_2_3
+subsubsection_9_5_1
+subsubsection_2_4_3
+subsubsection_2_4_2
+

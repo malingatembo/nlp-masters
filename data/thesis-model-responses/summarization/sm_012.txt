@@ -1,0 +1,40 @@
+QUESTION: Describe the different Ethernet standards supported by Arista switches and their key characteristics.
+
+=== gpt4_no_rag ===
+Arista switches support a variety of Ethernet standards, each with unique characteristics:
+
+1. 10 Gigabit Ethernet (10GbE): This standard provides a 10-fold increase in network bandwidth over the older Gigabit Ethernet. It supports both copper and fiber cabling and is often used in data centers for server-switch links.
+
+2. 40 Gigabit Ethernet (40GbE): This standard is designed for high-speed interconnects in data centers and supercomputing environments. It uses multiple lanes of data flow and supports both copper and fiber cabling.
+
+3. 100 Gigabit Ethernet (100GbE): This is a high-speed Ethernet standard that supports data transfer rates of 100 Gbps. It's used in enterprise networks, data centers, and internet exchanges for high-demand tasks.
+
+4. 25 Gigabit Ethernet (25GbE): This standard provides a single-lane connection that offers a higher data rate compared to 10GbE. It's often used in data centers for server-to-switch connections.
+
+5. 50 Gigabit Ethernet (50GbE): This standard uses two lanes of 25 Gbps, providing a total data rate of 50 Gbps. It's designed for short-range, high-speed connections in data centers.
+
+6. 200 Gigabit Ethernet (200GbE): This standard supports data rates of 200 Gbps. It's used for high-capacity links in data centers and for high-performance computing applications.
+
+7. 400 Gigabit Ethernet (400GbE): This is the fastest Ethernet standard supported by Arista switches. It's designed for ultra-high-capacity data center interconnects and high-performance computing environments.
+
+Each Ethernet standard has different cabling requirements, data rates, and use cases. Arista switches support these standards to provide flexible, high-performance networking solutions for a variety of environments.
+
+=== tiny_llama ===
+Provide examples of how to configure and troubleshoot Ethernet switches with Arista switches. Discuss the benefits of using Arista switches in high-performance environments, including their ability to handle high-speed data traffic and their support for multiple ports. Include tips for optimizing network performance and reducing downtime for Arista switches.
+
+=== gpt4_rag ===
+Arista switches support a variety of Ethernet standards. The 10/100/1000 BASE-T Mbps Ethernet standard is used for out of band management ports. These interfaces have auto-negotiation enabled and allow for speed (10/100/1000), duplex (half/full), and flow control settings to be adjusted using the appropriate speed forced and flowcontrol commands. 
+
+Another standard supported is the 100 Gigabit Ethernet (100GbE) which defines an Ethernet implementation with a data rate of 100 billion bits per second over multiple 10 gigabit lanes. It implements full duplex point to point links connected by network switches. Arista switches support 100GBASE-10SR through MXP ports. 
+
+Arista switches also provide two physical interface types: Ethernet interfaces and Management interfaces. Ethernet interfaces are assigned a 48-bit MAC address and communicate with other interfaces by exchanging data packets. These packets contain the MAC address of their source and destination interface. Ethernet interfaces establish link level connections by exchanging packets and do not typically accept packets with a destination address of a different interface. 
+
+Ethernet data packets are frames, which begin with preamble and start fields, followed by an Ethernet header that includes source and destination MAC addresses. The middle section contains payload data, including headers for other protocols carried in the frame. The frame ends with a 32-bit cyclic redundancy check (CRC) field that interfaces use to detect data corrupted during transmission.
+
+CONTEXT USED:
+chapter_9
+subsection_9_1
+subsubsection_9_2_5
+subsubsection_9_2_1
+subsection_9_4
+
