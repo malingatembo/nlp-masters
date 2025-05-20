@@ -1,0 +1,13 @@
+{
+  "id": "subsubsection_9_5_4",
+  "type": "subsubsection",
+  "title": "Referencing Modular Ports",
+  "number": "9.5.4",
+  "parent": "subsection_9_5",
+  "content": "--ID: subsubsection_9_5_4\nArista modular switches provide port access through installed linecards. The maximum number of \nlinecards on a modular switch varies with the switch series and model.\n\nSeveral CLI commands modify modular parameters for all ports on a specified linecard or controlled by \na specified chip. This manual uses these conventions to reference modular components:\n\ncard_x refers to a line card.\n\n\u2022 module_y refers to a QSFP+ module.\n\nport_z refers to a linecard or module port.\n\nCommands that display Ethernet port status use the following conventions:\n\nSFP ports: : card_x/port_z to label the linecard-port location of modular ports\n\n\u2022 QSFP ports: card_x/module_y/port_z to label the linecard-port location of modular ports\n\nSection 9.5.6 describe QSFP+ module usage.\n\nExample\n\n[[CODE:code_subsubsection_9_5_4_0]]\n\n<!-- CODE:START -->\nThis command displays the status of interfaces 1 to 9 on linecard 4:\n\nswitch>show interface ethernet 4/1-9 status\nPort      Name              Status       Vlan        Duplex  Speed Type\nEt4/1                       connected    1             full    10G Not Present\nEt4/2                       connected    1             full    10G Not Present\nEt4/3                       connected    1             full    10G Not Present\nEt4/4                       connected    1             full    10G Not Present\nEt4/5                       connected    1             full    10G Not Present\nEt4/6                       connected    1             full    10G Not Present\nEt4/7                       connected    1             full    10G Not Present\nEt4/8                       connected    1             full    10G Not Present\nEt4/9                       connected    1             full    10G Not Present\nswitch>\n<!-- CODE:END -->",
+  "children": [],
+  "code_refs": [
+    "code_subsubsection_9_5_4_0"
+  ],
+  "table_refs": []
+}

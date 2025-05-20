@@ -1,0 +1,11 @@
+{
+  "id": "subsubsection_9_5_12",
+  "type": "subsubsection",
+  "title": "Subinterface Configuration",
+  "number": "9.5.12",
+  "parent": "subsection_9_5",
+  "content": "--ID: subsubsection_9_5_12\nFor a subinterface to be operational on an Ethernet or port channel interface, the parent interface must \nbe configured as a routed port and be administratively up, and a VLAN must be configured on the \nsubinterface. If the parent interface goes down, all subinterfaces automatically go down as well, but will \ncome back up with the same configuration once the parent interface is up.\n\nNote that a port channel should not contain Ethernet interfaces with subinterfaces configured on them, \nand that subinterfaces cannot be members of a port channel.\n\nSubinterfaces are named by adding a period followed by a unique subinterface number to the name of \nthe parent interface. Note that the subinterface number has no relation to the ID of the VLAN \ncorresponding to the subinterface.\n\nA maximum of 750 subinterfaces can be configured on a switch, and a maximum of 250 subinterfaces \ncan be configured under a single parent interface.\n\nSubinterfaces are available on the following platforms: \n\n\u2022 DCS-7050X\n\n\u2022 DCS-7060X\n\n\u2022 DCS-7250X\n\n\u2022 DCS-7260X\n\n\u2022 DCS-7280E\n\n\u2022 DCS-7300X\n\n\u2022 DCS-7320X\n\n\u2022 DCS-7500E",
+  "children": [],
+  "code_refs": [],
+  "table_refs": []
+}

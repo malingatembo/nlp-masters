@@ -1,0 +1,15 @@
+{
+  "id": "subsubsubsection_9_5_12_1",
+  "type": "subsubsubsection",
+  "title": "Creating a Subinterface",
+  "number": "9.5.12.1",
+  "parent": null,
+  "content": "--PARENT: subsubsection_9_5_12\n\nTo create a subinterface on an Ethernet or port channel interface:\n\nStep 1 Bring up the parent interface and ensure that it is configured as a routed port.\n\n[[CODE:code_subsubsubsection_9_5_12_1_0]]\n\nStep 2 Configure a VLAN on the subinterface. The encapsulation dot1q vlan command is also used \nfor VLAN translation, but in this context it associates a VLAN with the subinterface.\n\n[[CODE:code_subsubsubsection_9_5_12_1_1]]\n\nStep 3 Configure an IP address on the subinterface (optional) and ensure that it is up. \n\n[[CODE:code_subsubsubsection_9_5_12_1_2]]",
+  "children": [],
+  "code_refs": [
+    "code_subsubsubsection_9_5_12_1_0",
+    "code_subsubsubsection_9_5_12_1_1",
+    "code_subsubsubsection_9_5_12_1_2"
+  ],
+  "table_refs": []
+}

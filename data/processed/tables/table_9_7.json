@@ -1,0 +1,37 @@
+{
+  "id": "table_9_7",
+  "section_id": "subsubsubsection_9_5_13_2",
+  "title": "Table 9-7: Compatible Settings for Flow Control Negotiation",
+  "headers": [
+    "local port",
+    "peer port"
+  ],
+  "rows": [
+    [
+      "receive on",
+      "send on or send desired"
+    ],
+    [
+      "receive off",
+      "send off or send desired"
+    ],
+    [
+      "receive desired",
+      "send on, send off, or send desired"
+    ],
+    [
+      "send on",
+      "receive on or receive desired"
+    ],
+    [
+      "send off",
+      "receive off or receive desired"
+    ],
+    [
+      "send desired",
+      "receive on, receive off, or receive desired"
+    ]
+  ],
+  "section_number": "9.5.13.2",
+  "index": 0
+}

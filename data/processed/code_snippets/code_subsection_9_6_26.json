@@ -1,0 +1,7 @@
+{
+  "id": "code_subsection_9_6_26",
+  "section_id": "subsection_9_6",
+  "content": "This command displays packet counter results for Ethernet interfaces 1 and 2.\n\nswitch>show interfaces ethernet 1-2 counters bins\nInput\nPort                64 Byte      65-127 Byte     128-255 Byte     256-511 Byte\n------------------------------------------------------------------------------\nEt1                    2503         56681135          1045154          1029152\nEt2                       8         50216275          1518179          1086297\n\nPort          512-1023 Byte   1024-1522 Byte    1523-MAX Byte\n-------------------------------------------------------------\nEt1                  625825         17157823          8246822\nEt2                  631173         27059077          5755101\nswitch>",
+  "section_number": "9.6",
+  "index": 26
+}

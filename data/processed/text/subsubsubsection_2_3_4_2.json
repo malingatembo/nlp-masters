@@ -1,0 +1,14 @@
+{
+  "id": "subsubsubsection_2_3_4_2",
+  "type": "subsubsubsection",
+  "title": "show session-config [diff]",
+  "number": "2.3.4.2",
+  "parent": null,
+  "content": "--PARENT: subsubsection_2_3_4\n\nThis command must be issued from within a session. It shows the following:\n\n\nThe session configuration, including the changes made in the session.\nThe diff flag shows the differences with the running-config, which helps highlight the changes made in \nthe session.\n\nExample 1\n\n[[CODE:code_subsubsubsection_2_3_4_2_0]]\n\n\n\nExample 2\n\n[[CODE:code_subsubsubsection_2_3_4_2_1]]",
+  "children": [],
+  "code_refs": [
+    "code_subsubsubsection_2_3_4_2_0",
+    "code_subsubsubsection_2_3_4_2_1"
+  ],
+  "table_refs": []
+}

@@ -1,0 +1,29 @@
+{
+  "id": "subsubsubsection_2_1_2_3",
+  "type": "subsubsubsection",
+  "title": "Ethernet Management Port",
+  "number": "2.1.2.3",
+  "parent": null,
+  "content": "--PARENT: subsubsection_2_1_2\n\nArista switches provide one or more Ethernet management ports for configuring the switch and \nmanaging the network out of band. Figure 2-1 shows the location of the Ethernet management ports on \na DCS-7050T-64 switch. Only one port is required to manage the switch.\n\nYou can access the Ethernet management port(s) remotely over a common network or locally through \na directly connected PC. Before you can access the switch through a remote connection, an IP address \nand a static route to the default gateway are required. On a modular switch with dual supervisors, a \nvirtual IP address can also be configured to access the management port on whichever supervisor is \nactive.\n\nAssigning a Virtual IP Address to Access the Active Ethernet Management Port\n\nOn modular switches with dual supervisors, this procedure assigns a virtual IP address which will \nconnect to the Ethernet management port of the active supervisor. (To assign a physical IP address to an \nindividual Ethernet management port, see Assigning an IP Address to a Specific Ethernet Management \nPort below.)\n\nStep 1 Connect a PC or terminal server to the console port.\n\nUse the settings listed in Section 2.1.2.1 under Port Settings.\n\nStep 2 Type admin at the login prompt to log into the switch. Initial login through the console port \n\ndoes not require a password.\n\n\n[[CODE:code_subsubsubsection_2_1_2_3_0]]\n\n\nswitch>\n\nStep 3 Type enable at the command prompt to enter Privileged EXEC mode. See Section 3.5.1: Mode \n\nTypes for information about Privileged EXEC mode.\n\n[[CODE:code_subsubsubsection_2_1_2_3_1]]\n\n\nStep 4 Type configure terminal (or config) to enter global configuration mode. See Section 3.5.1: Mode \n\n\nTypes for information about global configuration mode.\n\n[[CODE:code_subsubsubsection_2_1_2_3_2]]\n\n\nStep 5 Type interface management 0 to enter interface configuration mode for the virtual interface \n\n\n\nwhich accesses management port 1 on the currently active supervisor.\n\n[[CODE:code_subsubsubsection_2_1_2_3_3]]\n\n\nStep 6 Type ip address, followed by the desired address, to assign a virtual IP address for access to the \n\nactive management port.\n\nThis command assigns IP address 10.0.2.5 to management port 0.\n\n[[CODE:code_subsubsubsection_2_1_2_3_4]]\n\nStep 7 Type end at both the interface configuration and global configuration prompts to return to \n\nPrivileged EXEC mode.\n\n[[CODE:code_subsubsubsection_2_1_2_3_5]]\n\n\nStep 8 Type write (or copy running-config startup-config) to save the new configuration to the \nstartup-config file. See Section 3.6.4: Saving the Running Configuration Settings.\n\n[[CODE:code_subsubsubsection_2_1_2_3_6]]\n\nAssigning an IP Address to a Specific Ethernet Management Port\n\nThis procedure assigns an IP address to a specific Ethernet management port:\n\nStep 1 Connect a PC or terminal server to the console port.\n\nUse the settings listed in Section 2.1.2.1 under Port Settings.\n\nStep 2 Type admin at the login prompt to log into the switch. The initial login does not require a \n\npassword.\n\n[[CODE:code_subsubsubsection_2_1_2_3_7]]\n\nStep 3 Type enable at the command prompt to enter Privileged EXEC mode. See Section 3.5.1: Mode\nTypes for information about Privileged EXEC mode.\n\n[[CODE:code_subsubsubsection_2_1_2_3_8]]\n\nStep 4 Type configure terminal (or config) to enter global configuration mode. See Section 3.5.1: Mode \n\nTypes for information about global configuration mode.\n[[CODE:code_subsubsubsection_2_1_2_3_9]]\n\n\nStep 5 Type interface management 1 to enter interface configuration mode.\n\nAny available management port can be used in place of management port 1.\n\n[[CODE:code_subsubsubsection_2_1_2_3_10]]\n\nStep 6 Type ip address, followed by the desired address, to assign an IP address to the port.\n\nThis command assigns the IP address 10.0.2.8 to management 1 port.\n\n[[CODE:code_subsubsubsection_2_1_2_3_11]]\n\nStep 7 Type end at both the interface configuration and global configuration prompts to return to \n\nPrivileged EXEC mode.\n[[CODE:code_subsubsubsection_2_1_2_3_12]]\n\n\nStep 8 Type write (or copy running-config startup-config) to save the new configuration to the \nstartup-config file. See Section 3.6.4: Saving the Running Configuration Settings.\n\n[[CODE:code_subsubsubsection_2_1_2_3_13]]\n\n\nConfiguring a Default Route to the Gateway\n\nThis procedure configures a default route to a gateway located at 10.0.2.1.\n\nStep 1 Enter global configuration mode.\n\n\n[[CODE:code_subsubsubsection_2_1_2_3_14]]\n\nStep 2 Create a static route to the gateway with the IP route command.\n\n[[CODE:code_subsubsubsection_2_1_2_3_15]]\n\nStep 3 Save the new configuration.\n[[CODE:code_subsubsubsection_2_1_2_3_16]]",
+  "children": [],
+  "code_refs": [
+    "code_subsubsubsection_2_1_2_3_0",
+    "code_subsubsubsection_2_1_2_3_1",
+    "code_subsubsubsection_2_1_2_3_2",
+    "code_subsubsubsection_2_1_2_3_3",
+    "code_subsubsubsection_2_1_2_3_4",
+    "code_subsubsubsection_2_1_2_3_5",
+    "code_subsubsubsection_2_1_2_3_6",
+    "code_subsubsubsection_2_1_2_3_7",
+    "code_subsubsubsection_2_1_2_3_8",
+    "code_subsubsubsection_2_1_2_3_9",
+    "code_subsubsubsection_2_1_2_3_10",
+    "code_subsubsubsection_2_1_2_3_11",
+    "code_subsubsubsection_2_1_2_3_12",
+    "code_subsubsubsection_2_1_2_3_13",
+    "code_subsubsubsection_2_1_2_3_14",
+    "code_subsubsubsection_2_1_2_3_15",
+    "code_subsubsubsection_2_1_2_3_16"
+  ],
+  "table_refs": []
+}

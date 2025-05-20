@@ -1,0 +1,13 @@
+{
+  "id": "subsubsection_9_2_2",
+  "type": "subsubsection",
+  "title": "40 Gigabit Ethernet",
+  "number": "9.2.2",
+  "parent": "subsection_9_2",
+  "content": "--ID: subsubsection_9_2_2\nThe 40 Gigabit Ethernet (40GbE) standard defines an Ethernet implementation with a nominal data rate \nof 40 billion bits per second over multiple 10 gigabit lanes. 40 Gigabit Ethernet implements full duplex \npoint to point links connected by network switches. 40 gigabit Ethernet standards are named \n40GBASE-xyz, as interpreted by [[TABLE:table_9_1]]\n\n\n[[TABLE:table_9_1]]\n\n\n<!-- TABLE:START -->\nTable 9-1: 40GBASE-xyz Interpretation\n| x                           | y          | z                                         |\n|-----------------------------|------------|-------------------------------------------|\n| Non-fiber media type,       | PHY        | Number of WWDM wavelengths or XAUI Lanes  |\n| or fiber wavelength         | encoding   |                                           |\n| C = Copper                  | R = LAN PHY| No value = 1 (serial)                     |\n| F = Serial SMF              | (64B/66B)  | 4 = 4 WWDM wavelengths or XAUI Lanes      |\n| K = Backplane               |            |                                           |\n| L = Long (1310 nm)          |            |                                           |\n| S = Short (850 nm)          |            |                                           |\n<!-- TABLE:END -->",
+  "children": [],
+  "code_refs": [],
+  "table_refs": [
+    "table_9_1"
+  ]
+}

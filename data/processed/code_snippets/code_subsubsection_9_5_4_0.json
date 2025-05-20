@@ -1,0 +1,7 @@
+{
+  "id": "code_subsubsection_9_5_4_0",
+  "section_id": "subsubsection_9_5_4",
+  "content": "This command displays the status of interfaces 1 to 9 on linecard 4:\n\nswitch>show interface ethernet 4/1-9 status\nPort      Name              Status       Vlan        Duplex  Speed Type\nEt4/1                       connected    1             full    10G Not Present\nEt4/2                       connected    1             full    10G Not Present\nEt4/3                       connected    1             full    10G Not Present\nEt4/4                       connected    1             full    10G Not Present\nEt4/5                       connected    1             full    10G Not Present\nEt4/6                       connected    1             full    10G Not Present\nEt4/7                       connected    1             full    10G Not Present\nEt4/8                       connected    1             full    10G Not Present\nEt4/9                       connected    1             full    10G Not Present\nswitch>",
+  "section_number": "9.5.4",
+  "index": 0
+}

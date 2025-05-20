@@ -1,0 +1,15 @@
+{
+  "id": "subsubsubsection_9_5_7_3",
+  "type": "subsubsubsection",
+  "title": "Configuring a QSFP100 Module as a Single 40GbE Interface",
+  "number": "9.5.7.3",
+  "parent": null,
+  "content": "--PARENT: subsubsection_9_5_7\n\nTo configure the port as a single 40GbE interface, combine the module’s four data lanes by using the \nspeed command (speed forced 40gfull) on the port’s /1 lane (the primary lane).\n\nImportant The  speed  command  is  hitless  on  the  7050X,  7060X,  7250X,  7260X,  7280SE,  7300X,  7320X  and  7500E\nseries platforms. On all other platforms, this command restarts the forwarding agent, which will result\nin traffic disruption.\n\nStep 1 Enter interface Ethernet configuration mode for lane /1 of the QSFP100 Ethernet interface.\n\n[[CODE:code_subsubsubsection_9_5_7_3_0]]\n\n\nStep 2 Enter the speed forced 40gfull command. Depending on the platform, this command may \nrestart the forwarding agent, disrupting traffic on all ports for 60 seconds or more.\n\n\n[[CODE:code_subsubsubsection_9_5_7_3_1]]\n\n\nStep 3 Use the show interfaces status command to confirm the change in configuration.\n\n[[CODE:code_subsubsubsection_9_5_7_3_2]]",
+  "children": [],
+  "code_refs": [
+    "code_subsubsubsection_9_5_7_3_0",
+    "code_subsubsubsection_9_5_7_3_1",
+    "code_subsubsubsection_9_5_7_3_2"
+  ],
+  "table_refs": []
+}

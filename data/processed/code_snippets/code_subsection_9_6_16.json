@@ -1,0 +1,7 @@
+{
+  "id": "code_subsection_9_6_16",
+  "section_id": "subsection_9_6",
+  "content": "switch(config)#interface ethernet 5\nswitch(config-if-Et5)#link-debounce time 0 12500\nswitch(config-if-Et5)#",
+  "section_number": "9.6",
+  "index": 16
+}

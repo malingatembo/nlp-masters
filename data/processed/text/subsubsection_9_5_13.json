@@ -1,0 +1,11 @@
+{
+  "id": "subsubsection_9_5_13",
+  "type": "subsubsection",
+  "title": "Autonegotiated Settings",
+  "number": "9.5.13",
+  "parent": "subsection_9_5",
+  "content": "--ID: subsubsection_9_5_13\nIn autonegotiation, the transmission speed, duplex setting, and flow control parameters used for \nEthernet-based communication can be automatically negotiated between connected devices to establish \noptimized common settings.",
+  "children": [],
+  "code_refs": [],
+  "table_refs": []
+}

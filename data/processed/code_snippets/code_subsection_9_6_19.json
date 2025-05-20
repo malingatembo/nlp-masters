@@ -1,0 +1,7 @@
+{
+  "id": "code_subsection_9_6_19",
+  "section_id": "subsection_9_6",
+  "content": "switch>show flowcontrol interface ethernet 1-10\nPort       Send FlowControl  Receive FlowControl  RxPause       TxPause\n           admin    oper     admin    oper\n---------  -------- -------- -------- --------    ------------- -------------\nEt1        off      off      off      off         0             0\nEt2        off      off      off      off         0             0\nEt3        off      off      off      off         0             0\nEt4        off      off      off      off         0             0\nEt5        off      off      off      off         0             0\nEt6        off      off      off      off         0             0\nEt7        off      off      off      off         0             0\nEt8        off      off      off      off         0             0\nEt9        off      off      off      off         0             0\nEt10       off      off      off      off         0             0\nswitch>",
+  "section_number": "9.6",
+  "index": 19
+}

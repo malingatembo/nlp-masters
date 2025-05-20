@@ -1,0 +1,7 @@
+{
+  "id": "code_subsubsection_9_5_14_0",
+  "section_id": "subsubsection_9_5_14",
+  "content": "switch>show interfaces status\nPort      Name              Status       Vlan        Duplex  Speed Type\nEt1                         connected    1             full    10G 10GBASE-SRL\nEt2                         connected    1             full    10G 10GBASE-SRL\nEt3                         connected    1             full    10G 10GBASE-SRL\nEt4                         connected    1             full    10G 10GBASE-SRL\nEt5                         notconnect   1             full    10G Not Present\nswitch>",
+  "section_number": "9.5.14",
+  "index": 0
+}

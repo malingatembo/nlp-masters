@@ -1,0 +1,14 @@
+{
+  "id": "subsubsection_9_5_2",
+  "type": "subsubsection",
+  "title": "Assigning a MAC Address to an Interface",
+  "number": "9.5.2",
+  "parent": "subsection_9_5",
+  "content": "--ID: subsubsection_9_5_2\nEthernet and Management interfaces are assigned a MAC address when manufactured. This address is \nthe burn-in address. The mac-address command assigns a MAC address to the configuration mode \ninterface in place of the burn-in address. The no mac-address command reverts the interface\u2019s current \nMAC address to its burn-in address.\n\nExamples\n\nThis command assigns the MAC address of 001c.2804.17e1 to Ethernet interface 7.\n[[CODE:code_subsubsubsection_9_5_2_0]]\n<!-- CODE:START -->\nswitch(config-if-Et7)#mac-address 001c.2804.17e1\n<!-- CODE:END -->\nThis command displays the MAC address of Ethernet interface 7. The active MAC address is \n001c.2804.17e1. The burn-in address is 001c.7312.02e2.\n[[CODE:code_subsubsubsection_9_5_2_1]]\n<!-- CODE:START -->\nswitch(config-if-Et7)#show interface ethernet 7\nEthernet7 is up, line protocol is up (connected)\n  Hardware is Ethernet, address is 001c.2804.17e1 (bia 001c.7312.02e2)\n  Description: b.e45\n<-------OUTPUT OMITTED FROM EXAMPLE-------->\n\nswitch(config-if-Et7)#\n<!-- CODE:END -->",
+  "children": [],
+  "code_refs": [
+    "code_subsubsubsection_9_5_2_0",
+    "code_subsubsubsection_9_5_2_1"
+  ],
+  "table_refs": []
+}

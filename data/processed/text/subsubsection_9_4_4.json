@@ -1,0 +1,11 @@
+{
+  "id": "subsubsection_9_4_4",
+  "type": "subsubsection",
+  "title": "Management Interfaces",
+  "number": "9.4.4",
+  "parent": "subsection_9_4",
+  "content": "--ID: subsubsection_9_4_4\nThe management interface is a layer 3 host port that is typically connected to a PC for performing out \nof band switch management tasks. Each switch has one or two management interfaces. Only one port \nis needed to manage the switch; the second port, when available, provides redundancy.\n\nManagement interfaces are 10/100/1000 BASE-T interfaces. By default, auto-negotiation is enabled on \nmanagement interfaces. All combinations of speed 10/100/1000 and full or half duplex is enforceable on \nthese interfaces through speed commands.\n\nManagement ports are enabled by default. The switch cannot route packets between management ports \nand network (Ethernet interface) ports because they are in separate routing domains. When the PC is \nmultiple hops from the management port, packet exchanges through layer 3 devices between the \nmanagement port and PC may require the enabling of routing protocols.\n\nThe Ethernet management ports are accessed remotely over a common network or locally through a \ndirectly connected PC. An IP address and static route to the default gateway must be configured to \naccess the switch through a remote connection.",
+  "children": [],
+  "code_refs": [],
+  "table_refs": []
+}

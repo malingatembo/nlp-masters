@@ -1,0 +1,7 @@
+{
+  "id": "code_subsection_9_6_24",
+  "section_id": "subsection_9_6",
+  "content": "This command displays byte and packet counters for Ethernet interfaces 1 and 2.\n\nswitch>show interfaces ethernet 1-2 counters\nPort                 InOctets     InUcastPkts     InMcastPkts     InBcastPkts\nEt1               99002845169        79116358           75557            2275\nEt2               81289180585        76278345           86422              11\n\nPort                OutOctets    OutUcastPkts    OutMcastPkts    OutBcastPkts\nEt1                4347928323         6085482          356173            2276\nEt2                4512762190         5791718          110498              15\nswitch>",
+  "section_number": "9.6",
+  "index": 24
+}

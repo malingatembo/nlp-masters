@@ -1,0 +1,11 @@
+{
+  "id": "subsubsection_9_5_8",
+  "type": "subsubsection",
+  "title": "CFP2 Ethernet Port Configuration",
+  "number": "9.5.8",
+  "parent": "subsection_9_5",
+  "content": "--ID: subsubsection_9_5_8\nEach CFP2 module contains ten data lanes. The configuration options available on the port depend on \nthe optic inserted:\n\n\u2022 CFP2-100G-LR4 optics operate only in 100GbE mode.\n\n\u2022 CF2-100G-ER4 optics operate only 100GbE mode.\n\n\u2022 CFP2-100G-XSR10 optics can be configured as a single 100GbE interface or as ten 10GbE \n\ninterfaces.\n\nWhen the port is configured as ten 10GbE interface, each lane is active and visible in CLI display \ncommands. When the lanes are combined to form a single 100GbE interface, display commands will \nshow the primary lane as connected or not connected; all other lanes will be hidden.\n\nThe following sections describe the configuration of CFP2 ports.",
+  "children": [],
+  "code_refs": [],
+  "table_refs": []
+}

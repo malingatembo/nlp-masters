@@ -1,0 +1,11 @@
+{
+  "id": "subsubsection_9_2_1",
+  "type": "subsubsection",
+  "title": "100 Gigabit Ethernet",
+  "number": "9.2.1",
+  "parent": "subsection_9_2",
+  "content": "--ID: subsubsection_9_2_1\nThe 100 Gigabit Ethernet (100GbE) standard defines an Ethernet implementation with a nominal data \nrate of 100 billion bits per second over multiple 10 gigabit lanes. 100 Gigabit Ethernet implements full \nduplex point to point links connected by network switches. Arista switches support 100GBASE-10SR \nthrough MXP ports.",
+  "children": [],
+  "code_refs": [],
+  "table_refs": []
+}

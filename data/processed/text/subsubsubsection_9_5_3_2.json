@@ -1,0 +1,13 @@
+{
+  "id": "subsubsubsection_9_5_3_2",
+  "type": "subsubsubsection",
+  "title": "DCS-7050QX-32S",
+  "number": "9.5.3.2",
+  "parent": null,
+  "content": "--PARENT: subsubsection_9_5_3\n\nThe DCS-7050QX-32S has 31 dedicated QSFP+ ports, plus one port group. The port group supports \neither one additional QSFP+ port or four SFP+ ports as shown in [[[TABLE:table_9_4]]\n[TABLE:table_9_4]]",
+  "children": [],
+  "code_refs": [],
+  "table_refs": [
+    "table_9_4"
+  ]
+}

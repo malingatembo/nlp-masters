@@ -1,0 +1,11 @@
+{
+  "id": "subsubsection_9_3_3",
+  "type": "subsubsection",
+  "title": "MXP Ports",
+  "number": "9.3.3",
+  "parent": "subsection_9_3",
+  "content": "--ID: subsubsection_9_3_3\nMXP ports provide embedded optics that operate in one of three modes: 10GbE (12 ports), 40GbE (3 \nports), and 100GbE (1 port). Each mode requires a specified cable is implemented through configuration \ncommands. MXP ports utilize multi-mode fiber to provide support over 150 meters.\n\n\n\n\n100GbE mode requires an MTP-24 to MTP-24 cable, which uses 20 of 24 fibers to carry 100Gbe across \n10 send and 10 receive channels. When connecting two 100GbE MXP ports, the TX lanes must be \ncrossed with the RX lanes. \n\n40GbE mode requires an MTP cable that provides a split into three MTP-12 ends. The cable splits \nthe MXP port into three MTP-12 ends, each compatible with standards based 40GBASE-SR4 ports \nover OM3 or OM4 fiber up to 100m or 150m.\n\n10GbE mode requires an MTP cable that provides a split into 12x10G with LC connectors to adapt \nthe MXP port into 12x10GbE. The cable splits the MXP port into twelve LC ends for using SR or SRL \noptics over multimode OM3/OM4 cables.",
+  "children": [],
+  "code_refs": [],
+  "table_refs": []
+}

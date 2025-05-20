@@ -1,0 +1,11 @@
+{
+  "id": "subsubsubsection_9_5_12_4",
+  "type": "subsubsubsection",
+  "title": "Configuring Routing Features on a Subinterface",
+  "number": "9.5.12.4",
+  "parent": null,
+  "content": "--PARENT: subsubsection_9_5_12\n\nOnce a subinterface is created, the following features can be configured on it:\n\n• Unicast and multicast routing\n\n• BGP, OSPF, ISIS, PIM\n\n• VRF\n\n• VRRP\n\n\n\nSNMP\n\nInheritance of QoS (trust mode and default DSCP) and MTU settings from the parent interface\n\nAdditionally, these features can be configured on subinterfaces on Arad (DCS-7500E and DCS-7280E) \nplatforms:\n\n\n\n\n\n\n\n\n\nSubinterface counters on ingress\n\n• VXLAN\n\n• MPLS\n\n• GRE\n\n\nPBR\n\n• QoS",
+  "children": [],
+  "code_refs": [],
+  "table_refs": []
+}

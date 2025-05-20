@@ -1,0 +1,13 @@
+{
+  "id": "subsubsubsection_2_3_4_3",
+  "type": "subsubsubsection",
+  "title": "show session-config name <name of session>",
+  "number": "2.3.4.3",
+  "parent": null,
+  "content": "--PARENT: subsubsection_2_3_4\n\nShow the session configuration of the named session.\n\nExample\n\n[[CODE:code_subsubsubsection_2_3_4_3_0]]",
+  "children": [],
+  "code_refs": [
+    "code_subsubsubsection_2_3_4_3_0"
+  ],
+  "table_refs": []
+}

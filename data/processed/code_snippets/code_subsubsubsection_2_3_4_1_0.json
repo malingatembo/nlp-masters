@@ -1,0 +1,7 @@
+{
+  "id": "code_subsubsubsection_2_3_4_1_0",
+  "section_id": "subsubsubsection_2_3_4_1",
+  "content": "Arista(config-s-s2)#show configuration sessions detail\nMaximum number of completed sessions: 1\nMaximum number of pending sessions: 5\nName State         User         Terminal       PID  Description\n---- ------------- ------------ -------------- ---- ----------------------------\ns1 completed",
+  "section_number": "2.3.4.1",
+  "index": 0
+}

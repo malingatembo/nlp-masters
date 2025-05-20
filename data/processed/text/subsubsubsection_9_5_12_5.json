@@ -1,0 +1,15 @@
+{
+  "id": "subsubsubsection_9_5_12_5",
+  "type": "subsubsubsection",
+  "title": "Displaying Subinterface Information",
+  "number": "9.5.12.5",
+  "parent": null,
+  "content": "--PARENT: subsubsection_9_5_12\n\nSubinterface information is displayed using the same show commands as for other interfaces.\n\nExamples\nThis command displays summary information for all IP interfaces on the switch, including \nsubinterfaces.\n\n[[CODE:code_subsubsubsection_9_5_12_5_0]]\n\nThis command displays information for subinterface Ethernet 1/1.1.\n\n[[CODE:code_subsubsubsection_9_5_12_5_1]]\n\nThis command displays status information for all subinterfaces configured on the switch.\n\n[[CODE:code_subsubsubsection_9_5_12_5_2]]",
+  "children": [],
+  "code_refs": [
+    "code_subsubsubsection_9_5_12_5_0",
+    "code_subsubsubsection_9_5_12_5_1",
+    "code_subsubsubsection_9_5_12_5_2"
+  ],
+  "table_refs": []
+}

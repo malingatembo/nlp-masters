@@ -1,0 +1,11 @@
+{
+  "id": "subsubsection_9_3_1",
+  "type": "subsubsection",
+  "title": "PHYs",
+  "number": "9.3.1",
+  "parent": "subsection_9_3",
+  "content": "--ID: subsubsection_9_3_1\nThe PHY provides translation services between the MAC layer and transceiver. It also helps to establish \nlinks between the local MAC layer and peer devices by detecting and signaling fault conditions. The \nPHY line-side interface receives Ethernet frames from the link partner as analog waveforms. The PHY \nuses signal processing to recover the encoded bits, then sends them to the MAC layer.\n\nPHY line-side interface components and their functions include:\n\n\nPhysical Medium Attachment (PMA): Framing, octet synchronization, scrambling / descrambling.\nPhysical Medium Dependent (PMD): Consists of the transceiver.\nPhysical Coding Sublayer (PCS): Performs auto-negotiation and coding (8B/10B or 64B/66B).\n\nThe MAC sublayer of the PHY provides a logical connection between the MAC layer and the peer device \nby initializing, controlling, and managing the connection with the peer.\n\nEthernet frames transmitted by the switch are received by the PHY system-side interface as a sequence \nof digital bits. The PHY encodes them into a media-specific waveform for transmission through the \nline-side interface and transceiver to the link peer. This encoding may include signal processing, such \nas signal pre-distortion and forward error correction.\n\nPHY system-side interface components and their functions include:\n\n\n10 Gigabit Attachment Unit Interface (XAUI): Connects an Ethernet MAC to a 10 G PHY.\nSerial Gigabit Media Independent Attachment (SGMII): Connects an Ethernet MAC to a 1G PHY.",
+  "children": [],
+  "code_refs": [],
+  "table_refs": []
+}

@@ -1,0 +1,24 @@
+{
+  "id": "table_9_5",
+  "section_id": "subsubsection_9_5_5",
+  "title": "Table 9-5: Lane States",
+  "headers": [
+    "Parent Port Configured Mode",
+    "Primary Lane(s)",
+    "Secondary Lanes"
+  ],
+  "rows": [
+    [
+      "single high-speed interface",
+      "active (connected/not connected)",
+      "inactive (errdisabled)"
+    ],
+    [
+      "multi-interface breakout",
+      "active (connected/not connected)",
+      "active (connected/not connected)"
+    ]
+  ],
+  "section_number": "9.5.5",
+  "index": 0
+}

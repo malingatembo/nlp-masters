@@ -1,0 +1,7 @@
+{
+  "id": "code_subsubsubsection_2_1_2_2_0",
+  "section_id": "subsubsubsection_2_1_2_2",
+  "content": "No startup-config was found.\nThe device is in Zero Touch Provisioning mode and is attempting to\ndownload the startup-config from a remote system. The device will not\nbe fully functional until either a valid startup-config is downloaded\nfrom a remote system or Zero Touch Provisioning is cancelled. To cancel\nZero Touch Provisioning, login as admin and type 'zerotouch cancel'\nat the CLI.\nlocalhost login:",
+  "section_number": "2.1.2.2",
+  "index": 0
+}

@@ -1,0 +1,11 @@
+{
+  "id": "subsubsection_9_2_5",
+  "type": "subsubsection",
+  "title": "10/100/1000 BASE-T",
+  "number": "9.2.5",
+  "parent": "subsection_9_2",
+  "content": "--ID: subsubsection_9_2_5\nArista switches provide 10/100/1000 BASE-T Mbps Ethernet out of band management ports. \nAuto-negotiation is enabled on these interfaces. Speed (10/100/1000), duplex (half/full), and flow control \nsettings are available using the appropriate speed forced and flowcontrol commands.",
+  "children": [],
+  "code_refs": [],
+  "table_refs": []
+}

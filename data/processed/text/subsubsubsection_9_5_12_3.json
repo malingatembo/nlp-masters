@@ -1,0 +1,11 @@
+{
+  "id": "subsubsubsection_9_5_12_3",
+  "type": "subsubsubsection",
+  "title": "Parent Interface Configuration",
+  "number": "9.5.12.3",
+  "parent": null,
+  "content": "--PARENT: subsubsection_9_5_12\n\nFor subinterfaces to function, the parent interface must be administratively up and configured as a \nrouted port.\n\nSome settings are inherited by subinterfaces from the parent interface. These include QoS (trust mode \nand default DSCP) and MTU.\n\nAdditionally, on the DCS-7050X, DCS-7250X, and DCS-7300X platforms, the parent interface may be \nconfigured with an IP address. In this case, untagged packets are treated as incoming traffic on the \nparent interface",
+  "children": [],
+  "code_refs": [],
+  "table_refs": []
+}

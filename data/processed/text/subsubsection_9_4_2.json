@@ -1,0 +1,11 @@
+{
+  "id": "subsubsection_9_4_2",
+  "type": "subsubsection",
+  "title": "Subinterfaces",
+  "number": "9.4.2",
+  "parent": "subsection_9_4",
+  "content": "--ID: subsubsection_9_4_2\nSubinterfaces divide a single ethernet or port channel interface into multiple logical L3 interfaces based \non the 802.1q tag (VLAN ID) of incoming traffic. Subinterfaces are commonly used in the L2/L3 \nboundary device, but they can also be used to isolate traffic with 802.1q tags between L3 peers by \nassigning each subinterface to a different VRF.\n\nWhile subinterfaces can be configured on a port channel interface (the virtual interface associated with \na port channel), the following restrictions apply:\n\n\n\n\n\n\n\n\n\u2022 An L3 interface with subinterfaces configured on it should not be made a member of a port \n\nchannel.\n\n\u2022 An interface that is a member of a port channel should not have subinterfaces configured on it.\n\n\u2022 A subinterface cannot be made a made of a port channel.\n\nSubinterfaces on multiple ports can be assigned the same VLAN ID, but there is no bridging between \nsubinterfaces (or between subinterfaces and SVIs), and each subinterface is considered to be in a \nseparate bridge domain.\n\nThe following features are supported on subinterfaces:\n\n\u2022 Unicast and multicast routing\n\n\u2022 BGP, OSPF, ISIS, PIM\n\n\u2022 VRF\n\n\u2022 VRRP\n\n\n\nSNMP\n\nSubinterface counters (on some platforms)\n\n\u2022 VXLAN (on some platforms)\n\n\u2022 MPLS (on some platforms)\n\n\u2022 GRE (on some platforms)\n\n\nPBR (on some platforms)\n\n\u2022 QoS (on some platforms)\n\n\n\nInheriting QoS settings (trust mode and default DSCP) from the parent interface\n\nInheriting MTU setting from parent interface\n\nThe following are not supported on subinterfaces:\n\n\u2022 BFD\n\n\u2022 ACL\n\n\n\n\nPer-subinterface MTU setting\n\nPer-subinterface SFLOW settings\n\nPer-subinterface mirroring settings",
+  "children": [],
+  "code_refs": [],
+  "table_refs": []
+}

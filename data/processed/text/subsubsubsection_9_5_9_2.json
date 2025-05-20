@@ -1,0 +1,16 @@
+{
+  "id": "subsubsubsection_9_5_9_2",
+  "type": "subsubsubsection",
+  "title": "Configuring an MXP Module With 40GbE Interfaces",
+  "number": "9.5.9.2",
+  "parent": null,
+  "content": "--PARENT: subsubsection_9_5_9\n\nEach set of four lanes on the MXP module is independently configurable as a single 40GbE interface or \nfour 10GbE interfaces. To configure four lanes as a single 40GbE interface, enter the speed command \n(speed forced 40gfull) on the group’s primary lane (/1, /5, or /9). To revert a group of four lanes to \nfunctioning as four independent 10GbE interfaces, enter the speed forced 10000full command on the \nprimary lane of the group.\n\nWhen four lanes of an MXP interface are combined to form a 40GbE port, CLI commands will show the \nprimary lane of that group as connected or not connected and the other three lanes as errdisabled. In \ngroups of four lanes which are configured as four independent 10GbE interfaces, each lane will be \ndisplayed in the CLI as connected or not connected.\n\nNote that a speed forced 100gfull command entered on the /1 lane takes precedence over speed forced \n40gfull commands on the /5 and /9 lanes.\n\nImportant The  speed  command  is  hitless  on  the  7050X,  7060X,  7250X,  7260X,  7280SE,  7300X,  7320X  and  7500E\nseries platforms. On all other platforms, this command restarts the forwarding agent, which will result\nin traffic disruption.\n\nThe example below shows the steps for configuring an MXP module as three 40GbE interfaces.\n\nStep 1 Enter interface Ethernet configuration mode for lane /1 of the MXP Ethernet interface.\n\n[[CODE:code_subsubsubsection_9_5_9_2_0]]\n\n\nStep 2 Enter the speed forced 40gfull command. Depending on the platform, this command may \nrestart the forwarding agent, disrupting traffic on all ports for 60 seconds or more.\n\n[[CODE:code_subsubsubsection_9_5_9_2_1]]\n\n\nStep 3 Repeat the above steps for lanes /5 and /9.\n\n[[CODE:code_subsubsubsection_9_5_9_2_2]]\n\n\nStep 4 Use the show interfaces status command to confirm the change in configuration.\n\n[[CODE:code_subsubsubsection_9_5_9_2_3]]",
+  "children": [],
+  "code_refs": [
+    "code_subsubsubsection_9_5_9_2_0",
+    "code_subsubsubsection_9_5_9_2_1",
+    "code_subsubsubsection_9_5_9_2_2",
+    "code_subsubsubsection_9_5_9_2_3"
+  ],
+  "table_refs": []
+}

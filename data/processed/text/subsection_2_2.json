@@ -1,0 +1,20 @@
+{
+  "id": "subsection_2_2",
+  "type": "subsection",
+  "title": "Connection Management",
+  "number": "2.2",
+  "parent": "chapter_2",
+  "content": "--ID: subsection_2_2\nThe switch supports three connection methods: \n\nconsole\nSSH\nTelnet\n\nThe switch always enables console and SSH. Telnet is disabled by default.\n\nManagement commands place the switch in a configuration mode for changing session connection \nparameters.\n\nExamples\n\nThe management console command places the switch in console management mode:\n\n[[CODE:code_subsection_2_2_0]]\n<!-- CODE:START -->\nswitch(config)#management console\nswitch(config-mgmt-console)#\n<!-- CODE:END -->\n\nThe management ssh command places the switch in SSH management mode:\n\n[[CODE:code_subsection_2_2_1]]\n<!-- CODE:START -->\nswitch(config)#management ssh\nswitch(config-mgmt-ssh)#\n<!-- CODE:END -->\n\nThe management telnet command places the switch in Telnet management mode:\n[[CODE:code_subsection_2_2_2]]\n\n<!-- CODE:START -->\nswitch(config)#management telnet\nswitch(config-mgmt-telnet)#\n<!-- CODE:END -->\n\nThe exit command returns the switch to global configuration mode.\n[[CODE:code_subsection_2_2_3]]\n\n<!-- CODE:START -->\nswitch(config-mgmt-ssh)#exit\nswitch(config)#\n<!-- CODE:END -->\n\nThe idle-timeout commands shown below configure the idle timeout period for the connection type \nbeing configured. The idle timeout is the interval that the connection waits after a user\u2019s most recent \ncommand before shutting down the connection. Automatic connection timeout is disabled by setting \nthe idle-timeout to zero, which is the default setting.\n\nExamples\n\nThis idle-timeout (SSH Management) command configures an ssh idle-timeout period of three \nhours.\n\n[[CODE:code_subsection_2_2_4]]\n<!-- CODE:START -->\nswitch(config)#management ssh\nswitch(config-mgmt-ssh)#idle-timeout 180\n<!-- CODE:END -->\n\nThis idle-timeout (Telnet Management) command disables automatic connection timeout for telnet \nconnections.\n\n[[CODE:code_subsection_2_2_5]]\n<!-- CODE:START -->\nswitch(config)#management telnet\nswitch(config-mgmt-telnet)#idle-timeout 0\n<!-- CODE:END -->\n\nThe shutdown (Telnet Management) command enables and disables Telnet connections.\n\nExamples\n\nThese commands enable Telnet.\n\n[[CODE:code_subsection_2_2_6]]\n<!-- CODE:START -->\nswitch(config)#management telnet\nswitch(config-mgmt-telnet)#no shutdown\n<!-- CODE:END -->\n\n\nThese commands disable Telnet.\n\n[[CODE:code_subsection_2_2_7]]\n<!-- CODE:START -->\nswitch(config)#management telnet\nswitch(config-mgmt-telnet)#shutdown\n<!-- CODE:END -->",
+  "children": [],
+  "code_refs": [
+    "code_subsection_2_2_0",
+    "code_subsection_2_2_1",
+    "code_subsection_2_2_2",
+    "code_subsection_2_2_3",
+    "code_subsection_2_2_4",
+    "code_subsection_2_2_5",
+    "code_subsection_2_2_6",
+    "code_subsection_2_2_7"
+  ],
+  "table_refs": []
+}

@@ -1,0 +1,7 @@
+{
+  "id": "code_subsection_2_5_34",
+  "section_id": "subsection_2_5",
+  "content": "switch(config)#management api http-commands \nswitch(config-mgmt-api-http-cmds)#protocol https port 52\nswitch(config-mgmt-api-http-cmds)#no shutdown",
+  "section_number": "2.5",
+  "index": 31
+}

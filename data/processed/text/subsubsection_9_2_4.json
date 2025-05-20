@@ -1,0 +1,11 @@
+{
+  "id": "subsubsection_9_2_4",
+  "type": "subsubsection",
+  "title": "Gigabit Ethernet",
+  "number": "9.2.4",
+  "parent": "subsection_9_2",
+  "content": "--ID: subsubsection_9_2_4\nThe Gigabit Ethernet (GbE), defined by IEEE 802.3-2008, describes an Ethernet version with a nominal \ndata rate of one billion bits per second. GbE cables and equipment are similar to those used in previous \nstandards. While full-duplex links in switches is the typical implementation, the specification permits \nhalf-duplex links connected through hubs.\n\nGigabit Ethernet physical layer standards that Arista switches support include 1000BASE-X (optical \nfiber), 1000BASE-T (twisted pair cable), and 1000BASE-CX (balanced copper cable).\n\n\n\n1000BASE-SX is a fiber optic standard that utilizes multi-mode fiber supporting 770 to 860 nm, near \ninfrared (NIR) light wavelength to transmit data over distances ranging from 220 to 550 meters. \n1000BASE-SX is typically used for intra-building links in large office buildings, co-location facilities \nand carrier neutral internet exchanges.\n\n1000BASE-LX is a fiber standard that utilizes a long wavelength laser (1,270\u20131,355 nm), with a RMS \nspectral width of 4 nm to transmit data up to 5 km. 1000BASE-LX can run on all common types of \nmulti-mode fiber with a maximum segment length of 550 m.\n\n1000BASE-T is a standard for gigabit Ethernet over copper wiring. Each 1000BASE-T network \nsegment can be a maximum length of 100 meters.",
+  "children": [],
+  "code_refs": [],
+  "table_refs": []
+}

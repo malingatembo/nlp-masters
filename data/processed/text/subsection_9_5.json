@@ -1,0 +1,26 @@
+{
+  "id": "subsection_9_5",
+  "type": "subsection",
+  "title": "Ethernet Configuration Procedures",
+  "number": "9.5",
+  "parent": "chapter_9",
+  "content": "--ID: subsection_9_5\nThese sections describe Ethernet and Management interface configuration procedures:\n\n\nSection 9.5.1: Physical Interface Configuration Modes\nSection 9.5.2: Assigning a MAC Address to an Interface\nSection 9.5.3: Port Groups (QSFP+ and SFP+ Interface Selection)\nSection 9.5.4: Referencing Modular Ports\nSection 9.5.5: Referencing Multi-lane Ports\nSection 9.5.6: QSFP+ Ethernet Port Configuration\nSection 9.5.7: QSFP100 Ethernet Port Configuration\nSection 9.5.8: CFP2 Ethernet Port Configuration\nSection 9.5.9: MXP Ethernet Port Configuration\nSection 9.5.10: Port Speed Capabilities\nSection 9.5.11: Agile Ports\nSection 9.5.12: Subinterface Configuration\nSection 9.5.13: Autonegotiated Settings\nSection 9.5.14: Displaying Ethernet Port Properties",
+  "children": [
+    "subsubsection_9_5_1",
+    "subsubsection_9_5_2",
+    "subsubsection_9_5_3",
+    "subsubsection_9_5_4",
+    "subsubsection_9_5_5",
+    "subsubsection_9_5_6",
+    "subsubsection_9_5_7",
+    "subsubsection_9_5_8",
+    "subsubsection_9_5_9",
+    "subsubsection_9_5_10",
+    "subsubsection_9_5_11",
+    "subsubsection_9_5_12",
+    "subsubsection_9_5_13",
+    "subsubsection_9_5_14"
+  ],
+  "code_refs": [],
+  "table_refs": []
+}

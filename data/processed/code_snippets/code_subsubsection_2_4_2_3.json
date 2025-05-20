@@ -1,0 +1,7 @@
+{
+  "id": "code_subsubsection_2_4_2_3",
+  "section_id": "subsubsection_2_4_2",
+  "content": "switch>enable\nswitch#configure terminal\nswitch(config)#enable secret xyz1\nswitch(config)#username admin secret abc41",
+  "section_number": "2.4.2",
+  "index": 3
+}

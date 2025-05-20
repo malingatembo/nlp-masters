@@ -1,0 +1,13 @@
+{
+  "id": "subsubsubsection_9_5_3_1",
+  "type": "subsubsubsection",
+  "title": "DCS-7050Q-16",
+  "number": "9.5.3.1",
+  "parent": null,
+  "content": "--PARENT: subsubsection_9_5_3\n\nThe DCS-7050Q-16 has 14 dedicated QSFP+ ports, plus two port groups. The port groups support \neither two additional QSFP+ ports or eight SFP+ ports as shown in [[[TABLE:table_9_3]]\n[TABLE:table_9_3]]",
+  "children": [],
+  "code_refs": [],
+  "table_refs": [
+    "table_9_3"
+  ]
+}

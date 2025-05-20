@@ -1,0 +1,15 @@
+{
+  "id": "subsubsection_2_3_3",
+  "type": "subsubsection",
+  "title": "Configuration CLI",
+  "number": "2.3.3",
+  "parent": "subsection_2_3",
+  "content": "--ID: subsubsection_2_3_3\nIn the CLI, execute the following configuration steps to create a configuration session.\n\n[[CODE:code_subsubsection_2_3_3_0]]\n\n<!-- CODE:START -->\nStep 1 configure session [<name of session>]\n<!-- CODE:END -->\n\nCreate or enter a session. If a name is not specified, it is automatically generated. The user is put in the \nsession configuration mode and the prompt will change to show the first six characters of the session \nname. Designating the name of a session is optional. When <name of session> is not specified, a \nunique name is assigned.\n\n[[CODE:code_subsubsection_2_3_3_1]]\n\n<!-- CODE:START -->\nno configure session <name of session>\n<!-- CODE:END -->\n\nDelete the specified configuration session. Designating the name of a session is required.\n\nStep 2 commit\n\nCommit the changes made in the session. This command must be issued from within the session \nconfiguration mode.\n\n[[CODE:code_subsubsection_2_3_3_2]]\n\n<!-- CODE:START -->\nabort\n<!-- CODE:END -->\n\nAbort the session, which is the same as deleting it. This command must be issued from within the session \nconfiguration mode.\n\nStep 3 rollback clean-config\n\nRevert configuration in the session to the clean, factory-default configuration. This command must be \nissued from within the session configuration mode.\n\nStep 4 service configuration session max completed <num>\n\nSet a limit on the maximum number of committed sessions that are saved.\n\nStep 5 service configuration session max pending <num>\n\nSet a limit on the maximum number of uncommitted sessions that can be outstanding.",
+  "children": [],
+  "code_refs": [
+    "code_subsubsection_2_3_3_0",
+    "code_subsubsection_2_3_3_1",
+    "code_subsubsection_2_3_3_2"
+  ],
+  "table_refs": []
+}

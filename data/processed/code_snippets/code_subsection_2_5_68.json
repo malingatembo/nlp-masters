@@ -1,0 +1,7 @@
+{
+  "id": "code_subsection_2_5_68",
+  "section_id": "subsection_2_5",
+  "content": "switch# xmpp send test2 command show version\nmessage from user: test2@test.aristanetworks.com\n--------------------------------------------------\nHardware version:    04.40\nSerial number:       JFL08432083\nSystem MAC address:  001c.7301.7d69\nSoftware image version: 4.12.3\nArchitecture:           i386\nInternal build version: 4.12.3\nInternal build ID:      f5ab5f57-9c26-4fe4-acaa-fb60fa55d01d\nUptime:                 2 hours and 38 minutes\nTotal memory:           1197548 kB\nFree memory:            182452 kB",
+  "section_number": "2.5",
+  "index": 64
+}

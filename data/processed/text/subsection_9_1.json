@@ -1,0 +1,11 @@
+{
+  "id": "subsection_9_1",
+  "type": "subsection",
+  "title": "Ethernet Ports Introduction",
+  "number": "9.1",
+  "parent": "chapter_9",
+  "content": "--ID: subsection_9_1\nArista switches support a variety of Ethernet network interfaces. This chapter describes the \nconfiguration and monitoring options available in Arista switching platforms.",
+  "children": [],
+  "code_refs": [],
+  "table_refs": []
+}

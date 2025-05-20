@@ -1,0 +1,7 @@
+{
+  "id": "code_subsection_9_6_43",
+  "section_id": "subsection_9_6",
+  "content": "switch>show interfaces status errdisabled\nPort    Name    Status     Reason\nEt49/2          errdisabled  multi-lane-intf\nEt49/3          errdisabled  multi-lane-intf\nEt49/4          errdisabled  multi-lane-intf\nswitch>",
+  "section_number": "9.6",
+  "index": 43
+}

@@ -1,0 +1,7 @@
+{
+  "id": "code_subsection_9_6_18",
+  "section_id": "subsection_9_6",
+  "content": "switch(config)#interface ethernet 7\nswitch(config-if-Et7)#mac-address 001c.2804.17e1\nswitch(config-if-Et7)#show interface ethernet 7\nEthernet3 is up, line protocol is up (connected)\n  Hardware is Ethernet, address is 001c.2804.17e1 (bia 001c.7312.02e2)\n  Description: b.e45\n  MTU 9212 bytes, BW 10000000 Kbit\n  Full-duplex, 10Gb/s, auto negotiation: off\n  Last clearing of \"show interface\" counters never\n  5 seconds input rate 7.84 kbps (0.0% with framing), 10 packets/sec\n  5 seconds output rate 270 kbps (0.0% with framing), 24 packets/sec\n     1363799 packets input, 222736140 bytes\n     Received 0 broadcasts, 290904 multicast\n     0 runts, 0 giants\n     0 input errors, 0 CRC, 0 alignment, 0 symbol\n     0 PAUSE input\n     2264927 packets output, 2348747214 bytes\n     Sent 0 broadcasts, 28573 multicast\n     0 output errors, 0 collisions\n     0 late collision, 0 deferred\n     0 PAUSE output\nswitch(config-if-Et7)#",
+  "section_number": "9.6",
+  "index": 18
+}

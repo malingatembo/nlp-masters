@@ -1,0 +1,11 @@
+{
+  "id": "subsubsubsection_2_1_2_1",
+  "type": "subsubsubsection",
+  "title": "Console Port",
+  "number": "2.1.2.1",
+  "parent": null,
+  "content": "--PARENT: subsubsection_2_1_2\n\nThe console port is a serial port located on the front of the switch. Figure 2-1 shows the console port on \nthe DCS-7050T-64 switch. Use a serial or RS-232 cable to connect to the console port. The accessory kit \nalso includes an RJ-45 to DB-9 adapter cable for connecting the switch.\n\nFigure 2-1\n\nSwitch Ports\n\nPort Settings\n\nUse these settings when connecting to the console port:\n\n9600 baud\nno flow control\n1 stop bit\nno parity bits\n8 data bits\n\nAdmin Username\n\nThe initial configuration provides one username, admin, that is not assigned a password. When using \nthe admin username without a password, you can only log into the switch through the console port. \nAfter a password is assigned to the admin username, it can log into the switch through any port.\n\nThe username command assigns a password to the specified username.\n\nExample\n\nThis command assigns the password pxq123 to the admin username:\n\nswitch(config)#username admin secret pxq123\nswitch(config)#\n\nNew and altered passwords that are not saved to the startup configuration file, as described in Section \n3.6.4: Saving the Running Configuration Settings, are lost when the switch is rebooted.",
+  "children": [],
+  "code_refs": [],
+  "table_refs": []
+}

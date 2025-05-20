@@ -1,0 +1,11 @@
+{
+  "id": "subsubsection_9_5_7",
+  "type": "subsubsection",
+  "title": "QSFP100 Ethernet Port Configuration",
+  "number": "9.5.7",
+  "parent": "subsection_9_5",
+  "content": "--ID: subsubsection_9_5_7\nEach QSFP100 module contains four data lanes which can be used individually or combined to form a \nsingle, higher-speed interface. This allows a QSFP100 Ethernet port to be configured as a single 100GbE \ninterface, a single 40GbE interface, or four 10GbE interfaces. The default mode is a single 100GbE \ninterface.\n\nThe 7060X, 7260X and 7320X platforms also allow a QSFP100 port to be configured as two 50GbE \ninterfaces or four 25GbE interfaces.\n\nWhen the lanes are combined to form a higher-speed interface, display commands will show the \nprimary lane(s) as connected or not connected, and will show the other lanes as errdisabled.\n\nThe following sections describe the configuration of QSFP+ ports.",
+  "children": [],
+  "code_refs": [],
+  "table_refs": []
+}

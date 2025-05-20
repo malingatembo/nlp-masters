@@ -1,0 +1,15 @@
+{
+  "id": "subsubsubsection_9_5_7_4",
+  "type": "subsubsubsection",
+  "title": "Configuring a QSFP100 Module as Four 25GbE Interfaces",
+  "number": "9.5.7.4",
+  "parent": null,
+  "content": "--PARENT: subsubsection_9_5_7\n\nTo configure the port as four 25GbE interfaces, use the speed command (speed forced 25gfull) on the \nport’s /1 lane (the primary lane). This configuration is available on 7060X, 7260X and 7320X platforms.\n\nImportant The  speed  command  is  hitless  on  the  7050X,  7060X,  7250X,  7260X,  7280SE,  7300X,  7320X  and  7500E\nseries platforms. On all other platforms, this command restarts the forwarding agent, which will result\nin traffic disruption.\n\n[[CODE:code_subsubsubsection_9_5_7_4_0]]\n\n\n\nswitch(config)#interface ethernet 5/1/1\n\nStep 2 Enter the speed forced 25gfull command. Depending on the platform, this command may \nrestart the forwarding agent, disrupting traffic on all ports for 60 seconds or more.\n\n[[CODE:code_subsubsubsection_9_5_7_4_1]]\n\n\nStep 3 Use the show interfaces status command to confirm the change in configuration.\n\n[[CODE:code_subsubsubsection_9_5_7_4_2]]",
+  "children": [],
+  "code_refs": [
+    "code_subsubsubsection_9_5_7_4_0",
+    "code_subsubsubsection_9_5_7_4_1",
+    "code_subsubsubsection_9_5_7_4_2"
+  ],
+  "table_refs": []
+}

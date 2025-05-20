@@ -1,0 +1,7 @@
+{
+  "id": "code_subsection_2_5_7",
+  "section_id": "subsection_2_5",
+  "content": "switch(config)#management ssh\nswitch(config-mgmt-ssh)#idle-timeout 180\nswitch(config-mgmt-ssh)#exit\nswitch(config)#",
+  "section_number": "2.5",
+  "index": 6
+}

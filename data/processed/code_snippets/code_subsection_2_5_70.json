@@ -1,0 +1,7 @@
+{
+  "id": "code_subsection_2_5_70",
+  "section_id": "subsection_2_5",
+  "content": "switch# xmpp session all@test.aristanetworks.com\nxmpp-all# show int Eth3 status\n\nresponse from: test1@test.aristanetworks.com\n\n--------------------------------------------------\n\nPort  Name  Status     Vlan     Duplex  Speed   Type\nEt3   bs3   connected  in Po3   a-full  a-1000  10GBASE-SR\nswitch#",
+  "section_number": "2.5",
+  "index": 66
+}

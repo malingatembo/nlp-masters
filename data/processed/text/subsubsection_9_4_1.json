@@ -1,0 +1,11 @@
+{
+  "id": "subsubsection_9_4_1",
+  "type": "subsubsection",
+  "title": "Ethernet Interfaces",
+  "number": "9.4.1",
+  "parent": "subsection_9_4",
+  "content": "--ID: subsubsection_9_4_1\nEthernet speed and duplex configuration options depend on the media type of the interface:\n\n\n\n\n\n\n\n\n40G QSFP+: Default operation is as four 10G ports. Speed forced command options support \nconfiguration as a single 40G port.\n\n10GBASE-T: Mode is autonegotiate by default, offering 10G and 1G full duplex and 100M. Default \nsetting is 10G. Half duplex and 10M are not supported. Adjustments may be made using speed \nforced commands.\n\n10GBASE (SFP+): Port operates as a single 10G port. Speed forced commands do not affect \nconfiguration.\n\n1000BASE-T (copper): Mode is autonegotiate by default, offering 1G full and 100M; default setting \nis 1G full. Autonegotiation that offers only 100M is available through speed auto 100full command. \nHalf duplex and 10M are not supported.\n\n100G CFP: Default operation is 100G. It cannot be split, and its speed cannot be changed.\n\n100G MXP: Default operation is as a single 100G port on the 7500 and 7280 platforms, and as three \n40G ports on the 7050 platform. On the 7500 and 7280 platforms, available speed/duplex settings are \na single100G port, three 40G ports, or twelve 10G ports. On the 7050 platform, available \nspeed/duplex settings are three 40G ports or twelve 10G ports. Adjustments are made with speed \nforced commands.\n\n100G QSFP100: Available speeds are transceiver-dependent. The QSFP100 transceiver supports a \nsingle 100G port, four 25G ports, or two 50G ports; the QSFP+ transceiver supports one 40G port \nor four 10G ports; the CWDM transceiver supports all five configurations. Adjustments are made \nusing speed forced commands. Note: 7500 and 7280 families do not currently support 25G or 50G \nspeeds.\n\nFor information relating to transceivers, please see Transceivers.",
+  "children": [],
+  "code_refs": [],
+  "table_refs": []
+}

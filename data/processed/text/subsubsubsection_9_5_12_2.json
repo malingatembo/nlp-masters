@@ -1,0 +1,13 @@
+{
+  "id": "subsubsubsection_9_5_12_2",
+  "type": "subsubsubsection",
+  "title": "Creating a Range of Subinterfaces",
+  "number": "9.5.12.2",
+  "parent": null,
+  "content": "--PARENT: subsubsection_9_5_12\n\nA range of subinterfaces can also be configured simultaneously. The following example configures \nsubinterfaces 1 to 100 on Ethernet interface 1/1, and assigns VLANs 501 through 600 to them. Note that \nthe range of interfaces must be the same size as the range of VLAN IDs.\n\nExample\n[[CODE:code_subsubsubsection_9_5_12_2_0]]",
+  "children": [],
+  "code_refs": [
+    "code_subsubsubsection_9_5_12_2_0"
+  ],
+  "table_refs": []
+}

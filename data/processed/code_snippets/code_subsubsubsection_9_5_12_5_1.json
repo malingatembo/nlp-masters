@@ -1,0 +1,7 @@
+{
+  "id": "code_subsubsubsection_9_5_12_5_1",
+  "section_id": "subsubsubsection_9_5_12_5",
+  "content": "switch>show interface ethernet 1/1.1\nEthernet1/1.1 is down, line protocol is lowerlayerdown (notconnect)\nHardware is Subinterface, address is 001c.735d.65dc\nInternet address is 10.0.0.1/24\nBroadcast address is 255.255.255.255\nAddress determined by manual configuration\nIP MTU 1500 bytes , BW 10000000 kbit\nDown 59 seconds\nswitch>",
+  "section_number": "9.5.12.5",
+  "index": 0
+}

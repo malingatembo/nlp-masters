@@ -1,0 +1,16 @@
+{
+  "id": "subsubsection_2_4_3",
+  "type": "subsubsection",
+  "title": "Restoring the Factory Default EOS Image and Startup Configuration",
+  "number": "2.4.3",
+  "parent": "subsection_2_4",
+  "content": "--ID: subsubsection_2_4_3\nA fullrecover command removes all internal flash contents (including configuration files, EOS image \nfiles, and user files), then restores the factory default EOS image and startup-config. A subsequent \ninstallation of the current EOS image may be required if the default image is outdated. This process \nrequires Aboot shell access through the console port.\n\nThis procedure restores the factory default EOS image and startup configuration.\n\nStep 1 Access the Aboot shell through the console port:\n\nStep a Type reload at the Privileged EXEC prompt.\n\nStep b Type Ctrl-C when prompted, early in the boot process.\n\nStep c Enter the Aboot password, if prompted.\n\nIf the Aboot password is not known, enter an empty password three times, after which the \nCLI displays:\n\n\n[[CODE:code_subsubsection_2_4_3_0]]\n\n<!-- CODE:START -->\nType \"fullrecover\" and press Enter to revert /mnt/flash to factory default \nstate, or just press Enter to reboot:\n<!-- CODE:END -->\n\nType fullrecover and go to step 4.\n\nStep 2 Type fullrecover at the Aboot prompt.\n\n\n[[CODE:code_subsubsection_2_4_3_1]]\n\n<!-- CODE:START -->\nAboot#fullrecover\n<!-- CODE:END -->\n\nAboot displays this warning: \n\n\n[[CODE:code_subsubsection_2_4_3_2]]\n\n<!-- CODE:START -->\nAll data on /mnt/flash will be erased; type \"yes\" and press Enter to proceed, \nor just press Enter to cancel:\n<!-- CODE:END -->\n\nStep 3 Type yes and press Enter.\n\nThe switch performs these actions:\n\nerases the contents of /mnt/flash\n\n\u2022 writes new boot-config, startup-config, and EOS.swi files to /mnt/flash\n\nreturns to the Aboot prompt\n\nStep 4 Exit Aboot. This boots the switch.\n\n\n[[CODE:code_subsubsection_2_4_3_3]]\n\n<!-- CODE:START -->\nAboot#exit\n<!-- CODE:END -->\n\nThe serial console settings are restored to their default values (9600/N/8/1/N). \n\nStep 5 Reconfigure the console port if non-default settings are required.\n\nStep 6 Cancel Zero Touch Provisioning (ZTP). Refer to Section 2.1.2.2: Cancelling Zero Touch \n\nProvisioning for instructions.\n\nIf ZTP is not cancelled, the switch either:\n\n\nboots, using the startup-config file or boot script that it obtains from the network, or\nremains in ZTP mode if the switch is unable to download a startup-config file or boot script.\n\nAfter ZTP is cancelled, the switch reboots, using the factory default settings. To avoid entering \nZTP mode on subsequent reboots, create a startup-config file before the next switch reboot.",
+  "children": [],
+  "code_refs": [
+    "code_subsubsection_2_4_3_0",
+    "code_subsubsection_2_4_3_1",
+    "code_subsubsection_2_4_3_2",
+    "code_subsubsection_2_4_3_3"
+  ],
+  "table_refs": []
+}

@@ -1,0 +1,7 @@
+{
+  "id": "code_subsubsection_9_5_14_3",
+  "section_id": "subsubsection_9_5_14",
+  "content": "switch>show interfaces ethernet 1-3 phy\nKey:\n   U    = Link up\n   D    = Link down\n   R    = RX Fault\n   T    = TX Fault\n   B    = High BER\n   L    = No Block Lock\n   A    = No XAUI Lane Alignment\n   0123 = No XAUI lane sync in lane N\n\nPort       PHY state    State Changes  Reset Count  PMA/PMD  PCS   XAUI\nEthernet1  linkUp       14518          1750         U..      U.... U.......\nEthernet2  linkUp       13944          1704         U..      U.... U.......\nEthernet3  detectingXcvr  3             1           D..      A0123\nswitch>",
+  "section_number": "9.5.14",
+  "index": 3
+}

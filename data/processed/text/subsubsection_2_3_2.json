@@ -1,0 +1,13 @@
+{
+  "id": "subsubsection_2_3_2",
+  "type": "subsubsection",
+  "title": "Configure Replace",
+  "number": "2.3.2",
+  "parent": "subsection_2_3",
+  "content": "--ID: subsubsection_2_3_2\nThe command configure replace <URL> replaces the current running-config with the configuration\nsaved in <URL>.\n\n[[CODE:code_subsubsection_2_3_2_0]]\n<!-- CODE:START -->\nconfigure replace <URL> [ignore-errors]\n<!-- CODE:END -->\n\nBy default, configure replace <URL> will replace running-config only if the configuration in <URL> \nloads without errors. The ignore-errors flag optionally forces the operation in spite of errors.\n\nNote\n\nThe command copy <URL> running-config was typically used to apply a saved configuration file to the \nsystem, and append that configuration to the current running-config (in lieu of replacing it). However, it is \nrecommended the user uses the CLI command configure replace <URL> to streamline the process of \ndeterministically restoring the system back to a known good configuration.\n\nThe normal workflow internally uses a configuration session to perform the replace.",
+  "children": [],
+  "code_refs": [
+    "code_subsubsection_2_3_2_0"
+  ],
+  "table_refs": []
+}

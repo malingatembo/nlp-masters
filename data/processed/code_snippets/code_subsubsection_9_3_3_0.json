@@ -1,0 +1,7 @@
+{
+  "id": "code_subsubsection_9_3_3_0",
+  "section_id": "subsubsection_9_5_3",
+  "content": "switch(config)#hardware port-group 1 select Et17-20\nswitch(config)#hardware port-group 2 select Et16/1-4",
+  "section_number": "9.5.3",
+  "index": 0
+}

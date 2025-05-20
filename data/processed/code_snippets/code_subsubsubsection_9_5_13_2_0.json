@@ -1,0 +1,7 @@
+{
+  "id": "code_subsubsubsection_9_5_13_2_0",
+  "section_id": "subsubsubsection_9_5_13_2",
+  "content": "switch(config)#interface ethernet 5\nswitch(config-if-Et5)#flowcontrol receive on\nswitch(config-if-Et5)#flowcontrol send on\nswitch(config-if-Et5)#",
+  "section_number": "9.5.13.2",
+  "index": 0
+}

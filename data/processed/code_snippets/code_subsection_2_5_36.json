@@ -1,0 +1,7 @@
+{
+  "id": "code_subsection_2_5_36",
+  "section_id": "subsection_2_5",
+  "content": "switch(config)#management xmpp\nswitch(config-mgmt-xmpp)#server arista-xmpp port 1",
+  "section_number": "2.5",
+  "index": 33
+}

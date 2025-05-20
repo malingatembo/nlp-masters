@@ -1,0 +1,14 @@
+{
+  "id": "subsubsection_9_5_1",
+  "type": "subsubsection",
+  "title": "Physical Interface Configuration Modes",
+  "number": "9.5.1",
+  "parent": "subsection_9_5",
+  "content": "--ID: subsubsection_9_5_1\nThe switch provides two configuration modes for modifying Ethernet parameters:\n\n\nInterface-Ethernet mode configures parameters for specified Ethernet interfaces.\nInterface-Management mode configures parameters for specified management Ethernet interfaces.\n\nPhysical interfaces cannot be created or removed.\n\nMultiple interfaces can be simultaneously configured. Commands are available for configuring \nEthernet specific, layer 2, layer 3, and application layer parameters. Commands that modify protocol \nspecific settings in Ethernet configuration mode are listed in the protocol chapters.\n\n\nThe interface ethernet command places the switch in Ethernet-interface configuration mode.\nThe interface management command places the switch in management configuration mode.\n\nExamples\n\nThis command places the switch in Ethernet-interface mode for Ethernet interfaces 5-7 and 10.\n[[CODE:code_subsubsubsection_9_5_1_0]]\n<!-- CODE:START -->\nswitch(config)#interface ethernet 5-7,10\nswitch(config-if-Et5-7,10)#\n<!-- CODE:END -->\n\nThis command places the switch in management-interface mode for management interface 1.\n[[CODE:code_subsubsubsection_9_5_1_1]]\n<!-- CODE:START -->\nswitch(config)#interface management 1\nswitch(config-if-Ma1)#\n<!-- CODE:END -->",
+  "children": [],
+  "code_refs": [
+    "code_subsubsubsection_9_5_1_0",
+    "code_subsubsubsection_9_5_1_1"
+  ],
+  "table_refs": []
+}

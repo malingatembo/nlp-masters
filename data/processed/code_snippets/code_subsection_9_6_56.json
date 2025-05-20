@@ -1,0 +1,7 @@
+{
+  "id": "code_subsection_9_6_56",
+  "section_id": "subsection_9_6",
+  "content": "transceiver qsfp default-mode 4x10G\nno transceiver qsfp default-mode\ndefault transceiver qsfp default-mode",
+  "section_number": "9.6",
+  "index": 55
+}

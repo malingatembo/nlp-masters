@@ -1,0 +1,7 @@
+{
+  "id": "code_subsubsubsection_9_5_9_2_3",
+  "section_id": "subsubsubsection_9_5_9_2",
+  "content": "switch(config-if-Et5/49/9)#show interfaces status\nPort    Name       Status       Vlan  Duplex  Speed  Type          Flags\nEt1                connected    2     full    1G     10GBASE-T\n<------OUTPUT OMITTED FROM EXAMPLE-------->\nEt5/49/1           connected    1     full    40G    100GBASE-SR1\nEt5/49/2           errdisabled  1     unconf  unconf 100GBASE-SR1\nEt5/49/3           errdisabled  1     unconf  unconf 100GBASE-SR1\nEt5/49/4           errdisabled  1     unconf  unconf 100GBASE-SR1\nEt5/49/5           connected    1     full    40G    100GBASE-SR1\nEt5/49/6           errdisabled  1     unconf  unconf 100GBASE-SR1\nEt5/49/7           errdisabled  1     unconf  unconf 100GBASE-SR1\nEt5/49/8           errdisabled  1     unconf  unconf 100GBASE-SR1\nEt5/49/9           connected    1     full    40G    100GBASE-SR1\nEt5/49/10          errdisabled  1     unconf  unconf 100GBASE-SR1\nEt5/49/11          errdisabled  1     unconf  unconf 100GBASE-SR1\nEt5/49/12          errdisabled  1     unconf  unconf 100GBASE-SR1\n<------OUTPUT OMITTED FROM EXAMPLE-------->",
+  "section_number": "9.5.9.2",
+  "index": 0
+}

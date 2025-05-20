@@ -1,0 +1,27 @@
+{
+  "id": "table_9_4",
+  "section_id": "subsubsubsection_9_5_3_2",
+  "title": "Table 9-4: DCS-7050QX-32S Port Groups",
+  "headers": [
+    "Port Group 1",
+    "Active Interface(s)",
+    "Port Group 2",
+    "Active Interface(s)"
+  ],
+  "rows": [
+    [
+      "In SFP+ Mode",
+      "Et1-4",
+      "In QSFP+ Mode",
+      "Et5/1-4"
+    ],
+    [
+      "(four SFP+ ports)",
+      "",
+      "(one QSFP+ port)",
+      ""
+    ]
+  ],
+  "section_number": "9.5.3.2",
+  "index": 0
+}

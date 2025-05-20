@@ -1,0 +1,16 @@
+{
+  "id": "subsection_2_4",
+  "type": "subsection",
+  "title": "Recovery Procedures",
+  "number": "2.4",
+  "parent": "chapter_2",
+  "content": "--ID: subsection_2_4\nThese sections describe switch recovery procedures:\n\n\nSection 2.4.1: Removing the Enable Password from the Startup Configuration\nSection 2.4.2: Reverting the Switch to the Factory Default Startup Configuration\nSection 2.4.3: Restoring the Factory Default EOS Image and Startup Configuration\nSection 2.4.4: Restoring the Configuration and Image from a USB Flash Drive\n\nThe first three procedures require Aboot Shell access through the console port. If the console port is not \naccessible, use the last procedure in the list to replace the configuration file through the USB Flash Drive.\n\nChapter 6, starting on page 353 describes the switch booting process and includes descriptions of the \nAboot shell, Aboot boot loader, and required configuration files.",
+  "children": [
+    "subsubsection_2_4_1",
+    "subsubsection_2_4_2",
+    "subsubsection_2_4_3",
+    "subsubsection_2_4_4"
+  ],
+  "code_refs": [],
+  "table_refs": []
+}

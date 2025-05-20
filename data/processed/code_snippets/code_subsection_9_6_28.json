@@ -1,0 +1,7 @@
+{
+  "id": "code_subsection_9_6_28",
+  "section_id": "subsection_9_6",
+  "content": "switch>show interfaces ethernet 1-2 counters errors\nPort               FCS    Align   Symbol       Rx    Runts   Giants       Tx\nEt1                  0        0        0        0        0        0        0\nEt2                  0        0        0        0        0        0        0\nswitch>",
+  "section_number": "9.6",
+  "index": 28
+}

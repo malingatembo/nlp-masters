@@ -1,0 +1,16 @@
+{
+  "id": "subsubsection_2_4_1",
+  "type": "subsubsection",
+  "title": "Removing the Enable Password from the Startup Configuration",
+  "number": "2.4.1",
+  "parent": "subsection_2_4",
+  "content": "--ID: subsubsection_2_4_1\nThe enable password controls access to Privileged EXEC mode. To prevent unauthorized disclosure, the \nswitch stores the enable password as an encrypted string that it generates from the clear-text password. \nWhen the switch authentication mode is local and an enable password is configured, the CLI prompts \nthe user to enter the clear-text password after the user types enable at the EXEC prompt. \n\nThe startup-config file stores the encrypted enable password to ensure that the switch loads it when \nrebooting. If the text version of the enable password is lost or forgotten, access to enable mode is \nrestored by removing the encrypted enable password from the startup configuration file.\n\nThis procedure restores access to enable mode without changing any other configuration settings.\n\nStep 1 Access the Aboot shell: \n\nStep a Power cycle the switch by successively removing and restoring access to its power source.\n\nStep b Type Ctrl-C when prompted, early in the boot process.\n\nStep c Enter the Aboot password, if prompted.\n\nIf the Aboot password is unknown, refer to Section 2.4.3: Restoring the Factory Default EOS \nImage and Startup Configuration for instructions on reverting all flash directory contents \nto the factory default, including the startup configuration and EOS image.\n\nStep 2 Change the active directory to /mnt/flash directory.\n\n[[CODE:code_subsubsection_2_4_1_0]]\n\n<!-- CODE:START -->\nAboot#cd /mnt/flash\n<!-- CODE:END -->\n\nStep 3 Open the startup-config file in vi.\n\n[[CODE:code_subsubsection_2_4_1_1]]\n\n<!-- CODE:START -->\nAboot#vi startup-config\n<!-- CODE:END -->\n\nStep 4 Remove the enable password line.\n\nThis is an example of an enable password line:\n\n[[CODE:code_subsubsection_2_4_1_2]]\n\n<!-- CODE:START -->\nenable secret 5 $1$dBXo2KpF$Pd4XYLpI0ap1ZaU7glG1w/\n<!-- CODE:END -->\n\nStep 5 Save the changes and exit vi.\n\nStep 6 Exit Aboot. This boots the switch.\n\n[[CODE:code_subsubsection_2_4_1_3]]\n\n<!-- CODE:START -->\nAboot#exit\n<!-- CODE:END -->\n\nRefer to Section 4.2.1.4: Enable Command Authorization for information on the enable password.",
+  "children": [],
+  "code_refs": [
+    "code_subsubsection_2_4_1_0",
+    "code_subsubsection_2_4_1_1",
+    "code_subsubsection_2_4_1_2",
+    "code_subsubsection_2_4_1_3"
+  ],
+  "table_refs": []
+}

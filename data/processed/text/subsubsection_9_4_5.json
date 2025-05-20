@@ -1,0 +1,11 @@
+{
+  "id": "subsubsection_9_4_5",
+  "type": "subsubsection",
+  "title": "Tunable SFP",
+  "number": "9.4.5",
+  "parent": "subsection_9_4",
+  "content": "--ID: subsubsection_9_4_5\nTuning of DWDM 10G SFP+ transceivers (10GBASE-DWDM) includes:\n\n\nTuning transceiver wavelength/frequency by channel number\nShowing wavelengths/frequencies for specified channels supported by the transceiver\nShowing current wavelength/frequency settings of the transceiver interface\n\nFor information relating to tuning the transceiver wavelength/frequency by channel number, refer to \nthe command transceiver channel. To show the current wavelength/frequency settings for specified \nchannels, refer to the command show interfaces transceiver channels. To show the current \nwavelength/frequency settings of an interface, refer to the command show interfaces transceiver \nhardware.",
+  "children": [],
+  "code_refs": [],
+  "table_refs": []
+}

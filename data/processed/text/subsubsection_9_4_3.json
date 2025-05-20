@@ -1,0 +1,11 @@
+{
+  "id": "subsubsection_9_4_3",
+  "type": "subsubsection",
+  "title": "Agile Port",
+  "number": "9.4.3",
+  "parent": "subsection_9_4",
+  "content": "--ID: subsubsection_9_4_3\nAgile Ports are a feature of the 7150S Series that allows the user to configure adjacent blocks of 4 x SFP+ \ninterfaces as a single 40G link. The set of interfaces that can be combined to form a higher speed port is \nrestricted by the hardware configuration. Only interfaces that pass through a common PHY component \ncan be combined. One interface within a combinable set is designated as the primary port. When the \nprimary interface is configured as a higher speed port, all configuration statements are performed on \nthat interface. All other interfaces in the set are subsumed and not individually configurable when the \nprimary interface is configured as the higher speed port. This feature allows the 7150S-24 to behave as \na 4x40G switch (using 16 SFP+) and the remaining SFP+ provide 8 x 10G ports. On the 7150S-52 this \nallows up to 13x 40G (all 52 ports grouped as 40G) and on the 7150S-64 Agile Ports allows the switch to \nbe deployed with up to 16 native 40G interfaces - 4 are QSFP+ and the remaining 12 as 4xSFP+ groups.\n\nSection 9.5.11 describes the configuration of agile ports.\n\n\n\n\n\n\n\nInterfaces",
+  "children": [],
+  "code_refs": [],
+  "table_refs": []
+}

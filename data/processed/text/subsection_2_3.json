@@ -1,0 +1,16 @@
+{
+  "id": "subsection_2_3",
+  "type": "subsection",
+  "title": "Configure Session",
+  "number": "2.3",
+  "parent": "chapter_2",
+  "content": "--ID: subsection_2_3\nThe command configure session allows users to issue configuration sessions as CLIs that do not take effect \nimmediately. Each configure session is saved with a unique name. A session is entered, modified and exited \nat any time by entering configure session <name of session> (e.g. configure session \nrouting_changes) without impacting the currently running system configuration.\n\nA session is defined as a collection of configuration changes that are grouped together. \n\nWhen a session is committed, the configuration that was modified during the session is copied into the running \nconfiguration. A session can be aborted or removed, thereby removing the session completely and freeing up \nmemory used by the session. The user must explicitly request that the changes in a deferred session be applied to \nthe configuration of the router, entering a commit command and exiting the mode. Alternately, the user may \nabandon the changes, entering an abort command.\n\nConfiguration sessions are used to make sets of changes, after verifying there are no CLI errors. Configuration \nsessions allow the administrator to pre-provision a group of CLIs in a named session, thereby committing \nexecution of each configuration session at specified times.\n\nThis chapter contains the following sections:\n\n\nSection 2.3.1: Configuration Session\nSection 2.3.2: Configure Replace",
+  "children": [
+    "subsubsection_2_3_1",
+    "subsubsection_2_3_2",
+    "subsubsection_2_3_3",
+    "subsubsection_2_3_4"
+  ],
+  "code_refs": [],
+  "table_refs": []
+}

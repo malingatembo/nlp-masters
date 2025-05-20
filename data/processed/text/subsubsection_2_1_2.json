@@ -1,0 +1,11 @@
+{
+  "id": "subsubsection_2_1_2",
+  "type": "subsubsection",
+  "title": "Manual Provisioning",
+  "number": "2.1.2",
+  "parent": "subsection_2_1",
+  "content": "--ID: subsubsection_2_1_2\nInitial manual switch provisioning requires the cancellation of ZTP mode, the assignment of an IP \naddress to a network port, and the establishment of an IP route to a gateway. Initial provision is \nperformed through the serial console and Ethernet management ports.\n\n\nThe console port is used for serial access to the switch. These conditions may require serial access:\n\n\u2014 management ports are not assigned IP addresses\n\u2014 the network is inoperable\n\u2014 the enable password is not available\n\n\nThe Ethernet management ports are used for out of band network management tasks. Before using \na management port for the first time, an IP address must be assigned to that port.",
+  "children": [],
+  "code_refs": [],
+  "table_refs": []
+}

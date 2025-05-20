@@ -1,0 +1,18 @@
+{
+  "id": "subsubsection_2_4_2",
+  "type": "subsubsection",
+  "title": "Reverting the Switch to the Factory Default Startup Configuration",
+  "number": "2.4.2",
+  "parent": "subsection_2_4",
+  "content": "--ID: subsubsection_2_4_2\nThe startup-config file contains configuration parameters that the switch uses during a boot. Parameters \nthat do not appear in startup-config are set to their factory defaults when the switch reloads. The process \nrequires the Aboot password if Aboot is password protected.\n\nThis procedure reverts EOS configuration settings to the default state through bypassing the \nstartup-config file during a switch boot.\n\nStep 1 Access the Aboot shell through the console port:\n\nStep a Type reload at the Privileged EXEC prompt.\n\nStep b Type Ctrl-C when prompted, early in the boot process.\n\nStep c Enter the Aboot password, if prompted.\n\nIf the Aboot password is unknown, refer to Section 2.4.3: Restoring the Factory Default EOS \nImage and Startup Configuration for instructions on reverting all flash directory contents \nto the factory default, including startup-config and EOS image.\n\nStep 2 Change the active directory to /mnt/flash directory.\n\n\n[[CODE:code_subsubsection_2_4_2_0]]\n\n<!-- CODE:START -->\nAboot#cd /mnt/flash\n<!-- CODE:END -->\n\nStep 3 Rename the startup configuration file.\n\n\n[[CODE:code_subsubsection_2_4_2_1]]\n\n<!-- CODE:START -->\nAboot#mv startup-config startup-config.old\n<!-- CODE:END -->\n\nStep 4 Exit Aboot. This boots the switch\n\n\n[[CODE:code_subsubsection_2_4_2_2]]\n\n<!-- CODE:START -->\nAboot#exit\n<!-- CODE:END -->\n\nStep 5 Cancel Zero Touch Provisioning (ZTP). Refer to Section 2.1.2.2: Cancelling Zero Touch \n\nProvisioning for instructions.\n\nIf ZTP is not cancelled, the switch either:\n\n\nboots, using the startup-config file or boot script that it obtains from the network, or\nremains in ZTP mode if the switch is unable to download a startup-config file or boot script.\n\nStep 6 Configure the admin and enable passwords.\n\nRefer to Section 4.2.1: Local Security File for information about creating usernames and \npasswords.\n\n\n[[CODE:code_subsubsection_2_4_2_3]]\n\n<!-- CODE:START -->\nswitch>enable\nswitch#configure terminal\nswitch(config)#enable secret xyz1\nswitch(config)#username admin secret abc41\n<!-- CODE:END -->\n\nStep 7 Save the new running-config to the startup configuration file.\n\n[[CODE:code_subsubsection_2_4_2_4]]\n\n<!-- CODE:START -->\nswitch#write\n<!-- CODE:END -->\n\nStep 8 (Optional) Delete the old startup configuration file.\n\n\n[[CODE:code_subsubsection_2_4_2_5]]\n\n<!-- CODE:START -->\nswitch#delete startup-config.old\n<!-- CODE:END -->\n\nAfter ZTP is cancelled, the switch reboots, using the factory default settings. To avoid entering \nZTP mode on subsequent reboots, create a startup-config file before the next switch reboot.",
+  "children": [],
+  "code_refs": [
+    "code_subsubsection_2_4_2_0",
+    "code_subsubsection_2_4_2_1",
+    "code_subsubsection_2_4_2_2",
+    "code_subsubsection_2_4_2_3",
+    "code_subsubsection_2_4_2_4",
+    "code_subsubsection_2_4_2_5"
+  ],
+  "table_refs": []
+}

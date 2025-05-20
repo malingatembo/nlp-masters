@@ -1,0 +1,7 @@
+{
+  "id": "code_subsection_9_6_35",
+  "section_id": "subsection_9_6",
+  "content": "switch>show interface management 1 negotiation detail\nManagement1 :\n\nAuto-Negotiation Mode     10/100/1000 BASE-T (IEEE Clause 28)\nAuto-Negotiation Status   Success\n\n  Advertisements       Speed           Duplex     Pause\n                       --------------- ---------- --------------------\n      Local            10M/100M/1G     half/full  Disabled\n      Link Partner     None            None       None\n\n  Resolution           100Mb/s         full       Rx=off,Tx=off\n\nswitch>",
+  "section_number": "9.6",
+  "index": 35
+}

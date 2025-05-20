@@ -1,0 +1,17 @@
+{
+  "id": "subsection_9_4",
+  "type": "subsection",
+  "title": "Interfaces",
+  "number": "9.4",
+  "parent": "chapter_9",
+  "content": "--ID: subsection_9_4\nArista switches provide two physical interface types that receive, process, and transmit Ethernet frames: \nEthernet interfaces and Management interfaces.\n\nEach Ethernet interface is assigned a 48-bit MAC address and communicates with other interfaces by \nexchanging data packets. Each packet contains the MAC address of its source and destination interface. \nEthernet interfaces establish link level connections by exchanging packets. Interfaces do not typically \naccept packets with a destination address of a different interface.\n\nEthernet data packets are frames. A frame begins with preamble and start fields, followed by an \nEthernet header that includes source and destination MAC addresses. The middle section contains \npayload data, including headers for other protocols carried in the frame. The frame ends with a 32-bit \ncyclic redundancy check (CRC) field that interfaces use to detect data corrupted during transmission.",
+  "children": [
+    "subsubsection_9_4_1",
+    "subsubsection_9_4_2",
+    "subsubsection_9_4_3",
+    "subsubsection_9_4_4",
+    "subsubsection_9_4_5"
+  ],
+  "code_refs": [],
+  "table_refs": []
+}

@@ -1,0 +1,7 @@
+{
+  "id": "code_subsection_2_5_62",
+  "section_id": "subsection_2_5",
+  "content": "switch(config)#management xmpp\nswitch(config-mgmt-xmpp)#server arista-xmpp\nswitch(config-mgmt-xmpp)#domain test.aristanetworks.com\nswitch(config-mgmt-xmpp)#username test1@test.aristanetworks.com password 0 arista\nswitch(config-mgmt-xmpp)#no shutdown",
+  "section_number": "2.5",
+  "index": 58
+}

@@ -1,0 +1,7 @@
+{
+  "id": "code_subsection_9_6_21",
+  "section_id": "subsection_9_6",
+  "content": "switch>show hardware port-group\n\nPortgroup: 1    Active Ports: Et15/1-4\nPort            State\n------------------------------------------\nEthernet17      ErrDisabled\nEthernet18      ErrDisabled\nEthernet19      ErrDisabled\nEthernet20      ErrDisabled\nEthernet15/1    Active\nEthernet15/2    Active\nEthernet15/3    Active\nEthernet15/4    Active\n\nPortgroup: 2    Active Ports: Et16/1-4\nPort            State\n------------------------------------------\nEthernet16/1    Active\nEthernet16/2    Active\nEthernet16/3    Active\nEthernet16/4    Active\nEthernet21      ErrDisabled\nEthernet22      ErrDisabled\nEthernet23      ErrDisabled\nEthernet24      ErrDisabled\nswitch>",
+  "section_number": "9.6",
+  "index": 21
+}

@@ -1,0 +1,15 @@
+{
+  "id": "subsubsubsection_9_5_8_1",
+  "type": "subsubsubsection",
+  "title": "Configuring a CFP2 Module as a Single 100GbE Interface",
+  "number": "9.5.8.1",
+  "parent": null,
+  "content": "--PARENT: subsubsection_9_5_8\n\nTo configure the port as a single 100GbE interface (the default configuration), combine the module’s ten \ndata lanes by using the speed command (speed forced 100gfull) on the port’s /1 lane (the primary lane).\n\nThis configuration is available for all pluggable optics.\n\nImportant The  speed  command  is  hitless  on  the  7050X,  7060X,  7250X,  7260X,  7280SE,  7300X,  7320X  and  7500E\nseries platforms. On all other platforms, this command restarts the forwarding agent, which will result\nin traffic disruption.\n\nStep 1 Enter interface Ethernet configuration mode for lane /1 of the CFP2 Ethernet interface.\n\n[[CODE:code_subsubsubsection_9_5_8_1_0]]\n\n\nStep 2 Enter the speed forced 100gfull command. Depending on the platform, this command may \nrestart the forwarding agent, disrupting traffic on all ports for 60 seconds or more.\n\n[[CODE:code_subsubsubsection_9_5_8_1_1]]\n\n\nStep 3 Use the show interfaces status command to confirm the change in configuration.\n\n[[CODE:code_subsubsubsection_9_5_8_1_2]]",
+  "children": [],
+  "code_refs": [
+    "code_subsubsubsection_9_5_8_1_0",
+    "code_subsubsubsection_9_5_8_1_1",
+    "code_subsubsubsection_9_5_8_1_2"
+  ],
+  "table_refs": []
+}

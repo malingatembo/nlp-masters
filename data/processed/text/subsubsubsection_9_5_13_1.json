@@ -1,0 +1,11 @@
+{
+  "id": "subsubsubsection_9_5_13_1",
+  "type": "subsubsubsection",
+  "title": "Speed and Duplex",
+  "number": "9.5.13.1",
+  "parent": null,
+  "content": "--PARENT: subsubsection_9_5_13\n\nThe speed command affects the transmission speed and duplex setting for the configuration mode \ninterface. When a speed forced command is in effect on an interface, autonegotiation of speed and \nduplex settings is disabled for the interface; to enable autonegotiation, use the speed auto command.\n\nThe scope and effect of the speed command depends on the interface type; see Ethernet Interfaces and \nEthernet Configuration Procedures for detailed information on the speed settings for different \ninterfaces.",
+  "children": [],
+  "code_refs": [],
+  "table_refs": []
+}

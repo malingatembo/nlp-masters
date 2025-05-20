@@ -1,0 +1,11 @@
+{
+  "id": "subsubsection_9_5_9",
+  "type": "subsubsection",
+  "title": "MXP Ethernet Port Configuration",
+  "number": "9.5.9",
+  "parent": "subsection_9_5",
+  "content": "--ID: subsubsection_9_5_9\nEach MXP module contains twelve data lanes which can be used individually or combined to form one \nor more higher-speed interfaces. This allows an MXP Ethernet port to be configured as a single 100GbE \ninterface, up to twelve 10GbE interfaces, or a mixture of 40GbE and 10GbE ports.\n\nMXP ports do not use pluggable optics: instead, an MTP-24 ribbon is inserted directly into the port. The \nremote end of the MTP 24 ribbon must then be broken out using a splitter cable or cartridge based on \nthe operational mode and speed of the MXP port.\n\nWhen four lanes of an MXP interface are combined to form a 40GbE port, CLI commands will show the \nprimary lane of that group as connected or not connected and the other three lanes as errdisabled.\n\nThe following sections describe the configuration of MXP interfaces.",
+  "children": [],
+  "code_refs": [],
+  "table_refs": []
+}

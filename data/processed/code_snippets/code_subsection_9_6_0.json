@@ -1,0 +1,7 @@
+{
+  "id": "code_subsection_9_6_0",
+  "section_id": "subsection_9_6",
+  "content": "switch(config)#interface ethernet 5\nflowcontrol receive STATE\nno flowcontrol receive\ndefault flowcontrol receive",
+  "section_number": "9.6",
+  "index": 0
+}

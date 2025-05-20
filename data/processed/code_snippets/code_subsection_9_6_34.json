@@ -1,0 +1,7 @@
+{
+  "id": "code_subsection_9_6_34",
+  "section_id": "subsection_9_6",
+  "content": "switch>show interface management 1-2 negotiation\nPort       Autoneg            Negotiated Settings\n           Status   Speed     Duplex    Rx Pause  Tx Pause\n---------  -------  --------  --------  --------  --------\nMa1        success  100M      full      off       off\nMa2        success  auto      auto      off       off\nswitch>",
+  "section_number": "9.6",
+  "index": 34
+}

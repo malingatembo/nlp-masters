@@ -1,0 +1,7 @@
+{
+  "id": "code_subsubsubsection_9_5_8_1_2",
+  "section_id": "subsubsubsection_9_5_8_1",
+  "content": "switch(config-if-Et5/1/1)#show interfaces status\nPort    Name       Status       Vlan  Duplex  Speed  Type          Flags\nEt1                connected    2     full    1G     10GBASE-T\n<------OUTPUT OMITTED FROM EXAMPLE-------->\nEt5/1/1            connected    1     full    100G   100GBASE-SR1\nEt5/2/1            connected    1     full    100G   100GBASE-SR1\n<------OUTPUT OMITTED FROM EXAMPLE-------->",
+  "section_number": "9.5.8.1",
+  "index": 0
+}

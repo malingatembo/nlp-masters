@@ -1,0 +1,7 @@
+{
+  "id": "code_subsubsubsection_9_5_12_5_0",
+  "section_id": "subsubsubsection_9_5_12_5",
+  "content": "switch>show ip interfaces brief\nInterface       IP Address        Status  Protocol  MTU\nEthernet1/1     10.1.1.1/24       up      up        1500\nEthernet1/1.1   10.0.0.1/24       up      up        1500\nEthernet1/2     unassigned        up      up        1500",
+  "section_number": "9.5.12.5",
+  "index": 0
+}

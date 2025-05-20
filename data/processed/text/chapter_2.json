@@ -1,0 +1,17 @@
+{
+  "id": "chapter_2",
+  "type": "chapter",
+  "title": "Initial Configuration and Recovery",
+  "number": "2",
+  "parent": null,
+  "content": "--ID: chapter_2\n--SOURCE: arista.txt\n\nThis chapter describes initial configuration and recovery tasks. Subsequent chapters provide details \nabout features introduced in this chapter. \n\nThis chapter contains these sections:\n\n\nSection 2.1: Initial Switch Access\nSection 2.2: Connection Management\nSection 2.4: Recovery Procedures\nSection 2.5: Session Management Commands",
+  "children": [
+    "subsection_2_1",
+    "subsection_2_2",
+    "subsection_2_3",
+    "subsection_2_4",
+    "subsection_2_5"
+  ],
+  "code_refs": [],
+  "table_refs": []
+}

@@ -1,0 +1,7 @@
+{
+  "id": "code_subsubsubsection_9_5_12_5_2",
+  "section_id": "subsubsubsection_9_5_12_5",
+  "content": "switch>show interfaces status sub-interfaces\nPort    Name    Status  Vlan  Duplex  Speed  Type                 Flags\nEt1.1   connect 101     full   10G    dot1q-encapsulation\nEt1.2   connect 102     full   10G    dot1q-encapsulation\nEt1.3   connect 103     full   10G    dot1q-encapsulation\nEt1.4   connect 103     full   10G    dot1q-encapsulation\nswitch>",
+  "section_number": "9.5.12.5",
+  "index": 0
+}

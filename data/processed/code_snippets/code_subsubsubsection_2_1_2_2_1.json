@@ -1,0 +1,7 @@
+{
+  "id": "code_subsubsubsection_2_1_2_2_1",
+  "section_id": "subsubsubsection_2_1_2_2",
+  "content": "localhost login: admin\nadmin\nlocalhost>Apr 15 21:28:21 localhost ZeroTouch: %ZTP-5-DHCP_QUERY: Sending DHCP request \non  [ Ethernet10, Ethernet13, Ethernet14, Ethernet17, Ethernet18, Ethernet21, \nE-thernet22, Ethernet23, Ethernet24, Ethernet7, Ethernet8, Ethernet9, Management1, \nManagement2 ]\nApr 15 21:28:51 localhost ZeroTouch: %ZTP-5-DHCP_QUERY_FAIL: Failed to get a valid DHCP \nresponse\nApr 15 21:28:51 localhost ZeroTouch: %ZTP-5-RETRY: Retrying Zero Touch Provisioning \nfrom the beginning (attempt 1)\nApr 15 21:29:22 localhost ZeroTouch: %ZTP-5-DHCP_QUERY: Sending DHCP request on  [ \nEthernet10, Ethernet13, Ethernet14, Ethernet17, Ethernet18, Ethernet21, Ethernet22, \nEthernet23, Ethernet24, Ethernet7, Ethernet8, Ethernet9, Management1, Management2 ]\nlocalhost>zerotouch cancel\nzerotouch cancel\nlocalhost>Apr 15 21:29:39 localhost ZeroTouch: %ZTP-5-CANCEL: Cancelling Zero Touch \nProvisioning\nApr 15 21:29:39 localhost ZeroTouch: %ZTP-5-RELOAD: Rebooting the system\nBroadcast messagStopping sshd: [  OK  ]\nwatchdog is not running\nSysRq : Remount R/O\nRestarting system\nø\nAboot 1.9.0-52504.EOS2.0\nPress Control-C now to enter Aboot shell",
+  "section_number": "2.1.2.2",
+  "index": 0
+}

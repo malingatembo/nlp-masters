@@ -1,0 +1,7 @@
+{
+  "id": "code_subsection_9_6_45",
+  "section_id": "subsection_9_6",
+  "content": "switch>show interfaces ethernet 1-4 transceiver\nIf device is externally calibrated, only calibrated values are printed.\nN/A: not applicable, Tx: transmit, Rx: receive.\nmA: milliamperes, dBm: decibels (milliwatts).\n                             Bias      Optical   Optical\n        Temp       Voltage   Current   Tx Power  Rx Power  Last Update\nPort    (Celsius)  (Volts)   (mA)      (dBm)     (dBm)     (Date Time)\n-----   ---------  --------  --------  --------  --------  -------------------\nEt1      34.17      3.30      6.75     -2.41     -2.83     2011-12-02 16:18:48\nEt2      35.08      3.30      6.75     -2.23     -2.06     2011-12-02 16:18:42\nEt3      36.72      3.30      7.20     -2.02     -2.14     2011-12-02 16:18:49\nEt4      35.91      3.30      6.92     -2.20     -2.23     2011-12-02 16:18:45\nswitch>",
+  "section_number": "9.6",
+  "index": 45
+}

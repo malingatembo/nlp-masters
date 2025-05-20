@@ -1,0 +1,11 @@
+{
+  "id": "subsubsection_2_3_1",
+  "type": "subsubsection",
+  "title": "Configuration Session",
+  "number": "2.3.1",
+  "parent": "subsection_2_3",
+  "content": "--ID: subsubsection_2_3_1\nThe command configure session allows users to make a series of configuration changes in a temporary \nlocation and commit them to running-config at once by issuing the commit command.\n\nconfigure session <name of session> and running-config \u2014 The user enters a session (versus \nconfigure terminal in the case where configuration sessions are not used). If a session name is not \nspecified, a system named session is created. A snapshot of the current running-config is copied into the \nsession\u2019s data structure as the basis of further configuration changes.\n\nCLI configuration commands \u2014 User can run any configuration commands inside the session.\n\nrollback clean-config \u2014 User can run rollback command to revert the session\u2019s configuration to the \ndefault configuration (or clean configuration).\n\nshow session-config \u2014 User can run show session-config to show the session\u2019s configuration, \nwhich will be the future running-config once committed.\n\ncommit \u2014 User issues commit to commit the changes, which will replace the current running-config.\n\nabort \u2014 to abort the session and throw away all changes.\n\nexit \u2014 User can exit from the session, and later return to the same session by running configure \nsession <name> again.\n\nFor named session \u2014 More than one CLI instance can enter the same session and make changes to the session \nconfiguration. Once the session is committed in any of the CLIs, no other CLI can commit or make any other \nchanges in that session.",
+  "children": [],
+  "code_refs": [],
+  "table_refs": []
+}

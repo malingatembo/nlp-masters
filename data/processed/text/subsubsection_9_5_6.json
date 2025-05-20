@@ -1,0 +1,11 @@
+{
+  "id": "subsubsection_9_5_6",
+  "type": "subsubsection",
+  "title": "QSFP+ Ethernet Port Configuration",
+  "number": "9.5.6",
+  "parent": "subsection_9_5",
+  "content": "--ID: subsubsection_9_5_6\nEach QSFP+ module contains four data lanes which can be used individually or combined to form a \nsingle, higher-speed interface. This allows a QSFP+ Ethernet port to be configured as a single 40GbE \ninterface or as four 10GbE interfaces.\n\nWhen the four lanes are combined to form a 40GbE interface, display commands will show lane /1 as \nconnected or not connected, and will show lanes /2 through /4 as errdisabled.\n\nThe following sections describe the configuration of QSFP+ ports.",
+  "children": [],
+  "code_refs": [],
+  "table_refs": []
+}

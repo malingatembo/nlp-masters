@@ -1,0 +1,7 @@
+{
+  "id": "code_subsubsubsection_9_5_2_1",
+  "section_id": "subsubsection_9_5_2",
+  "content": "switch(config-if-Et7)#show interface ethernet 7\nEthernet7 is up, line protocol is up (connected)\n  Hardware is Ethernet, address is 001c.2804.17e1 (bia 001c.7312.02e2)\n  Description: b.e45\n<-------OUTPUT OMITTED FROM EXAMPLE-------->\n\nswitch(config-if-Et7)#",
+  "section_number": "9.5.2",
+  "index": 1
+}

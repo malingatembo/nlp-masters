@@ -1,0 +1,17 @@
+{
+  "id": "subsection_9_2",
+  "type": "subsection",
+  "title": "Ethernet Standards",
+  "number": "9.2",
+  "parent": "chapter_9",
+  "content": "--ID: subsection_9_2\nEthernet, standardized in IEEE 802.3, is a group of technologies used for communication over local area \nnetworks. Ethernet communication divides data streams into frames containing addresses (source and \ndestination), payload, and cyclical redundancy check (CRC) information.\n\nIEEE 802.3 also describes two types of optical fiber: single-mode fiber (SMF) and multi-mode fiber \n(MMF).\n\n\nSMF is more expensive, but can be used over longer distances (over 300 meters).\n\n\u2022 MMF is less expensive, but can only be used over distances of less than 300 meters.",
+  "children": [
+    "subsubsection_9_2_1",
+    "subsubsection_9_2_2",
+    "subsubsection_9_2_3",
+    "subsubsection_9_2_4",
+    "subsubsection_9_2_5"
+  ],
+  "code_refs": [],
+  "table_refs": []
+}

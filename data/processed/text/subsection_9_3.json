@@ -1,0 +1,15 @@
+{
+  "id": "subsection_9_3",
+  "type": "subsection",
+  "title": "Ethernet Physical Layer",
+  "number": "9.3",
+  "parent": "chapter_9",
+  "content": "--ID: subsection_9_3\n\nThe Ethernet physical layer (PHY) includes hardware components connecting a switch\u2019s MAC layer to \nthe transceiver, cable, and ultimately a peer link partner. Data exist in digital form at the MAC layer. On \nthe line side of the PHY, data exist as analog signals: light blips on optical fiber or voltage pulses on \ncopper cable. Signals may be distorted while in transit and recovery may require signal processing.\n\nEthernet physical layer components include a PHY and a transceiver.",
+  "children": [
+    "subsubsection_9_3_1",
+    "subsubsection_9_3_2",
+    "subsubsection_9_3_3"
+  ],
+  "code_refs": [],
+  "table_refs": []
+}

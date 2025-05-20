@@ -1,0 +1,14 @@
+{
+  "id": "subsubsubsection_2_1_2_2",
+  "type": "subsubsubsection",
+  "title": "Cancelling Zero Touch Provisioning",
+  "number": "2.1.2.2",
+  "parent": null,
+  "content": "--PARENT: subsubsection_2_1_2\n\nZero Touch Provisioning (ZTP) installs a startup-config file from a network location if flash memory does \nnot contain a startup-config when the switch reboots. Cancelling ZTP is required if the switch cannot \ndownload a startup-config or boot script file.\n\nWhen the switch boots without a startup-config file, it displays the following message through the \nconsole port:\n\n[[CODE:code_subsubsubsection_2_1_2_2_0]]\n\n\nTo cancel ZTP mode, log into the switch with the admin password, then enter the zerotouch cancel \ncommand. The switch immediately boots without installing a startup-config file. \n\n\n[[CODE:code_subsubsubsection_2_1_2_2_1]]\n\n\nSection 6.4.1 lists the remaining messages that the switch displays before providing a logon prompt. To \navoid entering ZTP mode on subsequent reboots, create a startup-config file as described by step 8 of \nSection 2.1.2.3.",
+  "children": [],
+  "code_refs": [
+    "code_subsubsubsection_2_1_2_2_0",
+    "code_subsubsubsection_2_1_2_2_1"
+  ],
+  "table_refs": []
+}

@@ -1,0 +1,7 @@
+{
+  "id": "code_subsubsection_9_5_14_6",
+  "section_id": "subsubsection_9_5_14",
+  "content": "switch>show interfaces management 1-2 status\nPort      Name              Status       Vlan        Duplex  Speed Type\nMa1                         connected    routed      a-full a-100M 10/100/1000\nMa2                         connected    routed      a-full   a-1G 10/100/1000\nswitch>",
+  "section_number": "9.5.14",
+  "index": 6
+}

@@ -1,0 +1,13 @@
+{
+  "id": "subsubsubsection_2_3_4_1",
+  "type": "subsubsubsection",
+  "title": "show configuration sessions [detail]",
+  "number": "2.3.4.1",
+  "parent": null,
+  "content": "--PARENT: subsubsection_2_3_4\n\nThis command displays the following information about the sessions that exist in the system:\n\nThe name of each session and its state (completed, pending, aborted, etc.) are displayed.\nIf a user has currently entered the session, the user name and the associated terminal are also shown.\n\n• With the detail flag, the process ID of the CLI process that is using the session is also displayed.\n\nNote\n\nAn asterisk (*) indicates that the user running the show command is currently in the marked session.\n\n\n\n\n\n\n\n\nExample\n\n[[CODE:code_subsubsubsection_2_3_4_1_0]]\n\n\n* s2 pending       user123      vty870         7729",
+  "children": [],
+  "code_refs": [
+    "code_subsubsubsection_2_3_4_1_0"
+  ],
+  "table_refs": []
+}

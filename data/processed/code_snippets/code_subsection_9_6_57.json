@@ -1,0 +1,7 @@
+{
+  "id": "code_subsection_9_6_57",
+  "section_id": "subsection_9_6",
+  "content": "transceiver channel CHANNEL_NUMBER grid-spacing <SPACING_GRID>\nno transceiver channel CHANNEL_NUMBER [GRID_SPACING <SPACING_GRID>\ndefault transceiver channel CHANNEL_NUMBER [GRID_SPACING <SPACING_GRID>",
+  "section_number": "9.6",
+  "index": 0
+}

@@ -1,0 +1,7 @@
+{
+  "id": "code_subsubsection_9_5_14_1",
+  "section_id": "subsubsection_9_5_14",
+  "content": "switch>show interfaces ethernet 2,18 capabilities\nEthernet2\n  Model:        DCS-7150S-64-CL\n  Type:         10GBASE-CR\n  Speed/Duplex: 10G/full,40G/full,auto\n  Flowcontrol:  rx-(off,on,desired),tx-(off,on,desired)\nEthernet18\n  Model:        DCS-7150S-64-CL\n  Type:         10GBASE-SR\n  Speed/Duplex: 10G/full\n  Flowcontrol:  rx-(off,on),tx-(off,on)\nswitch>",
+  "section_number": "9.5.14",
+  "index": 1
+}

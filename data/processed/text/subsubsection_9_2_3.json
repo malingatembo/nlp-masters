@@ -1,0 +1,13 @@
+{
+  "id": "subsubsection_9_2_3",
+  "type": "subsubsection",
+  "title": "10 Gigabit Ethernet",
+  "number": "9.2.3",
+  "parent": "subsection_9_2",
+  "content": "--ID: subsubsection_9_2_3\n\nThe 10 Gigabit Ethernet (10GbE) standard defines an Ethernet implementation with a nominal data rate \nof 10 billion bits per second. 10 Gigabit Ethernet implements full duplex point to point links connected \nby network switches. Half duplex operation, hubs and CSMA/CD do not exist in 10GbE. The standard \nencompasses several PHY standards; a networking device may support different PHY types through \npluggable PHY modules. 10GbE standards are named 10GBASE-xyz, as interpreted by [[TABLE:table_9_2]]\n\n[[TABLE:table_9_2]]\n\n<!-- TABLE:START -->\nTable 9-2: 10GBASE-xyz Interpretation\n| x                           | y                  | z                                        |\n|-----------------------------|--------------------|------------------------------------------|\n| media type or wavelength,   | PHY encoding type  | Number of WWDM wavelengths or XAUI Lanes|\n| if media type is fiber      |                    |                                          |\n| C = Copper (twin axial)     | R = LAN PHY (64B/66B) | If omitted, value = 1 (serial)        |\n| T = Twisted Pair            | X = LAN PHY (8B/10B)  | 4 = 4 WWDM wavelengths or XAUI Lanes  |\n| S = Short (850 nm)          | W = WAN PHY(*) (64B/66B) |                                        |\n| L = Long (1310 nm)          |                    |                                          |\n| E = Extended (1550 nm)      |                    |                                          |\n| Z = Ultra extended (1550 nm)|                    |                                          |\n<!-- TABLE:END -->",
+  "children": [],
+  "code_refs": [],
+  "table_refs": [
+    "table_9_2"
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "id": "code_subsubsection_9_5_14_2",
+  "section_id": "subsubsection_9_5_14",
+  "content": "switch>show interfaces ethernet 1 transceiver properties\nName : Et1\nAdministrative Speed: 10G\nAdministrative Duplex: full\nOperational Speed: 10G (forced)\nOperational Duplex: full (forced)\nMedia Type: 10GBASE-SRL",
+  "section_number": "9.5.14",
+  "index": 2
+}

@@ -1,0 +1,7 @@
+{
+  "id": "code_subsection_9_6_49",
+  "section_id": "subsection_9_6",
+  "content": "switch(config-as-if-Et4/1/3)#show interfaces ethernet 4 / 3 / 4 transceiver \nhardware\n\nName: Et4/3/4\nMedia Type: 10GBASE-DWDM\nConfigured Channel : 39\nConfigured Grid (GHz) : 50\nComputed Frequency (GHz) : 193,100\nComputed Wavelength (nm) : 1552.52\nOperational Channel : 39 (Default)\nOperational Grid (GHz) : 50 (Default)\nOperational Frequency (GHz): 193,100\nOperational Wavelength (nm): 1552.52\n\nswitch(config-as-if-Et4/1/3)#",
+  "section_number": "9.6",
+  "index": 49
+}

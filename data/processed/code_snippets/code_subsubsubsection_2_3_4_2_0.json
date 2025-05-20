@@ -1,0 +1,7 @@
+{
+  "id": "code_subsubsubsection_2_3_4_2_0",
+  "section_id": "subsubsubsection_2_3_4_2",
+  "content": "Arista(config-s-s2)#show session-config\n! Command: show session-configuration named s2\nip dhcp smart-relay global\n!\ntransceiver qsfp default-mode 4x10G\n!\nip pim bsr-candidate Loopback0 224.0.0.0/4 priority 64 hashmask 30 interval 60\n!\nhostname Arista\nip host one 1.1.1.1\n!\nno aaa root\n!\nspanning-tree mode mstp\n!\ninterface Ethernet1\n!\ninterface Ethernet2\n!\ninterface Ethernet3\n!\ninterface Ethernet4\n!\ninterface Ethernet5\n!\ninterface Ethernet6\n!\nno ip routing\n!\n!\nend",
+  "section_number": "2.3.4.2",
+  "index": 0
+}

@@ -1,0 +1,7 @@
+{
+  "id": "code_subsection_9_6_4",
+  "section_id": "subsection_9_6",
+  "content": "hardware port-group group_number select PORT_LIST\nno hardware port-group group_number\ndefault hardware port-group group_number",
+  "section_number": "9.6",
+  "index": 4
+}

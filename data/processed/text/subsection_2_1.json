@@ -1,0 +1,14 @@
+{
+  "id": "subsection_2_1",
+  "type": "subsection",
+  "title": "Initial Switch Access",
+  "number": "2.1",
+  "parent": "chapter_2",
+  "content": "--ID: subsection_2_1\nArista Network switches provide two initial configuration methods:\n\n\u2022 Zero Touch Provisioning configures the switch without user interaction (Section 2.1.1).\n\n\u2022 Manual provisioning configures the switch through commands entered by a user through the CLI \n(Section 2.1.2).",
+  "children": [
+    "subsubsection_2_1_1",
+    "subsubsection_2_1_2"
+  ],
+  "code_refs": [],
+  "table_refs": []
+}

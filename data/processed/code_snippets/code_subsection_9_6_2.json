@@ -1,0 +1,7 @@
+{
+  "id": "code_subsection_9_6_2",
+  "section_id": "subsection_9_6",
+  "content": "flowcontrol send STATE\nno flowcontrol send\ndefault flowcontrol send",
+  "section_number": "9.6",
+  "index": 2
+}

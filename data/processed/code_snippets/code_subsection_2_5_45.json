@@ -1,0 +1,7 @@
+{
+  "id": "code_subsection_2_5_45",
+  "section_id": "subsection_2_5",
+  "content": "switch#show xmpp neighbors\nNeighbor                          State           Last Seen Login Time\n------------------------------    --------------- -------------------------\nadmin@test.aristanetworks.com    present         0:01:40 ago\ntest1@test.aristanetworks.com    present         20:29:39 ago\n\nNeighbor                          Status Message\n------------------------------    ----------------------------------------\nadmin@test.aristanetworks.com\ntest1@test.aristanetworks.com     Arista Networks DCS-7048T-4S\nswitch#",
+  "section_number": "2.5",
+  "index": 41
+}

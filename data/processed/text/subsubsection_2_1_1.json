@@ -1,0 +1,13 @@
+{
+  "id": "subsubsection_2_1_1",
+  "type": "subsubsection",
+  "title": "Zero Touch Provisioning",
+  "number": "2.1.1",
+  "parent": "subsection_2_1",
+  "content": "--ID: subsubsection_2_1_1\nZero Touch Provisioning (ZTP) configures a switch without user intervention by downloading a startup \nconfiguration file (startup-config) or a boot script from a location specified by a DHCP server. Section \n6.4.4 describes network tasks required to set up ZTP.\n\nThe switch enters ZTP mode when it boots if flash memory does not contain startup-config. It remains \nin ZTP mode until a user cancels ZTP mode, or until the switch retrieves a startup-config or a boot script. \nAfter downloading a file through ZTP, the switch reboots again, using the retrieved file.\n\nSecurity Considerations\n\nThe ZTP process cannot distinguish an approved DHCP server from a rogue DHCP server. For secure \nprovisioning, you must ensure that only approved DHCP servers are able to communicate with the \nswitch until after the ZTP process is complete. Arista also recommends validating the EOS image on \nyour ZTP server by confirming that its MD5 checksum matches the MD5 checksum that can be found \non the EOS download page of the Arista website. On a UNIX server, the md5sum command calculates \nthis checksum:\n\n[[CODE:code_subsubsection_2_1_1_0]]\n\n<!-- CODE:START --> \n% md5sum EOS.swi\n3bac45b96bc820eb1d10c9ee33108a25  EOS.swi\n<!-- CODE:END --> \n\nTo provision the switch through Zero Touch Provisioning:\n\nStep 1 Mount the switch in its permanent location.\n\nStep 2 Connect at least one management or Ethernet port to a network that can access the DHCP \n\nserver and configuration file.\n\nStep 3 Provide power to the switch.\n\nZTP provisioning progress can be monitored through the console port. Section 2.1.2.1 provides \ninformation for setting up the console port. Section 2.1.2.2 provides information for monitoring ZTP \nprogress and cancelling ZTP mode.",
+  "children": [],
+  "code_refs": [
+    "code_subsubsection_2_1_1_0"
+  ],
+  "table_refs": []
+}

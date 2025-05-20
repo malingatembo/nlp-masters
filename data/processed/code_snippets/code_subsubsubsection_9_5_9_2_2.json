@@ -1,0 +1,7 @@
+{
+  "id": "code_subsubsubsection_9_5_9_2_2",
+  "section_id": "subsubsubsection_9_5_9_2",
+  "content": "switch(config-if-Et5/49/1)#interface ethernet 5/49/5\nswitch(config-if-Et5/49/5)#speed forced 40gfull\nswitch(config-if-Et5/49/5)#interface ethernet 5/49/9\nswitch(config-if-Et5/49/9)#speed forced 40gfull",
+  "section_number": "9.5.9.2",
+  "index": 0
+}

@@ -1,0 +1,7 @@
+{
+  "id": "code_subsubsubsection_9_5_12_1_0",
+  "section_id": "subsubsubsection_9_5_12_1",
+  "content": "switch(config)#interface Ethernet1/1\nswitch(config-if-Et1/1)#no switchport\nswitch(config-if-Et1/1)#no shutdown",
+  "section_number": "9.5.12.1",
+  "index": 0
+}

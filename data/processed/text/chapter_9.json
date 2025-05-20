@@ -1,0 +1,18 @@
+{
+  "id": "chapter_9",
+  "type": "chapter",
+  "title": "Ethernet Ports",
+  "number": "9",
+  "parent": null,
+  "content": "--ID: chapter_9\n--SOURCE: arista.txt\n\nThis chapter describes Ethernet ports supported by Arista switches. Sections covered in this chapter \ninclude:\n\n\nSection 9.1: Ethernet Ports Introduction\nSection 9.2: Ethernet Standards\nSection 9.3: Ethernet Physical Layer\nSection 9.4: Interfaces\nSection 9.5: Ethernet Configuration Procedures\nSection 9.6: Ethernet Configuration Commands",
+  "children": [
+    "subsection_9_1",
+    "subsection_9_2",
+    "subsection_9_3",
+    "subsection_9_4",
+    "subsection_9_5",
+    "subsection_9_6"
+  ],
+  "code_refs": [],
+  "table_refs": []
+}
