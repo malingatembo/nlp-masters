@@ -1,7 +1,6 @@
 # My project specific
 output/
 output/results/*
-data/processed/*
 .env
 
 led / optimized / DLL files
